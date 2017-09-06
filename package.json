@@ -1,6 +1,8 @@
 {
     "name": "indicore-snippets",
+    "displayName": "Indicore Snippets",
     "description": "Indicore Snippets for Visual Studio Code",
+	"homepage": "https://github.com/sibvic/vsc-indicore",
     "version": "0.2.0",
     "publisher": "sibvic",
     "icon": "images/sdk-logo.png",
