@@ -3,7 +3,7 @@
     "description": "Indicore Snippets for Visual Studio Code",
     "version": "0.2.0",
     "publisher": "sibvic",
-    "icon": "images/logo.png",
+    "icon": "images/sdk-logo.png",
     "license": "MIT",
     "engines": {
         "vscode": "^0.10.1"
