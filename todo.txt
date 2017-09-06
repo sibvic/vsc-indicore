@@ -1,0 +1,1734 @@
+Accounts(table)
+assert (v [, message])
+AsyncOperationFinished(cookie, successful, message, message1, message2)
+
+bar_stream
+bar_stream.close
+bar_stream.high
+bar_stream.low
+bar_stream.median
+bar_stream.open
+bar_stream.typical
+bar_stream.volume
+bar_stream.weighted
+bar_stream:getAll
+bar_stream:supportsVolume
+C
+
+Captures:
+ChangeParameters()
+ChangeParameters()
+Character Class:
+CheckParameters(parameters)
+CheckParameters(parameters)
+Click
+Click(x, y, price, date)
+Closed Trades(table)
+collectgarbage (opt [, arg])
+ConsoleBacktester
+ConsoleOptimizer
+ConsoleUtilities
+context
+context.DASH
+DASH in context
+context.DASHDOT
+DASHDOT in context
+context.DOT
+DOT in context
+context.SOLID
+SOLID in context
+context.tooltip
+tooltip in context
+context:bottom
+bottom in context
+context:convertPenStyle
+convertPenStyle in context
+context:convertTransparency
+convertTransparency in context
+context:createFont
+createFont in context
+context:createHatchBrush
+createHatchBrush in context
+context:createPen
+createPen in context
+context:createPoints
+createPoints in context
+context:createSolidBrush
+createSolidBrush in context
+context:deleteObject
+deleteObject in context
+context:drawArc
+drawArc in context
+context:drawBezierLine
+drawBezierLine in context
+context:drawBezierShape
+drawBezierShape in context
+context:drawEllipse
+drawEllipse in context
+context:drawGradientRectangle
+drawGradientRectangle in context
+context:drawGradientTriangle
+drawGradientTriangle in context
+context:drawIcon
+drawIcon in context
+context:drawLine
+drawLine in context
+context:drawPicture
+drawPicture in context
+context:drawPictureTransparentBackground
+drawPictureTransparentBackground in context
+context:drawPolygon
+drawPolygon in context
+context:drawPolyline
+drawPolyline in context
+context:drawRectangle
+drawRectangle in context
+context:drawText
+drawText in context
+context:firstBar
+firstBar in context
+context:indexOfBar
+indexOfBar in context
+context:lastBar
+lastBar in context
+context:left
+left in context
+context:loadIcon
+loadIcon in context
+context:loadPicture
+loadPicture in context
+context:maxPrice
+maxPrice in context
+context:measureText
+measureText in context
+context:minPrice
+minPrice in context
+context:nextBar
+nextBar in context
+context:pixelsToPoints
+pixelsToPoints in context
+context:pointOfPrice
+pointOfPrice in context
+context:pointsToPixels
+pointsToPixels in context
+context:positionOfBar
+positionOfBar in context
+context:positionOfDate
+positionOfDate in context
+context:priceOfPoint
+priceOfPoint in context
+context:priceWidth
+priceWidth in context
+context:resetClipRectangle
+resetClipRectangle in context
+context:right
+right in context
+context:setClipRectangle
+setClipRectangle in context
+context:setPixel
+setPixel in context
+context:startEnumeration
+startEnumeration in context
+context:top
+top in context
+core
+core.ASYNC_REDRAW
+ASYNC_REDRAW in core
+core.Bar
+Bar in core
+core.Both
+Both in core
+core.COLOR_BACKGROUND
+COLOR_BACKGROUND in core
+core.COLOR_CUSTOMLEVEL
+COLOR_CUSTOMLEVEL in core
+core.COLOR_DOWNCANDLE
+COLOR_DOWNCANDLE in core
+core.COLOR_LABEL
+COLOR_LABEL in core
+core.COLOR_LINE
+COLOR_LINE in core
+core.COLOR_UPCANDLE
+COLOR_UPCANDLE in core
+core.colors
+colors in core
+core.CR_BOTTOM
+CR_BOTTOM in core
+core.CR_CENTER
+CR_CENTER in core
+core.CR_CHART
+CR_CHART in core
+core.CR_LEFT
+CR_LEFT in core
+core.CR_RIGHT
+CR_RIGHT in core
+core.CR_TOP
+CR_TOP in core
+core.crosses
+crosses in core
+core.crossesOver
+crossesOver in core
+core.crossesOverOrTouch
+crossesOverOrTouch in core
+core.crossesUnder
+crossesUnder in core
+core.crossesUnderOrTouch
+crossesUnderOrTouch in core
+core.date
+date in core
+core.datetime
+datetime in core
+core.dateToTable
+dateToTable in core
+core.Dot
+Dot in core
+core.drawLine
+drawLine in core
+core.eraseStream
+eraseStream in core
+core.findDate
+findDate in core
+core.FLAG_ACCOUNT
+FLAG_ACCOUNT in core
+core.FLAG_ALLOW_TRADE
+FLAG_ALLOW_TRADE in core
+core.FLAG_BARPERIODS
+FLAG_BARPERIODS in core
+core.FLAG_BARPERIODS_EDIT
+FLAG_BARPERIODS_EDIT in core
+core.FLAG_BIDASK
+FLAG_BIDASK in core
+core.FLAG_DATE
+FLAG_DATE in core
+core.FLAG_DATE_OR_NULL
+FLAG_DATE_OR_NULL in core
+core.FLAG_DATETIME
+FLAG_DATETIME in core
+core.FLAG_DATETIME_OR_NULL
+FLAG_DATETIME_OR_NULL in core
+core.FLAG_EMAIL
+FLAG_EMAIL in core
+core.FLAG_INDICATOR
+FLAG_INDICATOR in core
+core.FLAG_INSTRUMENTS
+FLAG_INSTRUMENTS in core
+core.FLAG_LEVEL_STYLE
+FLAG_LEVEL_STYLE in core
+core.FLAG_LINE_STYLE
+FLAG_LINE_STYLE in core
+core.FLAG_ONLYINDICATORS
+FLAG_ONLYINDICATORS in core
+core.FLAG_ONLYOSCILLATORS
+FLAG_ONLYOSCILLATORS in core
+core.FLAG_ORDER
+FLAG_ORDER in core
+core.FLAG_PERIODS
+FLAG_PERIODS in core
+core.FLAG_PERIODS_EDIT
+FLAG_PERIODS_EDIT in core
+core.FLAG_PRICE
+FLAG_PRICE in core
+core.FLAG_SOUND
+FLAG_SOUND in core
+core.FLAG_STRATEGY
+FLAG_STRATEGY in core
+core.FLAG_TRADE
+FLAG_TRADE in core
+core.formatDate
+formatDate in core
+core.getcandle
+getcandle in core
+core.H_Center
+H_Center in core
+core.H_Left
+H_Left in core
+core.H_Right
+H_Right in core
+core.host
+host in core
+core.ILanguageServiceIndicator
+ILanguageServiceIndicator in core
+core.ILanguageServiceJs
+ILanguageServiceJs in core
+core.ILanguageServiceLua
+ILanguageServiceLua in core
+core.ILanguageServiceNativeWin
+ILanguageServiceNativeWin in core
+core.ILanguageServiceStrategy
+ILanguageServiceStrategy in core
+core.ILanguageServiceUnknownLanguage
+ILanguageServiceUnknownLanguage in core
+core.ILanguageServiceUnknownType
+ILanguageServiceUnknownType in core
+core.Indicator
+Indicator in core
+core.indicators
+indicators in core
+core.indicators:create
+create in core.indicators
+core.indicators:findIndicator
+findIndicator in core.indicators
+core.isnontrading
+isnontrading in core
+core.Line
+Line in core
+core.LINE_DASH
+LINE_DASH in core
+core.LINE_DASHDOT
+LINE_DASHDOT in core
+core.LINE_DOT
+LINE_DOT in core
+core.LINE_NONE
+LINE_NONE in core
+core.LINE_SOLID
+LINE_SOLID in core
+core.makeHttpLoader
+makeHttpLoader in core
+core.now
+now in core
+core.Oscillator
+Oscillator in core
+core.OWNER_ADDITIONAL_AREA
+OWNER_ADDITIONAL_AREA in core
+core.OWNER_INTERNAL
+OWNER_INTERNAL in core
+core.OWNER_MAIN_AREA
+OWNER_MAIN_AREA in core
+core.OWNER_UNKNOWN
+OWNER_UNKNOWN in core
+core.parseCsv
+parseCsv in core
+core.range
+range in core
+core.rangeFrom
+rangeFrom in core
+core.rangeTo
+rangeTo in core
+core.requires
+requires in core
+core.rgb
+rgb in core
+core.Signal
+Signal in core
+core.Strategy
+Strategy in core
+core.tableToDate
+tableToDate in core
+core.Tick
+Tick in core
+core.touches
+touches in core
+core.TZ_EST
+TZ_EST in core
+core.TZ_FINANCIAL
+TZ_FINANCIAL in core
+core.TZ_GMT
+TZ_GMT in core
+core.TZ_LOCAL
+TZ_LOCAL in core
+core.TZ_SERVER
+TZ_SERVER in core
+core.TZ_TS
+TZ_TS in core
+core.UpdateAll
+UpdateAll in core
+core.UpdateLast
+UpdateLast in core
+core.UpdateNew
+UpdateNew in core
+core.V_Bottom
+V_Bottom in core
+core.V_Center
+V_Center in core
+core.V_Top
+V_Top in core
+core.valuemap
+valuemap in core
+core.version
+version in core
+core.View
+View in core
+core:app_path
+app_path in core
+coroutine.create (f)
+coroutine.resume (co [, val1, ...])
+coroutine.running ()
+coroutine.status (co)
+coroutine.wrap (f)
+coroutine.yield (...)
+Create a Limit Order
+Create a Market Close Order
+Create a Market Order
+Create a Market Range Close Order (Using Price and Distance)
+Create a Market Range Close Order (Using Two Prices)
+Create a Market Range Order (Using Price and Distance)
+Create a Market Range Order (Using Two Prices)
+Create a new contingency group
+Create a Stop Order
+Create a True Market Close Order
+Create a True Market Order
+Create an Entry Limit Order
+Create an Entry Stop Order
+Create an Range Entry Order
+Create OCO orders
+Create Order
+Create OTO orders
+Creation Patterns
+CreationFinished()
+CreationStarted()
+creationStrategy
+creationStrategy:setMaxClickCount
+setMaxClickCount in creationStrategy
+creationStrategy:setNeedParamsAfterPattern
+setNeedParamsAfterPattern in creationStrategy
+creationStrategy:setPattern
+setPattern in creationStrategy
+D
+
+db
+db:get
+get in db
+db:put
+put in db
+debug.debug ()
+debug.getfenv (o)
+debug.gethook ([thread])
+debug.getinfo ([thread,] function [, what])
+debug.getlocal ([thread,] level, local)
+debug.getmetatable (object)
+debug.getregistry ()
+debug.getupvalue (func, up)
+debug.setfenv (object, table)
+debug.sethook ([thread,] hook, mask [, count])
+debug.setlocal ([thread,] level, local, value)
+debug.setmetatable (object, table)
+debug.setupvalue (func, up, value)
+debug.traceback ([thread,] [message])
+Debugging a View Indicator
+Debugging an Owner-drawn Indicator
+Definitions
+Delete Order
+dofile (filename)
+DoubleClick
+DoubleClick(x, y, price, date)
+Drag(x, y, price, date)
+DragClick
+DragEnd(x, y, price, date)
+Draw(stage, context)
+Draw(stage, context) function
+Drawing and Performance
+Drawing Concepts
+E
+
+Edit Order
+ELS (Entry-with-Limit-and-Stop) Contingent Order
+ELS (Entry-with-Limit-and-Stop) Contingent Order
+ELS (Entry-with-Limit-and-Stop) Order Execution Scenarios
+error (message [, level])
+Example of Triangle graphical tool
+expat_lua
+expat_lua.ATTRIBUTE
+ATTRIBUTE in expat_lua
+expat_lua.COMMENT
+COMMENT in expat_lua
+expat_lua.ELEMENT
+ELEMENT in expat_lua
+expat_lua.parseDOM
+parseDOM in expat_lua
+expat_lua.parseSAX
+parseSAX in expat_lua
+expat_lua.TEXT
+TEXT in expat_lua
+expat_lua.utf8_to_ansi
+utf8_to_ansi in expat_lua
+ExtAsyncOperationFinished function
+Extension Kit
+ExtSubscribe function of helper.lua
+ExtSubscribe1 function of helper.lua
+ExtUpdate function
+F
+
+file table
+file:close ()
+file:flush ()
+file:lines ()
+file:read (...)
+file:seek ([whence] [, offset])
+file:setvbuf (mode [, size])
+file:write (...)
+G
+
+getfenv (f)
+getmetatable (object)
+Graphical Tools
+H
+
+host
+host.ReferencePoints
+ReferencePoints in host
+host.Window
+Window in host
+host:execute
+execute in host
+host:execute("addCommand", ...);
+execute("addCommand", ...); in host
+host:execute("attachOutputToChart", ...);
+execute("attachOutputToChart", ...); in host
+host:execute("attachTextToChart", ...);
+execute("attachTextToChart", ...); in host
+host:execute("calculateDate", ...)
+execute("calculateDate", ...) in host
+host:execute("calculatePositionOfDate", ...)
+execute("calculatePositionOfDate", ...) in host
+host:execute("convertTime", ...);
+execute("convertTime", ...); in host
+host:execute("createFont", ...);
+execute("createFont", ...); in host
+host:execute("deleteFont", ...);
+execute("deleteFont", ...); in host
+host:execute("drawLabel", ...)
+execute("drawLabel", ...) in host
+host:execute("drawLabel1", ...)
+execute("drawLabel1", ...) in host
+host:execute("drawLine", ...)
+execute("drawLine", ...) in host
+host:execute("extendHistory", ...)
+execute("extendHistory", ...) in host
+host:execute("getAskPrice");
+execute("getAskPrice"); in host
+host:execute("getBidPrice");
+execute("getBidPrice"); in host
+host:execute("getHistory", ...)
+execute("getHistory", ...) in host
+host:execute("getHistory1", ...)
+execute("getHistory1", ...) in host
+host:execute("getIndicatorOwner", ...)
+execute("getIndicatorOwner", ...) in host
+host:execute("getProperty", ...)
+execute("getProperty", ...) in host
+host:execute("getServerTime");
+execute("getServerTime"); in host
+host:execute("getSyncHistory", ...)
+execute("getSyncHistory", ...) in host
+host:execute("getTradingDayOffset")
+execute("getTradingDayOffset") in host
+host:execute("getTradingProperty", ...);
+execute("getTradingProperty", ...); in host
+host:execute("getTradingWeekOffset")
+execute("getTradingWeekOffset") in host
+host:execute("isTableFilled", ...);
+execute("isTableFilled", ...); in host
+host:execute("killTimer", ...);
+execute("killTimer", ...); in host
+host:execute("prompt", ...);
+execute("prompt", ...); in host
+host:execute("removeAll")
+execute("removeAll") in host
+host:execute("removeLabel", ...)
+execute("removeLabel", ...) in host
+host:execute("removeLine", ...)
+execute("removeLine", ...) in host
+host:execute("setStatus", ...);
+execute("setStatus", ...); in host
+host:execute("setTimer", ...);
+execute("setTimer", ...); in host
+host:execute("stop");
+execute("stop"); in host
+host:execute("subscribeTradeEvents", ...);
+execute("subscribeTradeEvents", ...); in host
+host:findTable
+findTable in host
+host:trace
+trace in host
+host:version
+version in host
+How to Add/Remove Indicator to Project?
+How to create an owner-drawn indicator.
+How to Create Graphical Tool?
+How to Create Package?
+How to Create View Indicator?
+How to Debug an Indicator?
+How to Execute an Indicator or Strategy Program?
+How to Install and Use Your Indicator in Marketscope?
+How to Protect Strategy or Indicator Source Code?
+How to Select Nested Indicators to be Debugged?
+How to Start Creating an Indicator in SDK?
+How to Support Localization?
+How to use 3rd party modules
+How to Use Another Indicator in Your Code?
+How to Use Breakpoints?
+How to Watch an Expression?
+How to Work with Project?
+Http/Https loader
+http_loader
+http_loader.cancel
+cancel in http_loader
+http_loader.load
+load in http_loader
+http_loader.loading
+loading in http_loader
+http_loader.response
+response in http_loader
+http_loader.successful
+successful in http_loader
+http_lua
+http_lua.createRequest
+createRequest in http_lua
+http_lua.fromBase64
+fromBase64 in http_lua
+http_lua.md2
+md2 in http_lua
+http_lua.toBase64
+toBase64 in http_lua
+http_lua.toHex
+toHex in http_lua
+http_request
+http_request:cancel
+cancel in http_request
+http_request:httpStatus
+httpStatus in http_request
+http_request:loading
+loading in http_request
+http_request:response
+response in http_request
+http_request:responseHeader
+responseHeader in http_request
+http_request:responseHeaders
+responseHeaders in http_request
+http_request:setAgent
+setAgent in http_request
+http_request:setRequestHeader
+setRequestHeader in http_request
+http_request:start
+start in http_request
+http_request:success
+success in http_request
+I
+
+indicator
+indicator.parameters
+parameters in indicator
+indicator:description
+description in indicator
+indicator:name
+name in indicator
+indicator:path
+path in indicator
+indicator:requiredSource
+requiredSource in indicator
+indicator:setTag
+setTag in indicator
+indicator:type
+type in indicator
+indicator_manager
+IndicatorRunner
+Indicore 3 Lua Editor/Debugger Window
+indicore3_ffi
+indicore3_ffi.barstream_getClose
+barstream_getClose in indicore3_ffi
+indicore3_ffi.barstream_getHigh
+barstream_getHigh in indicore3_ffi
+indicore3_ffi.barstream_getLow
+barstream_getLow in indicore3_ffi
+indicore3_ffi.barstream_getOpen
+barstream_getOpen in indicore3_ffi
+indicore3_ffi.core_crosses
+core_crosses in indicore3_ffi
+indicore3_ffi.core_crosses2
+core_crosses2 in indicore3_ffi
+indicore3_ffi.core_crossesOver
+core_crossesOver in indicore3_ffi
+indicore3_ffi.core_crossesOver2
+core_crossesOver2 in indicore3_ffi
+indicore3_ffi.core_crossesOverOrTouch
+core_crossesOverOrTouch in indicore3_ffi
+indicore3_ffi.core_crossesOverOrTouch2
+core_crossesOverOrTouch2 in indicore3_ffi
+indicore3_ffi.core_crossesUnder
+core_crossesUnder in indicore3_ffi
+indicore3_ffi.core_crossesUnder2
+core_crossesUnder2 in indicore3_ffi
+indicore3_ffi.core_crossesUnderOrTouch
+core_crossesUnderOrTouch in indicore3_ffi
+indicore3_ffi.core_crossesUnderOrTouch2
+core_crossesUnderOrTouch2 in indicore3_ffi
+indicore3_ffi.core_drawLine
+core_drawLine in indicore3_ffi
+indicore3_ffi.core_erase
+core_erase in indicore3_ffi
+indicore3_ffi.core_findDate
+core_findDate in indicore3_ffi
+indicore3_ffi.core_getCandle
+core_getCandle in indicore3_ffi
+indicore3_ffi.core_isNonTrading
+core_isNonTrading in indicore3_ffi
+indicore3_ffi.core_math_avg
+core_math_avg in indicore3_ffi
+indicore3_ffi.core_math_cfft
+core_math_cfft in indicore3_ffi
+indicore3_ffi.core_math_correlation
+core_math_correlation in indicore3_ffi
+indicore3_ffi.core_math_covariance
+core_math_covariance in indicore3_ffi
+indicore3_ffi.core_math_devsq
+core_math_devsq in indicore3_ffi
+indicore3_ffi.core_math_fft
+core_math_fft in indicore3_ffi
+indicore3_ffi.core_math_kurt
+core_math_kurt in indicore3_ffi
+indicore3_ffi.core_math_lreg
+core_math_lreg in indicore3_ffi
+indicore3_ffi.core_math_lwma
+core_math_lwma in indicore3_ffi
+indicore3_ffi.core_math_meandev
+core_math_meandev in indicore3_ffi
+indicore3_ffi.core_math_median_s
+core_math_median_s in indicore3_ffi
+indicore3_ffi.core_math_median_w
+core_math_median_w in indicore3_ffi
+indicore3_ffi.core_math_regChannel
+core_math_regChannel in indicore3_ffi
+indicore3_ffi.core_math_skew
+core_math_skew in indicore3_ffi
+indicore3_ffi.core_math_slope_lreg
+core_math_slope_lreg in indicore3_ffi
+indicore3_ffi.core_math_stdev
+core_math_stdev in indicore3_ffi
+indicore3_ffi.core_math_sum
+core_math_sum in indicore3_ffi
+indicore3_ffi.core_object_release
+core_object_release in indicore3_ffi
+indicore3_ffi.core_parseCandle
+core_parseCandle in indicore3_ffi
+indicore3_ffi.core_touches
+core_touches in indicore3_ffi
+indicore3_ffi.core_touches2
+core_touches2 in indicore3_ffi
+indicore3_ffi.host_getTradingTable
+host_getTradingTable in indicore3_ffi
+indicore3_ffi.indicatorinstance_update
+indicatorinstance_update in indicore3_ffi
+indicore3_ffi.indicatorinstance_updateAll
+indicatorinstance_updateAll in indicore3_ffi
+indicore3_ffi.math2d_polygonToBezierShape
+math2d_polygonToBezierShape in indicore3_ffi
+indicore3_ffi.math2d_polylineToBezierLine
+math2d_polylineToBezierLine in indicore3_ffi
+indicore3_ffi.math2d_scaleShiftTransform
+math2d_scaleShiftTransform in indicore3_ffi
+indicore3_ffi.odcontext_bottom
+odcontext_bottom in indicore3_ffi
+indicore3_ffi.odcontext_createFont
+odcontext_createFont in indicore3_ffi
+indicore3_ffi.odcontext_createHatchBrush
+odcontext_createHatchBrush in indicore3_ffi
+indicore3_ffi.odcontext_createPen
+odcontext_createPen in indicore3_ffi
+indicore3_ffi.odcontext_createSolidBrush
+odcontext_createSolidBrush in indicore3_ffi
+indicore3_ffi.odcontext_deleteObject
+odcontext_deleteObject in indicore3_ffi
+indicore3_ffi.odcontext_drawArc
+odcontext_drawArc in indicore3_ffi
+indicore3_ffi.odcontext_drawEllipse
+odcontext_drawEllipse in indicore3_ffi
+indicore3_ffi.odcontext_drawGradientRectangle
+odcontext_drawGradientRectangle in indicore3_ffi
+indicore3_ffi.odcontext_drawIcon
+odcontext_drawIcon in indicore3_ffi
+indicore3_ffi.odcontext_drawLine
+odcontext_drawLine in indicore3_ffi
+indicore3_ffi.odcontext_drawPicture
+odcontext_drawPicture in indicore3_ffi
+indicore3_ffi.odcontext_drawPictureTransparantBackground
+odcontext_drawPictureTransparantBackground in indicore3_ffi
+indicore3_ffi.odcontext_drawPolygon
+odcontext_drawPolygon in indicore3_ffi
+indicore3_ffi.odcontext_drawPolyline
+odcontext_drawPolyline in indicore3_ffi
+indicore3_ffi.odcontext_drawRectangle
+odcontext_drawRectangle in indicore3_ffi
+indicore3_ffi.odcontext_drawText
+odcontext_drawText in indicore3_ffi
+indicore3_ffi.odcontext_firstBar
+odcontext_firstBar in indicore3_ffi
+indicore3_ffi.odcontext_indexOfBar
+odcontext_indexOfBar in indicore3_ffi
+indicore3_ffi.odcontext_lastBar
+odcontext_lastBar in indicore3_ffi
+indicore3_ffi.odcontext_left
+odcontext_left in indicore3_ffi
+indicore3_ffi.odcontext_loadIcon
+odcontext_loadIcon in indicore3_ffi
+indicore3_ffi.odcontext_loadPicture
+odcontext_loadPicture in indicore3_ffi
+indicore3_ffi.odcontext_maxPrice
+odcontext_maxPrice in indicore3_ffi
+indicore3_ffi.odcontext_measureText
+odcontext_measureText in indicore3_ffi
+indicore3_ffi.odcontext_minPrice
+odcontext_minPrice in indicore3_ffi
+indicore3_ffi.odcontext_nextBar
+odcontext_nextBar in indicore3_ffi
+indicore3_ffi.odcontext_pixelsToPoints
+odcontext_pixelsToPoints in indicore3_ffi
+indicore3_ffi.odcontext_pointOfPrice
+odcontext_pointOfPrice in indicore3_ffi
+indicore3_ffi.odcontext_pointsToPixels
+odcontext_pointsToPixels in indicore3_ffi
+indicore3_ffi.odcontext_positionOfBar
+odcontext_positionOfBar in indicore3_ffi
+indicore3_ffi.odcontext_priceOfPoint
+odcontext_priceOfPoint in indicore3_ffi
+indicore3_ffi.odcontext_priceWidth
+odcontext_priceWidth in indicore3_ffi
+indicore3_ffi.odcontext_right
+odcontext_right in indicore3_ffi
+indicore3_ffi.odcontext_setPixel
+odcontext_setPixel in indicore3_ffi
+indicore3_ffi.odcontext_startEnumeration
+odcontext_startEnumeration in indicore3_ffi
+indicore3_ffi.odcontext_tooltip
+odcontext_tooltip in indicore3_ffi
+indicore3_ffi.odcontext_top
+odcontext_top in indicore3_ffi
+indicore3_ffi.odpoints_addPoint
+odpoints_addPoint in indicore3_ffi
+indicore3_ffi.odpoints_addXY
+odpoints_addXY in indicore3_ffi
+indicore3_ffi.odpoints_allocate
+odpoints_allocate in indicore3_ffi
+indicore3_ffi.odpoints_create
+odpoints_create in indicore3_ffi
+indicore3_ffi.odpoints_get
+odpoints_get in indicore3_ffi
+indicore3_ffi.odpoints_setPoint
+odpoints_setPoint in indicore3_ffi
+indicore3_ffi.odpoints_setXY
+odpoints_setXY in indicore3_ffi
+indicore3_ffi.odpoints_size
+odpoints_size in indicore3_ffi
+indicore3_ffi.outputstream_getBreak
+outputstream_getBreak in indicore3_ffi
+indicore3_ffi.outputstream_getColor
+outputstream_getColor in indicore3_ffi
+indicore3_ffi.outputstream_setBreak
+outputstream_setBreak in indicore3_ffi
+indicore3_ffi.outputstreamimpl_getBookmark
+outputstreamimpl_getBookmark in indicore3_ffi
+indicore3_ffi.outputstreamimpl_set
+outputstreamimpl_set in indicore3_ffi
+indicore3_ffi.outputstreamimpl_setBookmark
+outputstreamimpl_setBookmark in indicore3_ffi
+indicore3_ffi.outputstreamimpl_setColor
+outputstreamimpl_setColor in indicore3_ffi
+indicore3_ffi.parameterconstant_delete
+parameterconstant_delete in indicore3_ffi
+indicore3_ffi.parameterconstant_get_bool
+parameterconstant_get_bool in indicore3_ffi
+indicore3_ffi.parameterconstant_get_double
+parameterconstant_get_double in indicore3_ffi
+indicore3_ffi.parameterconstant_get_int
+parameterconstant_get_int in indicore3_ffi
+indicore3_ffi.parameterconstant_get_string
+parameterconstant_get_string in indicore3_ffi
+indicore3_ffi.parameterconstant_new_bool
+parameterconstant_new_bool in indicore3_ffi
+indicore3_ffi.parameterconstant_new_double
+parameterconstant_new_double in indicore3_ffi
+indicore3_ffi.parameterconstant_new_int
+parameterconstant_new_int in indicore3_ffi
+indicore3_ffi.parameterconstant_new_string
+parameterconstant_new_string in indicore3_ffi
+indicore3_ffi.stream_displayPrecision
+stream_displayPrecision in indicore3_ffi
+indicore3_ffi.stream_first
+stream_first in indicore3_ffi
+indicore3_ffi.stream_getPrice
+stream_getPrice in indicore3_ffi
+indicore3_ffi.stream_getVolume
+stream_getVolume in indicore3_ffi
+indicore3_ffi.stream_isAlive
+stream_isAlive in indicore3_ffi
+indicore3_ffi.stream_isBar
+stream_isBar in indicore3_ffi
+indicore3_ffi.stream_isBid
+stream_isBid in indicore3_ffi
+indicore3_ffi.stream_name
+stream_name in indicore3_ffi
+indicore3_ffi.stream_pipSize
+stream_pipSize in indicore3_ffi
+indicore3_ffi.stream_precision
+stream_precision in indicore3_ffi
+indicore3_ffi.stream_size
+stream_size in indicore3_ffi
+indicore3_ffi.stream_supportsVolume
+stream_supportsVolume in indicore3_ffi
+indicore3_ffi.stream_timeframe
+stream_timeframe in indicore3_ffi
+indicore3_ffi.textoutput_getLevel
+textoutput_getLevel in indicore3_ffi
+indicore3_ffi.textoutput_getText
+textoutput_getText in indicore3_ffi
+indicore3_ffi.textoutput_size
+textoutput_size in indicore3_ffi
+indicore3_ffi.textoutputimpl_set
+textoutputimpl_set in indicore3_ffi
+indicore3_ffi.textoutputimpl_setNoData
+textoutputimpl_setNoData in indicore3_ffi
+indicore3_ffi.thisindicatorinstance_updateFrom
+thisindicatorinstance_updateFrom in indicore3_ffi
+indicore3_ffi.thisindicatorinstance_view_addBar
+thisindicatorinstance_view_addBar in indicore3_ffi
+indicore3_ffi.tradingtable_enumerator
+tradingtable_enumerator in indicore3_ffi
+indicore3_ffi.tradingtable_findAll
+tradingtable_findAll in indicore3_ffi
+indicore3_ffi.tradingtable_findRow
+tradingtable_findRow in indicore3_ffi
+indicore3_ffi.tradingtable_version
+tradingtable_version in indicore3_ffi
+indicore3_ffi.tradingtableenumerator_next
+tradingtableenumerator_next in indicore3_ffi
+indicore3_ffi.tradingtableenumerator_reset
+tradingtableenumerator_reset in indicore3_ffi
+indicore3_ffi.tradingtablerow_refresh
+tradingtablerow_refresh in indicore3_ffi
+indicore3_ffi.tradingtablerow_value
+tradingtablerow_value in indicore3_ffi
+indicore3_ffi:odcontext_drawBezierLine
+odcontext_drawBezierLine in indicore3_ffi
+indicore3_ffi:odcontext_drawBezierShape
+odcontext_drawBezierShape in indicore3_ffi
+indicore3_ffi:odcontext_resetClipRectangle
+odcontext_resetClipRectangle in indicore3_ffi
+indicore3_ffi:odcontext_setClipRectangle
+odcontext_setClipRectangle in indicore3_ffi
+Init()
+Init()
+Init()
+instance
+instance (strategy or signal)
+instance (tool)
+instance.ask
+ask in instance
+instance.bid
+bid in instance
+instance.DATA
+DATA in instance
+instance.parameters
+parameters in instance
+instance.parameters
+parameters in instance
+instance:getCandleOutput
+getCandleOutput in instance
+instance:getCandleOutputsCount
+getCandleOutputsCount in instance
+instance:getStream
+getStream in instance
+instance:getStreamCount
+getStreamCount in instance
+instance:getTextOutput
+getTextOutput in instance
+instance:getTextOutputCount
+getTextOutputCount in instance
+instance:name
+name in instance
+instance:update
+update in instance
+instance_impl
+instance_impl.parameters
+parameters in instance_impl
+instance_impl.source
+source in instance_impl
+instance_impl:addCopyStream
+addCopyStream in instance_impl
+instance_impl:addInternalStream
+addInternalStream in instance_impl
+instance_impl:addStream
+addStream in instance_impl
+instance_impl:addViewBar
+addViewBar in instance_impl
+instance_impl:createCandleGroup
+createCandleGroup in instance_impl
+instance_impl:createChannelGroup
+createChannelGroup in instance_impl
+instance_impl:createFromToBarGroup
+createFromToBarGroup in instance_impl
+instance_impl:createTextOutput
+createTextOutput in instance_impl
+instance_impl:drawOnMainChart
+drawOnMainChart in instance_impl
+instance_impl:initView
+initView in instance_impl
+instance_impl:name
+name in instance_impl
+instance_impl:ownerDrawn
+ownerDrawn in instance_impl
+instance_impl:setLabelColor
+setLabelColor in instance_impl
+instance_impl:updateFrom
+updateFrom in instance_impl
+interop
+interop:instance
+instance in interop
+interop:isalive
+isalive in interop
+interop:size
+size in interop
+interop_instance
+interop_instance:indicatorOutput
+indicatorOutput in interop_instance
+interop_instance:invoke
+invoke in interop_instance
+interop_instance:isIndicator
+isIndicator in interop_instance
+interop_instance:name
+name in interop_instance
+io.close ([file])
+io.flush ()
+io.input ([file])
+io.lines ([filename])
+io.open (filename [, mode])
+io.output ([file])
+io.popen ([prog [, mode]])
+io.read (...)
+io.tmpfile ()
+io.type (obj)
+io.write (...)
+ipairs (t)
+L
+
+Limit/Entry Limit Order Execution Scenarios
+Limit/Entry Limit Orders
+Limit/Entry Limit Orders
+load (func [, chunkname])
+loadfile ([filename])
+loadstring (string [, chunkname])
+Lua 5.1 documentation
+Lua 5.1 Reference Manual
+Lua: 1 - Introduction
+Lua: 2 - The Language
+Lua: 2.1 - Lexical Conventions
+Lua: 2.10 - Garbage Collection
+Lua: 2.10.1 - Garbage-Collection Metamethods
+Lua: 2.10.2 - Weak Tables
+Lua: 2.11 - Coroutines
+Lua: 2.2 - Values and Types
+Lua: 2.2.1 - Coercion
+Lua: 2.3 - Variables
+Lua: 2.4 - Statements
+Lua: 2.4.1 - Chunks
+Lua: 2.4.2 - Blocks
+Lua: 2.4.3 - Assignment
+Lua: 2.4.4 - Control Structures
+Lua: 2.4.5 - For Statement
+Lua: 2.4.6 - Function Calls as Statements
+Lua: 2.4.7 - Local Declarations
+Lua: 2.5 - Expressions
+Lua: 2.5.1 - Arithmetic Operators
+Lua: 2.5.2 - Relational Operators
+Lua: 2.5.3 - Logical Operators
+Lua: 2.5.4 - Concatenation
+Lua: 2.5.5 - The Length Operator
+Lua: 2.5.6 - Precedence
+Lua: 2.5.7 - Table Constructors
+Lua: 2.5.8 - Function Calls
+Lua: 2.5.9 - Function Definitions
+Lua: 2.6 - Visibility Rules
+Lua: 2.7 - Error Handling
+Lua: 2.8 - Metatables
+Lua: 2.9 - Environments
+Lua: 3 - The Application Program Interface
+Lua: 3.1 - The Stack
+Lua: 3.2 - Stack Size
+Lua: 3.3 - Pseudo-Indices
+Lua: 3.4 - C Closures
+Lua: 3.5 - Registry
+Lua: 3.6 - Error Handling in C
+Lua: 3.7 - Functions and Types
+Lua: 3.8 - The Debug Interface
+Lua: 4 - The Auxiliary Library
+Lua: 4.1 - Functions and Types
+Lua: 5 - Standard Libraries
+Lua: 5.1 - Basic Functions
+Lua: 5.2 - Coroutine Manipulation
+Lua: 5.3 - Modules
+Lua: 5.4 - String Manipulation
+Lua: 5.4.1 - Patterns
+Lua: 5.5 - Table Manipulation
+Lua: 5.6 - Mathematical Functions
+Lua: 5.7 - Input and Output Facilities
+Lua: 5.8 - Operating System Facilities
+Lua: 5.9 - The Debug Library
+Lua: 6 - Lua Stand-alone
+Lua: 7 - Incompatibilities with the Previous Version
+Lua: 7.1 - Changes in the Language
+Lua: 7.2 - Changes in the Libraries
+Lua: 7.3 - Changes in the API
+Lua: 8 - The Complete Syntax of Lua
+M
+
+math.abs (x)
+math.acos (x)
+math.asin (x)
+math.atan (x)
+math.atan2 (x, y)
+math.ceil (x)
+math.cos (x)
+math.cosh (x)
+math.deg (x)
+math.exp (x)
+math.floor (x)
+math.fmod (x, y)
+math.frexp (x)
+math.huge
+math.ldexp (m, e)
+math.log (x)
+math.log10 (x)
+math.max (x, ...)
+math.min (x, ...)
+math.modf (x)
+math.pi
+math.pow (x, y)
+math.rad (x)
+math.random ([m [, n]])
+math.randomseed (x)
+math.sin (x)
+math.sinh (x)
+math.sqrt (x)
+math.tan (x)
+math.tanh (x)
+math2d
+math2d.cartesianToPolar
+cartesianToPolar in math2d
+math2d.isPointInRect
+isPointInRect in math2d
+math2d.isPointOnLine
+isPointOnLine in math2d
+math2d.isPointOnSegment
+isPointOnSegment in math2d
+math2d.lineEllipseIntersection
+lineEllipseIntersection in math2d
+math2d.lineEquation
+lineEquation in math2d
+math2d.lineIntersection
+lineIntersection in math2d
+math2d.lineRectangleIntersection
+lineRectangleIntersection in math2d
+math2d.polarToCartesian
+polarToCartesian in math2d
+math2d.polygonToBezierShape
+polygonToBezierShape in math2d
+math2d.polylineToBezierLine
+polylineToBezierLine in math2d
+math2d.projectPointOnLine
+projectPointOnLine in math2d
+math2d.scaleShiftTransform
+scaleShiftTransform in math2d
+math2d.segmentIntersection
+segmentIntersection in math2d
+math2d.segmentRectangleIntersection
+segmentRectangleIntersection in math2d
+mathex
+mathex.avg
+avg in mathex
+mathex.betaDist
+betaDist in mathex
+mathex.betaDistInv
+betaDistInv in mathex
+mathex.binomDist
+binomDist in mathex
+mathex.cfft
+cfft in mathex
+mathex.chiDist
+chiDist in mathex
+mathex.correl
+correl in mathex
+mathex.covar
+covar in mathex
+mathex.devsq
+devsq in mathex
+mathex.expDist
+expDist in mathex
+mathex.fDist
+fDist in mathex
+mathex.fDistInv
+fDistInv in mathex
+mathex.fft
+fft in mathex
+mathex.gammaDist
+gammaDist in mathex
+mathex.gammaln
+gammaln in mathex
+mathex.geomean
+geomean in mathex
+mathex.icfft
+icfft in mathex
+mathex.ifft
+ifft in mathex
+mathex.kurt
+kurt in mathex
+mathex.lreg
+lreg in mathex
+mathex.lregSlope
+lregSlope in mathex
+mathex.lwma
+lwma in mathex
+mathex.makeArray
+makeArray in mathex
+mathex.max
+max in mathex
+mathex.max2
+max2 in mathex
+mathex.meandev
+meandev in mathex
+mathex.median_s
+median_s in mathex
+mathex.median_w
+median_w in mathex
+mathex.min
+min in mathex
+mathex.min2
+min2 in mathex
+mathex.minmax
+minmax in mathex
+mathex.normalDist
+normalDist in mathex
+mathex.poissonDist
+poissonDist in mathex
+mathex.regChannel
+regChannel in mathex
+mathex.skew
+skew in mathex
+mathex.stdev
+stdev in mathex
+mathex.studentDist
+studentDist in mathex
+mathex.sum
+sum in mathex
+mathex.weibullDist
+weibullDist in mathex
+Messages(table)
+module (name [, ...])
+Move(x, y, price, date)
+MoveFinished()
+MoveReferencePoint(x, y, price, date)
+MoveReferencePointFinished()
+MoveReferencePointStart(pointID)
+MoveStart()
+Moving Reference Point
+Moving Shape
+N
+
+next (table [, index])
+O
+
+OCO (One-Cancels-the-Other) Contingent Order
+OCO (One-Cancels-the-Other) Contingent Order
+OCO (One-Cancels-the-Other) Contingent Order Execution Scenarios
+Offers(table)
+Open/Close Market Order
+Open/Close Market Order
+Open/Close Market Order Execution Scenarios
+Open/Close, Open/Close Limit, Open/Close Range Orders
+Open/Close, Open/Close Limit, Open/Close Range Orders
+Open/Close, Open/Close Limit, Open/Close Range Orders Execution Scenarios
+Order Execution Errors
+Order Types
+Orders in the FXCM's trading system
+Orders(table)
+os.clock ()
+os.date ([format [, time]])
+os.difftime (t2, t1)
+os.execute ([command])
+os.exit ([code])
+os.getenv (varname)
+os.remove (filename)
+os.rename (oldname, newname)
+os.setlocale (locale [, category])
+os.time ([table])
+os.tmpname ()
+OTO (One-Triggers-the-Other) Contingent Order
+OTO (One-Triggers-the-Other) Contingent Order
+OTO (One-Triggers-the-Other) Order Execution Scenarios
+output_stream
+output_stream:color
+color in output_stream
+output_stream:id
+id in output_stream
+output_stream:isBreak
+isBreak in output_stream
+output_stream:isVisible
+isVisible in output_stream
+output_stream:label
+label in output_stream
+output_stream:level
+level in output_stream
+output_stream:levelsCount
+levelsCount in output_stream
+output_stream:lineStyle
+lineStyle in output_stream
+output_stream:lineWidth
+lineWidth in output_stream
+output_stream:type
+type in output_stream
+output_stream_impl
+output_stream_impl:addLevel
+addLevel in output_stream_impl
+output_stream_impl:getBookmark
+getBookmark in output_stream_impl
+output_stream_impl:set
+set in output_stream_impl
+output_stream_impl:setBookmark
+setBookmark in output_stream_impl
+output_stream_impl:setBreak
+setBreak in output_stream_impl
+output_stream_impl:setColor
+setColor in output_stream_impl
+output_stream_impl:setPrecision
+setPrecision in output_stream_impl
+output_stream_impl:setStyle
+setStyle in output_stream_impl
+output_stream_impl:setVisible
+setVisible in output_stream_impl
+output_stream_impl:setWidth
+setWidth in output_stream_impl
+ownerdraw_points
+ownerdraw_points.new
+new in ownerdraw_points
+ownerdraw_points:add
+add in ownerdraw_points
+ownerdraw_points:get
+get in ownerdraw_points
+ownerdraw_points:set
+set in ownerdraw_points
+ownerdraw_points:size
+size in ownerdraw_points
+Owner-drawn Indicators
+P
+
+package.cpath
+package.loaded
+package.loadlib (libname, funcname)
+package.path
+package.preload
+package.seeall (module)
+pairs (t)
+pane
+pane.Data
+Data in pane
+paneData
+paneData:getStream
+getStream in paneData
+paneData:getStreamCount
+getStreamCount in paneData
+parameters
+parameters.new
+new in parameters
+parameters:addBoolean
+addBoolean in parameters
+parameters:addColor
+addColor in parameters
+parameters:addDate
+addDate in parameters
+parameters:addDouble
+addDouble in parameters
+parameters:addFile
+addFile in parameters
+parameters:addGroup
+addGroup in parameters
+parameters:addInteger
+addInteger in parameters
+parameters:addIntegerAlternative
+addIntegerAlternative in parameters
+parameters:addString
+addString in parameters
+parameters:addStringAlternative
+addStringAlternative in parameters
+parameters:getBoolean
+getBoolean in parameters
+parameters:getColor
+getColor in parameters
+parameters:getCustomParameters
+getCustomParameters in parameters
+parameters:getDouble
+getDouble in parameters
+parameters:getFile
+getFile in parameters
+parameters:getInteger
+getInteger in parameters
+parameters:getString
+getString in parameters
+parameters:setBoolean
+setBoolean in parameters
+parameters:setColor
+setColor in parameters
+parameters:setDouble
+setDouble in parameters
+parameters:setFlag
+setFlag in parameters
+parameters:setInteger
+setInteger in parameters
+parameters:setString
+setString in parameters
+Pattern Item:
+Pattern:
+pcall (f, arg1, ...)
+Persistent Storage
+Prepare(nameOnly)
+Prepare(nameOnly)
+Prepare(nameOnly)
+print (...)
+profile
+profile:createInstance
+createInstance in profile
+profile:description
+description in profile
+profile:id
+id in profile
+profile:name
+name in profile
+profile:parameters
+parameters in profile
+profile:profileLanguage
+profileLanguage in profile
+profile:profileType
+profileType in profile
+profile:requiredSource
+requiredSource in profile
+profile:type
+type in profile
+R
+
+Range Entry Order Execution Scenarios
+Range Entry Orders
+Range Entry Orders
+rawequal (v1, v2)
+rawget (table, index)
+rawset (table, index, value)
+reference_points
+reference_points:removeReferencePoint
+removeReferencePoint in reference_points
+reference_points:setReferencePoint
+setReferencePoint in reference_points
+ReleaseInstance()
+ReleaseInstance()
+ReleaseInstance()
+Remove orders from an existing contingency group
+require (modname)
+resources
+resources:get
+get in resources
+S
+
+Scenario 1
+Scenario 1
+Scenario 1
+Scenario 1
+Scenario 1
+Scenario 1
+Scenario 1
+Scenario 1
+Scenario 2
+Scenario 2
+Scenario 2
+Scenario 2
+Scenario 2
+Scenario 2
+Scenario 2
+Scenario 2
+Scenario 3
+Scenario 3
+Scenario 3
+Scenario 3
+Scenario 3
+Scenario 3
+Scenario 3
+Scenario 4
+Scenario 4
+Scenario 4
+Scenario 4
+Scenario 4
+Scenario 4
+Scenario 4
+Scenario 5
+Scenario 5
+Scenario 5
+Scenario 5
+Scenario 5
+Scenario 6
+Scenario 6
+Scenario 6
+Scenario 6
+Scenario 7
+Scenario 7
+Scenario 8
+select (index, ...)
+setfenv (f, table)
+setmetatable (table, metatable)
+Signals and Strategies
+Stop/Entry Stop Order Execution Scenarios
+Stop/Entry Stop Orders
+Stop/Entry Stop Orders
+storagedb
+storagedb.get_db
+get_db in storagedb
+strategy
+strategy.parameters
+parameters in strategy
+strategy:description
+description in strategy
+strategy:name
+name in strategy
+strategy:setTag
+setTag in strategy
+strategy:type
+type in strategy
+Stream Indexing
+string.byte (s [, i [, j]])
+string.char (...)
+string.dump (function)
+string.find (s, pattern [, init [, plain]])
+string.format (formatstring, ...)
+string.gmatch (s, pattern)
+string.gsub (s, pattern, repl [, n])
+string.len (s)
+string.lower (s)
+string.match (s, pattern [, init])
+string.rep (s, n)
+string.reverse (s)
+string.sub (s, i [, j])
+string.upper (s)
+Summary(table)
+T
+
+table.concat (table [, sep [, i [, j]]])
+table.insert (table, [pos,] value)
+table.maxn (table)
+table.remove (table [, pos])
+table.sort (table [, comp])
+terminal
+terminal:alertEmail
+alertEmail in terminal
+terminal:alertMessage
+alertMessage in terminal
+terminal:alertSound
+alertSound in terminal
+terminal:execute
+execute in terminal
+text_output
+text_output:color
+color in text_output
+text_output:font
+font in text_output
+text_output:get
+get in text_output
+text_output:halign
+halign in text_output
+text_output:hasData
+hasData in text_output
+text_output:id
+id in text_output
+text_output:label
+label in text_output
+text_output:size
+size in text_output
+text_output:valign
+valign in text_output
+text_output_impl
+text_output_impl:set
+set in text_output_impl
+text_output_impl:setNoData
+setNoData in text_output_impl
+The advanced indicator techniques
+The Indicore SDK
+The Indicore SDK User Guide
+The list of encoding supported.
+The Main Features of Indicore 3 Lua Editor/Debugger
+The Structure of a Strategy Program
+The Structure of a Tool Program
+The Structure of an Indicator Program
+The Tool Lifecycle
+tick_stream
+tick_stream:barSize
+tick_stream:date
+tick_stream:first
+tick_stream:getDisplayPrecision
+tick_stream:getPrecision
+tick_stream:hasData
+tick_stream:instrument
+tick_stream:isAlive
+tick_stream:isBar
+tick_stream:isBid
+tick_stream:name
+tick_stream:pipSize
+tick_stream:serial
+tick_stream:size
+tick_stream:tick
+tonumber (e [, base])
+tool
+tool.creationStrategy
+creationStrategy in tool
+tool.parameters
+parameters in tool
+tool:description
+description in tool
+tool:icon
+icon in tool
+tool:name
+name in tool
+tool:setTag
+setTag in tool
+tostring (e)
+Trades(table)
+Trading
+Trading Commands
+Trading Tables
+tradingtable
+tradingtable:enumerator
+enumerator in tradingtable
+tradingtable:find
+find in tradingtable
+tradingtable:findAll
+findAll in tradingtable
+tradingtable:version
+version in tradingtable
+tradingtable_enum
+tradingtable_enum:next
+next in tradingtable_enum
+tradingtable_enum:reset
+reset in tradingtable_enum
+tradingtable_row
+tradingtable_row:cell
+cell in tradingtable_row
+tradingtable_row:refresh
+refresh in tradingtable_row
+type (v)
+U
+
+unpack (list [, i [, j]])
+Update()
+Update(period, mode)
+V
+
+valuemap
+valuemap:append
+append in valuemap
+View Indicators
+W
+
+What is SDK?
+What Should You Do to Create an Indicator?
+win32
+win32.convertTimeZoneToUTC
+convertTimeZoneToUTC in win32
+win32.convertUTCToTimeZone
+convertUTCToTimeZone in win32
+win32.copyFile
+copyFile in win32
+win32.createFolder
+createFolder in win32
+win32.currentTimeLocal
+currentTimeLocal in win32
+win32.currentTimeUTC
+currentTimeUTC in win32
+win32.deleteFile
+deleteFile in win32
+win32.deleteFolder
+deleteFolder in win32
+win32.enumRegistry
+enumRegistry in win32
+win32.fileAttributes
+fileAttributes in win32
+win32.files
+files in win32
+win32.formatDate
+formatDate in win32
+win32.formatNumber
+formatNumber in win32
+win32.getCurrentTimeZone
+getCurrentTimeZone in win32
+win32.getRegistry
+getRegistry in win32
+win32.getTimeZone
+getTimeZone in win32
+win32.getTimeZonesList
+getTimeZonesList in win32
+win32.hfTickCount
+hfTickCount in win32
+win32.isAttribute
+isAttribute in win32
+win32.moveFile
+moveFile in win32
+win32.setRegistry
+setRegistry in win32
+win32.splitFileName
+splitFileName in win32
+win32.tempFileName
+tempFileName in win32
+win32.tempFolder
+tempFolder in win32
+win32.tickCount
+tickCount in win32
+window
+window.CurrentPane
+CurrentPane in window
+X
+
+XML Parser
+xmldocument
+xmldocument.root
+root in xmldocument
+xmlelement
+xmlelement:attributesCount
+attributesCount in xmlelement
+xmlelement:elementsCount
+elementsCount in xmlelement
+xmlelement:findAttribute
+findAttribute in xmlelement
+xmlelement:getAttribute
+getAttribute in xmlelement
+xmlelement:getElement
+getElement in xmlelement
+xmlelement:getNode
+getNode in xmlelement
+xmlelement:nodesCount
+nodesCount in xmlelement
+xmlelement:text
+text in xmlelement
+xmlhandler
+xmlhandler.endCDATA
+endCDATA in xmlhandler
+xmlhandler.endNamespace
+endNamespace in xmlhandler
+xmlhandler.processingInstruction
+processingInstruction in xmlhandler
+xmlhandler.startNamespace
+startNamespace in xmlhandler
+xmlhandler:characters
+characters in xmlhandler
+xmlhandler:comment
+comment in xmlhandler
+xmlhandler:endElement
+endElement in xmlhandler
+xmlhandler:startCDATA
+startCDATA in xmlhandler
+xmlhandler:startElement
+startElement in xmlhandler
+xmlnode
+xmlnode.namespaceURI
+namespaceURI in xmlnode
+xmlnode:fullName
+fullName in xmlnode
+xmlnode:hasNamespace
+hasNamespace in xmlnode
+xmlnode:name
+name in xmlnode
+xmlnode:prefix
+prefix in xmlnode
+xmlnode:type
+type in xmlnode
+xmlnode:value
+value in xmlnode
+xpcall (f, err)
