@@ -164,16 +164,6 @@ core.CR_RIGHT
 CR_RIGHT in core
 core.CR_TOP
 CR_TOP in core
-core.crosses
-crosses in core
-core.crossesOver
-crossesOver in core
-core.crossesOverOrTouch
-crossesOverOrTouch in core
-core.crossesUnder
-crossesUnder in core
-core.crossesUnderOrTouch
-crossesUnderOrTouch in core
 core.date
 date in core
 core.datetime
