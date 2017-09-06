@@ -1,26 +1,26 @@
 {
-	"name": "Indicore Snippets",
-	"description": "Indicore Snippets for Visual Studio Code",
-	"version": "0.1.0",
-	"publisher": "sibvic",
-	"icon": "images/logo.png",
-	"license": "MIT",
-	"engines": {
-		"vscode": "^0.10.1"
-	},
-	"categories": [
-		"Snippets"
-	],
-	"contributes": {
-		"snippets": [
-			{
-				"language": "lua",
-				"path": "./snippets/snippets.json"
-			}
-		]
-	},
-	"repository": {
-      "type": "git",
-      "url": "https://github.com/sibvic/vsc-indicore.git"
-  	}
+    "name": "indicore-snippets",
+    "description": "Indicore Snippets for Visual Studio Code",
+    "version": "0.2.0",
+    "publisher": "sibvic",
+    "icon": "images/logo.png",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^0.10.1"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "lua",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sibvic/vsc-indicore.git"
+    }
 }
