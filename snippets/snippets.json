@@ -1120,5 +1120,11 @@
         "description": "5.1,5.2,5.3\n\nxpcall (f, err)",
         "prefix": "xpcall",
         "scope": "source.lua"
+    },
+    "core.getcandle": {
+        "body": "core.getcandle(${1:barSize}, ${2:datetime}, ${3:tradingDayOffset}, ${4:tradingWeekOffset})",
+        "description": "Gets the begin and end of the candle to which the specified date belongs.",
+        "prefix": "core.getcandle",
+        "scope": "source.lua"
     }
 }

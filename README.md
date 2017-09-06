@@ -1,4 +1,4 @@
-# Lua snippets
+# Indicore snippets
 
 ## Usage
 
