@@ -1156,5 +1156,11 @@
         "description": "Checks whether one stream crosses under or touches the other stream at the specified position",
         "prefix": "core.crossesUnderOrTouch",
         "scope": "source.lua"
+    },
+    "host:trace": {
+        "body": "host:trace(${1:string}${2:[, ...]})",
+        "description": "Puts the string into the default application output stream",
+        "prefix": "host:trace",
+        "scope": "source.lua"
     }
 }

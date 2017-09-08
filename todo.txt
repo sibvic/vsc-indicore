@@ -528,8 +528,6 @@ host:execute("subscribeTradeEvents", ...);
 execute("subscribeTradeEvents", ...); in host
 host:findTable
 findTable in host
-host:trace
-trace in host
 host:version
 version in host
 How to Add/Remove Indicator to Project?
