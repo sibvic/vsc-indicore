@@ -1163,4 +1163,11 @@
         "prefix": "host:trace",
         "scope": "source.lua"
     }
+    ,
+    "host:execute(\"getTradingWeekOffset\")": {
+        "body": "host:execute(\"getTradingWeekOffset\")",
+        "description": "Returns an offset of the trading week start.",
+        "prefix": "host:execute(\"getTradingWeekOffset",
+        "scope": "source.lua"
+    }    
 }

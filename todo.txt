@@ -504,8 +504,6 @@ host:execute("getTradingDayOffset")
 execute("getTradingDayOffset") in host
 host:execute("getTradingProperty", ...);
 execute("getTradingProperty", ...); in host
-host:execute("getTradingWeekOffset")
-execute("getTradingWeekOffset") in host
 host:execute("isTableFilled", ...);
 execute("isTableFilled", ...); in host
 host:execute("killTimer", ...);
