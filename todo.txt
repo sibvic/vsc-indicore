@@ -520,8 +520,6 @@ host:execute("setStatus", ...);
 execute("setStatus", ...); in host
 host:execute("setTimer", ...);
 execute("setTimer", ...); in host
-host:execute("stop");
-execute("stop"); in host
 host:execute("subscribeTradeEvents", ...);
 execute("subscribeTradeEvents", ...); in host
 host:findTable

@@ -1162,12 +1162,17 @@
         "description": "Puts the string into the default application output stream",
         "prefix": "host:trace",
         "scope": "source.lua"
-    }
-    ,
+    },
     "host:execute(\"getTradingWeekOffset\")": {
         "body": "host:execute(\"getTradingWeekOffset\")",
         "description": "Returns an offset of the trading week start.",
         "prefix": "host:execute(\"getTradingWeekOffset",
         "scope": "source.lua"
-    }    
+    },
+    "host:execute(\"stop\")": {
+        "body": "host:execute(\"stop\")",
+        "description": "Stops the strategy which executed the command.",
+        "prefix": "host:execute(\"stop",
+        "scope": "source.lua"
+    }
 }
