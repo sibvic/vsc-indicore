@@ -1174,5 +1174,11 @@
         "description": "Stops the strategy which executed the command.",
         "prefix": "host:execute(\"stop",
         "scope": "source.lua"
+    },
+    "host:execute(\"isTableFilled\", tableId)": {
+        "body": "host:execute(\"isTableFilled\", ${1:tableId})",
+        "description": "Checks whether the table content is filled and ready to use.",
+        "prefix": "host:execute(\"isTableFilled",
+        "scope": "source.lua"
     }
 }
