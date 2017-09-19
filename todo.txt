@@ -436,90 +436,38 @@ Extension Kit
 ExtSubscribe function of helper.lua
 ExtSubscribe1 function of helper.lua
 ExtUpdate function
-F
-
-file table
-file:close ()
-file:flush ()
-file:lines ()
-file:read (...)
-file:seek ([whence] [, offset])
-file:setvbuf (mode [, size])
-file:write (...)
-G
-
 getfenv (f)
 getmetatable (object)
-Graphical Tools
-H
-
 host
 host.ReferencePoints
-ReferencePoints in host
 host.Window
-Window in host
 host:execute
-execute in host
-host:execute("addCommand", ...);
-execute("addCommand", ...); in host
 host:execute("attachOutputToChart", ...);
-execute("attachOutputToChart", ...); in host
 host:execute("attachTextToChart", ...);
-execute("attachTextToChart", ...); in host
 host:execute("calculateDate", ...)
-execute("calculateDate", ...) in host
 host:execute("calculatePositionOfDate", ...)
-execute("calculatePositionOfDate", ...) in host
 host:execute("convertTime", ...);
-execute("convertTime", ...); in host
 host:execute("createFont", ...);
-execute("createFont", ...); in host
 host:execute("deleteFont", ...);
-execute("deleteFont", ...); in host
 host:execute("drawLabel", ...)
-execute("drawLabel", ...) in host
 host:execute("drawLabel1", ...)
-execute("drawLabel1", ...) in host
 host:execute("drawLine", ...)
-execute("drawLine", ...) in host
 host:execute("extendHistory", ...)
-execute("extendHistory", ...) in host
 host:execute("getAskPrice");
-execute("getAskPrice"); in host
 host:execute("getBidPrice");
-execute("getBidPrice"); in host
 host:execute("getHistory", ...)
-execute("getHistory", ...) in host
 host:execute("getHistory1", ...)
-execute("getHistory1", ...) in host
 host:execute("getIndicatorOwner", ...)
-execute("getIndicatorOwner", ...) in host
 host:execute("getProperty", ...)
-execute("getProperty", ...) in host
-host:execute("getServerTime");
-execute("getServerTime"); in host
 host:execute("getSyncHistory", ...)
-execute("getSyncHistory", ...) in host
 host:execute("getTradingDayOffset")
-execute("getTradingDayOffset") in host
 host:execute("getTradingProperty", ...);
-execute("getTradingProperty", ...); in host
-host:execute("killTimer", ...);
-execute("killTimer", ...); in host
 host:execute("prompt", ...);
-execute("prompt", ...); in host
-host:execute("removeAll")
-execute("removeAll") in host
 host:execute("removeLabel", ...)
-execute("removeLabel", ...) in host
 host:execute("removeLine", ...)
-execute("removeLine", ...) in host
 host:execute("setStatus", ...);
-execute("setStatus", ...); in host
 host:execute("setTimer", ...);
-execute("setTimer", ...); in host
 host:execute("subscribeTradeEvents", ...);
-execute("subscribeTradeEvents", ...); in host
 host:findTable
 findTable in host
 host:version

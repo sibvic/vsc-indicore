@@ -1180,5 +1180,29 @@
         "description": "Checks whether the table content is filled and ready to use.",
         "prefix": "host:execute(\"isTableFilled",
         "scope": "source.lua"
+    },
+    "host:execute(\"killTimer\", id)": {
+        "body": "host:execute(\"killTimer\", ${1:id})",
+        "description": "Kills the timer.",
+        "prefix": "host:execute(\"killTimer",
+        "scope": "source.lua"
+    },
+    "host:execute(\"getServerTime\")": {
+        "body": "host:execute(\"getServerTime\")",
+        "description": "Gets the date/time of the server.",
+        "prefix": "host:execute(\"getServerTime",
+        "scope": "source.lua"
+    },
+    "host:execute(\"removeAll\")": {
+        "body": "host:execute(\"removeAll\")",
+        "description": "Removes all lines and labels created using the execute method.",
+        "prefix": "host:execute(\"removeAll",
+        "scope": "source.lua"
+    },
+    "host:execute(\"addCommand\", cookie, text, comment)": {
+        "body": "host:execute(\"addCommand\", {1:cookie}, {2:text}, {3:comment})",
+        "description": "Adds a custom command.",
+        "prefix": "host:execute(\"addCommand",
+        "scope": "source.lua"
     }
 }
