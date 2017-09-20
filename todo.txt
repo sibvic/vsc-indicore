@@ -442,8 +442,6 @@ host
 host.ReferencePoints
 host.Window
 host:execute
-host:execute("attachOutputToChart", ...);
-host:execute("attachTextToChart", ...);
 host:execute("calculateDate", ...)
 host:execute("calculatePositionOfDate", ...)
 host:execute("convertTime", ...);

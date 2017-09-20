@@ -1210,5 +1210,11 @@
         "description": "Attaches a line output stream or grouped streams of an oscillator to the main chart window.",
         "prefix": "host:execute(\"attachOuputToChart",
         "scope": "source.lua"
+    },
+    "host:execute(\"attachTextToChart\", id)": {
+        "body": "host:execute(\"attachTextToChart\", {1:id})",
+        "description": "Attaches a text output of an oscillator to the main chart window.",
+        "prefix": "host:execute(\"attachTextToChart",
+        "scope": "source.lua"
     }
 }

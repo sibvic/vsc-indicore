@@ -5,6 +5,7 @@
 ### New in this version
 
 * host:execute("attachOutputToChart", ...);
+* host:execute("attachTextToChart", ...);
 
 ## 0.4.0
 
