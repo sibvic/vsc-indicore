@@ -1,10 +1,12 @@
-# 0.5.0
+# Change log
 
-## New in this version
+## 0.5.0
+
+### New in this version
 
 * host:execute("attachOutputToChart", ...);
 
-# 0.4.0
+## 0.4.0
 
 * core.host:trace
 * host:execute("getTradingWeekOffset")
