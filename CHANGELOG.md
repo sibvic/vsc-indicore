@@ -1,3 +1,9 @@
+# 0.5.0
+
+## New in this version
+
+* host:execute("attachOutputToChart", ...);
+
 # 0.4.0
 
 * core.host:trace
@@ -8,4 +14,3 @@
 * host:execute("getServerTime")
 * host:execute("removeAll")
 * host:execute("addCommand", ...);
-* host:execute("attachOutputToChart", ...);
