@@ -8,3 +8,4 @@
 * host:execute("getServerTime")
 * host:execute("removeAll")
 * host:execute("addCommand", ...);
+* host:execute("attachOutputToChart", ...);

@@ -1204,5 +1204,11 @@
         "description": "Adds a custom command.",
         "prefix": "host:execute(\"addCommand",
         "scope": "source.lua"
+    },
+    "host:execute(\"attachOuputToChart\", id)": {
+        "body": "host:execute(\"attachOuputToChart\", {1:id})",
+        "description": "Attaches a line output stream or grouped streams of an oscillator to the main chart window.",
+        "prefix": "host:execute(\"attachOuputToChart",
+        "scope": "source.lua"
     }
 }
