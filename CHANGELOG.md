@@ -1,5 +1,11 @@
 # Change log
 
+## 0.6.0
+
+### New in 0.6.0
+
+* TODO
+
 ## 0.5.0
 
 ### New in this version
