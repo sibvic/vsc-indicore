@@ -30,107 +30,54 @@ ConsoleOptimizer
 ConsoleUtilities
 context
 context.DASH
-DASH in context
 context.DASHDOT
-DASHDOT in context
 context.DOT
-DOT in context
 context.SOLID
-SOLID in context
 context.tooltip
-tooltip in context
 context:bottom
-bottom in context
 context:convertPenStyle
-convertPenStyle in context
 context:convertTransparency
-convertTransparency in context
 context:createFont
-createFont in context
 context:createHatchBrush
-createHatchBrush in context
 context:createPen
-createPen in context
 context:createPoints
-createPoints in context
-context:createSolidBrush
-createSolidBrush in context
 context:deleteObject
-deleteObject in context
 context:drawArc
-drawArc in context
 context:drawBezierLine
-drawBezierLine in context
 context:drawBezierShape
-drawBezierShape in context
 context:drawEllipse
-drawEllipse in context
 context:drawGradientRectangle
-drawGradientRectangle in context
 context:drawGradientTriangle
-drawGradientTriangle in context
 context:drawIcon
-drawIcon in context
 context:drawLine
-drawLine in context
 context:drawPicture
-drawPicture in context
 context:drawPictureTransparentBackground
-drawPictureTransparentBackground in context
 context:drawPolygon
-drawPolygon in context
 context:drawPolyline
-drawPolyline in context
-context:drawRectangle
-drawRectangle in context
 context:drawText
-drawText in context
 context:firstBar
-firstBar in context
 context:indexOfBar
-indexOfBar in context
 context:lastBar
-lastBar in context
 context:left
-left in context
 context:loadIcon
-loadIcon in context
 context:loadPicture
-loadPicture in context
 context:maxPrice
-maxPrice in context
 context:measureText
-measureText in context
 context:minPrice
-minPrice in context
 context:nextBar
-nextBar in context
 context:pixelsToPoints
-pixelsToPoints in context
 context:pointOfPrice
-pointOfPrice in context
 context:pointsToPixels
-pointsToPixels in context
 context:positionOfBar
-positionOfBar in context
 context:positionOfDate
-positionOfDate in context
 context:priceOfPoint
-priceOfPoint in context
 context:priceWidth
-priceWidth in context
 context:resetClipRectangle
-resetClipRectangle in context
 context:right
-right in context
 context:setClipRectangle
-setClipRectangle in context
 context:setPixel
-setPixel in context
 context:startEnumeration
-startEnumeration in context
 context:top
-top in context
 core
 core.ASYNC_REDRAW
 ASYNC_REDRAW in core
@@ -652,7 +599,6 @@ odcontext_createHatchBrush in indicore3_ffi
 indicore3_ffi.odcontext_createPen
 odcontext_createPen in indicore3_ffi
 indicore3_ffi.odcontext_createSolidBrush
-odcontext_createSolidBrush in indicore3_ffi
 indicore3_ffi.odcontext_deleteObject
 odcontext_deleteObject in indicore3_ffi
 indicore3_ffi.odcontext_drawArc

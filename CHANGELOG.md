@@ -7,6 +7,8 @@
 * host:execute("attachOutputToChart", ...);
 * host:execute("attachTextToChart", ...);
 * host:execute("calculateDate", ...)
+* context:drawRectangle (pen, brush, x1, y1, x2, y2, transparency?)
+* context:createSolidBrush(objid, color)
 
 ## 0.4.0
 

@@ -1200,27 +1200,39 @@
         "scope": "source.lua"
     },
     "host:execute(\"addCommand\", cookie, text, comment)": {
-        "body": "host:execute(\"addCommand\", {1:cookie}, {2:text}, {3:comment})",
+        "body": "host:execute(\"addCommand\", ${1:cookie}, ${2:text}, ${3:comment})",
         "description": "Adds a custom command.",
         "prefix": "host:execute(\"addCommand",
         "scope": "source.lua"
     },
     "host:execute(\"attachOuputToChart\", id)": {
-        "body": "host:execute(\"attachOuputToChart\", {1:id})",
+        "body": "host:execute(\"attachOuputToChart\", ${1:id})",
         "description": "Attaches a line output stream or grouped streams of an oscillator to the main chart window.",
         "prefix": "host:execute(\"attachOuputToChart",
         "scope": "source.lua"
     },
     "host:execute(\"attachTextToChart\", id)": {
-        "body": "host:execute(\"attachTextToChart\", {1:id})",
+        "body": "host:execute(\"attachTextToChart\", ${1:id})",
         "description": "Attaches a text output of an oscillator to the main chart window.",
         "prefix": "host:execute(\"attachTextToChart",
         "scope": "source.lua"
     },
     "host:execute(\"calculateDate\", stream, index)": {
-        "body": "host:execute(\"calculateDate\", {1:stream}, {2:index})",
+        "body": "host:execute(\"calculateDate\", ${1:stream}, ${2:index})",
         "description": "Calculates the date in the stream.",
         "prefix": "host:execute(\"calculateDate",
+        "scope": "source.lua"
+    },
+    "context:drawRectangle(pen, brush, x1, y1, x2, y2, transparency?)": {
+        "body": "context:drawRectangle(${1:pen}, ${2:brush}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2}${7:[, transparency]})",
+        "description": "Draws a rectangle.",
+        "prefix": "context:drawRectangle(",
+        "scope": "source.lua"
+    },
+    "context:createSolidBrush(objid, color)": {
+        "body": "context:createSolidBrush({1:objid}, {2:color})",
+        "description": "Creates a GDI colored brush.",
+        "prefix": "context:createSolidBrush(",
         "scope": "source.lua"
     }
 }
