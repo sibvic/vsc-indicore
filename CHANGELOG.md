@@ -6,6 +6,7 @@
 
 * host:execute("attachOutputToChart", ...);
 * host:execute("attachTextToChart", ...);
+* host:execute("calculateDate", ...)
 
 ## 0.4.0
 

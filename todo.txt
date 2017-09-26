@@ -442,7 +442,6 @@ host
 host.ReferencePoints
 host.Window
 host:execute
-host:execute("calculateDate", ...)
 host:execute("calculatePositionOfDate", ...)
 host:execute("convertTime", ...);
 host:execute("createFont", ...);

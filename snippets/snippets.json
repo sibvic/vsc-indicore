@@ -1216,5 +1216,11 @@
         "description": "Attaches a text output of an oscillator to the main chart window.",
         "prefix": "host:execute(\"attachTextToChart",
         "scope": "source.lua"
+    },
+    "host:execute(\"calculateDate\", stream, index)": {
+        "body": "host:execute(\"calculateDate\", {1:stream}, {2:index})",
+        "description": "Calculates the date in the stream.",
+        "prefix": "host:execute(\"calculateDate",
+        "scope": "source.lua"
     }
 }
