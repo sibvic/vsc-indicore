@@ -20,7 +20,6 @@ ChangeParameters()
 ChangeParameters()
 Character Class:
 CheckParameters(parameters)
-CheckParameters(parameters)
 Click
 Click(x, y, price, date)
 Closed Trades(table)
@@ -29,7 +28,6 @@ ConsoleBacktester
 ConsoleOptimizer
 ConsoleUtilities
 context
-context.DASH
 context.DASHDOT
 context.DOT
 context.SOLID

@@ -1234,5 +1234,11 @@
         "description": "Creates a GDI colored brush.",
         "prefix": "context:createSolidBrush(",
         "scope": "source.lua"
+    },
+    "context.DASH": {
+        "body": "context.DASH",
+        "description": "The style of the pen (dashed line).",
+        "prefix": "context.DASH",
+        "scope": "source.lua"
     }
 }

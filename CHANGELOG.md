@@ -4,7 +4,7 @@
 
 ### New in 0.6.0
 
-* TODO
+* context.DASH
 
 ## 0.5.0
 
