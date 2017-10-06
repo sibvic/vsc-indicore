@@ -1240,5 +1240,23 @@
         "description": "The style of the pen (dashed line).",
         "prefix": "context.DASH",
         "scope": "source.lua"
+    },
+    "tick_stream:pipSize": {
+        "body": ":pipSize()",
+        "description": "The method returns the smallest possible change of the instrument price.",
+        "prefix": ":pipSize",
+        "scope": "source.lua"
+    },
+    "mathex.max": {
+        "body": "mathex.max({1:stream}, {2:range}{3:, [to?]})",
+        "description": "Finds the maximal value and its position in the specified stream and in the specified range.",
+        "prefix": "mathex.max",
+        "scope": "source.lua"
+    },
+    "mathex.min": {
+        "body": "mathex.min({1:stream}, {2:range}{3:, [to?]})",
+        "description": "Finds the minimal value and its position in the specified stream and in the specified range.",
+        "prefix": "mathex.min",
+        "scope": "source.lua"
     }
 }

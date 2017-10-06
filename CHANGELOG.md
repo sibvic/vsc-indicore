@@ -5,6 +5,9 @@
 ### New in 0.6.0
 
 * context.DASH
+* tick_stream:pipSize
+* mathex.max
+* mathex.min
 
 ## 0.5.0
 

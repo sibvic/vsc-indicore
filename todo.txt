@@ -1003,83 +1003,42 @@ math2d.segmentRectangleIntersection
 segmentRectangleIntersection in math2d
 mathex
 mathex.avg
-avg in mathex
 mathex.betaDist
-betaDist in mathex
 mathex.betaDistInv
-betaDistInv in mathex
 mathex.binomDist
-binomDist in mathex
 mathex.cfft
-cfft in mathex
 mathex.chiDist
-chiDist in mathex
 mathex.correl
-correl in mathex
 mathex.covar
-covar in mathex
 mathex.devsq
-devsq in mathex
 mathex.expDist
-expDist in mathex
 mathex.fDist
-fDist in mathex
 mathex.fDistInv
-fDistInv in mathex
 mathex.fft
-fft in mathex
 mathex.gammaDist
-gammaDist in mathex
 mathex.gammaln
-gammaln in mathex
 mathex.geomean
-geomean in mathex
 mathex.icfft
-icfft in mathex
 mathex.ifft
-ifft in mathex
 mathex.kurt
-kurt in mathex
 mathex.lreg
-lreg in mathex
 mathex.lregSlope
-lregSlope in mathex
 mathex.lwma
-lwma in mathex
 mathex.makeArray
-makeArray in mathex
-mathex.max
-max in mathex
 mathex.max2
-max2 in mathex
 mathex.meandev
-meandev in mathex
 mathex.median_s
-median_s in mathex
 mathex.median_w
-median_w in mathex
-mathex.min
-min in mathex
 mathex.min2
-min2 in mathex
 mathex.minmax
-minmax in mathex
 mathex.normalDist
-normalDist in mathex
 mathex.poissonDist
-poissonDist in mathex
 mathex.regChannel
-regChannel in mathex
 mathex.skew
-skew in mathex
 mathex.stdev
-stdev in mathex
 mathex.studentDist
-studentDist in mathex
 mathex.sum
-sum in mathex
 mathex.weibullDist
-weibullDist in mathex
 Messages(table)
 module (name [, ...])
 Move(x, y, price, date)
@@ -1433,7 +1392,6 @@ tick_stream:isAlive
 tick_stream:isBar
 tick_stream:isBid
 tick_stream:name
-tick_stream:pipSize
 tick_stream:serial
 tick_stream:size
 tick_stream:tick
