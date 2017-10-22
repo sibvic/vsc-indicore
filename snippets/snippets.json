@@ -1230,7 +1230,7 @@
         "scope": "source.lua"
     },
     "context:createSolidBrush(objid, color)": {
-        "body": "context:createSolidBrush({1:objid}, {2:color})",
+        "body": "context:createSolidBrush(${1:objid}, ${2:color})",
         "description": "Creates a GDI colored brush.",
         "prefix": "context:createSolidBrush(",
         "scope": "source.lua"
@@ -1248,15 +1248,1156 @@
         "scope": "source.lua"
     },
     "mathex.max": {
-        "body": "mathex.max({1:stream}, {2:range}{3:, [to?]})",
+        "body": "mathex.max(${1:stream}, ${2:range}${3:, [to?]})",
         "description": "Finds the maximal value and its position in the specified stream and in the specified range.",
         "prefix": "mathex.max",
         "scope": "source.lua"
     },
     "mathex.min": {
-        "body": "mathex.min({1:stream}, {2:range}{3:, [to?]})",
+        "body": "mathex.min(${1:stream}, ${2:range}${3:, [to?]})",
         "description": "Finds the minimal value and its position in the specified stream and in the specified range.",
         "prefix": "mathex.min",
         "scope": "source.lua"
+    },
+    "AsyncOperationFinished": {
+        "body": "AsyncOperationFinished(${1:cookie}, ${2:successful}, ${3:message}, ${4:message1}, ${5:message2})",
+        "description": "The notification that an asynchronous operation is finished.",
+        "prefix": "function AsyncOperationFinished",
+        "scope": "source.lua"
+    },
+    "close": {
+        "body": ".close",
+        "description": "The stream of close prices.",
+        "prefix": ".close",
+        "scope": "source.lua"
+    },
+    "high": {
+        "body": ".high",
+        "description": "The stream of high prices.",
+        "prefix": ".high",
+        "scope": "source.lua"
+    },
+    "low": {
+        "body": ".low",
+        "description": "The stream of low prices.",
+        "prefix": ".low",
+        "scope": "source.lua"
+    },
+    "median": {
+        "body": ".median",
+        "description": "The stream of median prices.",
+        "prefix": ".median",
+        "scope": "source.lua"
+    },
+    "open": {
+        "body": ".open",
+        "description": "The stream of open prices.",
+        "prefix": ".open",
+        "scope": "source.lua"
+    },
+    "typical": {
+        "body": ".typical",
+        "description": "The stream of typical prices.",
+        "prefix": ".typical",
+        "scope": "source.lua"
+    },
+    "volume": {
+        "body": ".volume",
+        "description": "The stream of volumes.",
+        "prefix": ".volume",
+        "scope": "source.lua"
+    },
+    "weighted": {
+        "body": ".weighted",
+        "description": "The stream of weighted prices.",
+        "prefix": ".weighted",
+        "scope": "source.lua"
+    },
+    "getAll": {
+        "body": ":getAll(${1:index})",
+        "description": "The method returns the Open, High, Low, and Close values of the specified period.",
+        "prefix": "getAll(",
+        "scope": "source.lua"
+    },
+    "supportsVolume": {
+        "body": ":supportsVolume()",
+        "description": "The method checks whether the stream supports the trading volume.",
+        "prefix": "supportsVolume(",
+        "scope": "source.lua"
+    },
+    "ChangeParameters": {
+        "body": "ChangeParameters()",
+        "description": "The notification that the parameter set has been changed on the fly.",
+        "prefix": "function ChangeParameters(",
+        "scope": "source.lua"
+    },
+    "CheckParameters": {
+        "body": "CheckParameters(${1:parameters})",
+        "description": "The request to check the parameters before changing the parameters on the fly.",
+        "prefix": "function CheckParameters(",
+        "scope": "source.lua"
+    },
+    "Click": {
+        "body": "Click(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "description": "Mouse Button Click Event.",
+        "prefix": "function Click(",
+        "scope": "source.lua"
+    },
+    "CreationStarted": {
+        "body": "CreationStarted()",
+        "description": "The start of tool initialization.",
+        "prefix": "function CreationStarted(",
+        "scope": "source.lua"
+    },
+    "CreationFinished": {
+        "body": "CreationFinished()",
+        "description": "The finish of tool initialization.",
+        "prefix": "function CreationFinished(",
+        "scope": "source.lua"
+    },
+    "Drag": {
+        "body": "Drag(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "description": "Mouse Drag Event.",
+        "prefix": "function Drag(",
+        "scope": "source.lua"
+    },
+    "DoubleClick": {
+        "body": "DoubleClick(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "description": "Mouse Drag Event.",
+        "prefix": "function DoubleClick(",
+        "scope": "source.lua"
+    },
+    "DragEnd": {
+        "body": "DragEnd(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "description": "Mouse Button Double Click Event.",
+        "prefix": "function DragEnd(",
+        "scope": "source.lua"
+    },
+    "MoveStart": {
+        "body": "MoveStart()",
+        "description": "The start of shape of tool moving.",
+        "prefix": "function MoveStart(",
+        "scope": "source.lua"
+    },
+    "Move": {
+        "body": "Move(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "description": "The moving of shape of tool.",
+        "prefix": "function Move(",
+        "scope": "source.lua"
+    },
+    "MoveFinished": {
+        "body": "MoveFinished()",
+        "description": "The finish of shape of tool moving.",
+        "prefix": "function MoveFinished(",
+        "scope": "source.lua"
+    },
+    "MoveReferencePointStart": {
+        "body": "MoveReferencePointStart(${1:pointID})",
+        "description": "The start of reference point moving.",
+        "prefix": "function MoveReferencePointStart(",
+        "scope": "source.lua"
+    },
+    "MoveReferencePoint": {
+        "body": "MoveReferencePoint(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "description": "The moving of shape of tool.",
+        "prefix": "function MoveReferencePoint(",
+        "scope": "source.lua"
+    },
+    "MoveReferencePointFinished": {
+        "body": "MoveReferencePointFinished()",
+        "description": "The finish of reference point moving.",
+        "prefix": "function MoveReferencePointFinished(",
+        "scope": "source.lua"
+    },
+    "Prepare": {
+        "body": "Prepare(${1:nameOnly})",
+        "description": "The tool initialization.",
+        "prefix": "function Prepare(",
+        "scope": "source.lua"
+    },
+    "ReleaseInstance": {
+        "body": "ReleaseInstance()",
+        "description": "The tool instance finalization.",
+        "prefix": "function ReleaseInstance(",
+        "scope": "source.lua"
+    },
+    "context.DASHDOT": {
+        "body": "context.DASHDOT",
+        "description": "The style of the pen (line or alternating dashes and dots).",
+        "prefix": "context.DASHDOT",
+        "scope": "source.lua"
+    },
+    "context.DOT": {
+        "body": "context.DOT",
+        "description": "The style of the pen (dotted line).",
+        "prefix": "context.DOT",
+        "scope": "source.lua"
+    },
+    "context.SOLID": {
+        "body": "context.SOLID",
+        "description": "The style of the pen (solid line).",
+        "prefix": "context.SOLID",
+        "scope": "source.lua"
+    },
+    "context:bottom": {
+        "body": "context:bottom()",
+        "description": "Returns Y coordinate of the bottom-right corner of the chart area.",
+        "prefix": "context:bottom(",
+        "scope": "source.lua"
+    },
+    "context:convertPenStyle": {
+        "body": "context:convertPenStyle(${1:penStyle})",
+        "description": "Converts old core line styles into context pen style.",
+        "prefix": "context:convertPenStyle(",
+        "scope": "source.lua"
+    },
+    "context:convertTransparency": {
+        "body": "context:convertTransparency(${1:transparency})",
+        "description": "Converts the transparency from 0-100 range to 0-255 range.",
+        "prefix": "context:convertTransparency(",
+        "scope": "source.lua"
+    },
+    "context:createFont": {
+        "body": "context:createFont(${1:objid}, ${2:faceName}, ${3:width}, ${4:height}, ${5:style})",
+        "description": "Creates a GDI font.",
+        "prefix": "context:createFont(",
+        "scope": "source.lua"
+    },
+    "context:createHatchBrush": {
+        "body": "context:createHatchBrush(${1:objid}, ${2:style}, ${3:color})",
+        "description": "Creates a GDI pattern brush.",
+        "prefix": "context:createHatchBrush(",
+        "scope": "source.lua"
+    },
+    "context:createPen": {
+        "body": "context:createPen(${1:objid}, ${2:style}, ${3:width}, ${4:color})",
+        "description": "Creates a GDI pen.",
+        "prefix": "context:createPen(",
+        "scope": "source.lua"
+    },
+    "context:createPoints": {
+        "body": "context:createPoints()",
+        "description": "Creates a collection of the points for polygon/polyline drawing.",
+        "prefix": "context:createPoints(",
+        "scope": "source.lua"
+    },
+    "context:deleteObject": {
+        "body": "context:deleteObject(${1:objid})",
+        "description": "Deletes a GDI object.",
+        "prefix": "context:deleteObject(",
+        "scope": "source.lua"
+    },
+    "context:drawArc": {
+        "body": "context:drawArc(${1:pen}, ${2:brush}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2}, ${7:x3}, ${8:y3}, ${9:x4}, ${10:y4}${11:[, transparency?]})",
+        "description": "Draws an arc.",
+        "prefix": "context:drawArc(",
+        "scope": "source.lua"
+    },
+    "context:drawBezierLine": {
+        "body": "context:drawBezierLine(${1:pen}, ${2:points}${3:[, transparency?]})",
+        "description": "Draws a cubic Bezier line.",
+        "prefix": "context:drawBezierLine(",
+        "scope": "source.lua"
+    },
+    "context:drawBezierShape": {
+        "body": "context:drawBezierShape(${1:pen}, ${2:brush}, ${3:points}${4:[, transparency?]})",
+        "description": "Draws and fills a cubic Bezier shape.",
+        "prefix": "context:drawBezierShape(",
+        "scope": "source.lua"
+    },
+    "context:drawEllipse": {
+        "body": "context:drawEllipse(${1:pen}, ${2:brush}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2}${7:[, transparency?]})",
+        "description": "Draws an ellipse.",
+        "prefix": "context:drawEllipse(",
+        "scope": "source.lua"
+    },
+    "context:drawGradientRectangle": {
+        "body": "context:drawGradientRectangle(${1:x1}, ${2:y1}, ${3:color1}, ${4:x2}, ${5:y2}, ${6:color2}, ${7:x3}, ${8:y3}, ${9:color3}, ${10:x4}, ${11:y4}, ${12:color4}${13:[, transparency?]})",
+        "description": "Draws a gradient-filled rectangle.",
+        "prefix": "context:drawGradientRectangle(",
+        "scope": "source.lua"
+    },
+    "context:drawGradientTriangle": {
+        "body": "context:drawGradientTriangle(${1:x1}, ${2:y1}, ${3:color1}, ${4:x2}, ${5:y2}, ${6:color2}, ${7:x3}, ${8:y3}, ${9:color3}${13:[, transparency?]})",
+        "description": "Draws a gradient-filled triangle.",
+        "prefix": "context:drawGradientTriangle(",
+        "scope": "source.lua"
+    },
+    "context:drawIcon": {
+        "body": "context:drawIcon(${1:icon}, ${2:x}, ${3:y}${4:[, transparency?]})",
+        "description": "Draws an icon.",
+        "prefix": "context:drawIcon(",
+        "scope": "source.lua"
+    },
+    "context:drawLine": {
+        "body": "context:drawLine(${1:pen}, ${2:x1}, ${3:y1}, ${4:x2}, ${5:y2}${6:[, transparency?]})",
+        "description": "Draws a line.",
+        "prefix": "context:drawLine(",
+        "scope": "source.lua"
+    },
+    "context:drawPicture": {
+        "body": "context:drawPicture(${1:picture}, ${2:x}, ${3:y}${4:[, transparency?]})",
+        "description": "Draws a picture.",
+        "prefix": "context:drawPicture(",
+        "scope": "source.lua"
+    },
+    "context:drawPictureTransparentBackground": {
+        "body": "context:drawPictureTransparentBackground(${1:picture}, ${2:x}, ${3:y}, ${4:bgColor}${5:[, transparency?]})",
+        "description": "Draws a picture using a color as a transparent background.",
+        "prefix": "context:drawPictureTransparentBackground(",
+        "scope": "source.lua"
+    },
+    "context:drawPolygon": {
+        "body": "context:drawPolygon(${1:pen}, ${2:brush}, ${3:points}${4:[, transparency?]})",
+        "description": "Draws a polygon.",
+        "prefix": "context:drawPolygon(",
+        "scope": "source.lua"
+    },
+    "context:drawPolyline": {
+        "body": "context:drawPolyline(${1:pen}, ${2:points}${3:[, transparency?]})",
+        "description": "Draws a polyline (a multi-segment zigzag line).",
+        "prefix": "context:drawPolyline(",
+        "scope": "source.lua"
+    },
+    "context:drawText": {
+        "body": "context:drawText(${1:font}, ${2:text}, ${3:color}, ${4:background}, ${5:x1}, ${6:y1}, ${7:x2}, ${8:y2}, ${9:style}${10:[, transparency?]})",
+        "description": "Draws a text.",
+        "prefix": "context:drawText(",
+        "scope": "source.lua"
+    },
+    "context:firstBar": {
+        "body": "context:firstBar()",
+        "description": "Returns the index of the first bar of the indicator source visible on the chart.",
+        "prefix": "context:firstBar(",
+        "scope": "source.lua"
+    },
+    "context:indexOfBar": {
+        "body": "context:indexOfBar(${1:x})",
+        "description": "Gets index of the bar by its position in the chart area.",
+        "prefix": "context:indexOfBar(",
+        "scope": "source.lua"
+    },
+    "context:lastBar": {
+        "body": "context:lastBar()",
+        "description": "Returns the index of the last bar of the indicator source visible on the chart.",
+        "prefix": "context:lastBar(",
+        "scope": "source.lua"
+    },
+    "context:left": {
+        "body": "context:left()",
+        "description": "Returns X coordinate of top-left corner of the chart area.",
+        "prefix": "context:left(",
+        "scope": "source.lua"
+    },
+    "context:loadIcon": {
+        "body": "context:loadIcon(${1:objid}, ${2:file})",
+        "description": "Loads a GDI icon from the file.",
+        "prefix": "context:loadIcon(",
+        "scope": "source.lua"
+    },
+    "context:loadPicture": {
+        "body": "context:loadPicture(${1:objid}, ${2:file})",
+        "description": "Loads a GDI picture from the file.",
+        "prefix": "context:loadPicture(",
+        "scope": "source.lua"
+    },
+    "context:maxPrice": {
+        "body": "context:maxPrice()",
+        "description": "Returns a maximum price visible on vertical axis.",
+        "prefix": "context:maxPrice(",
+        "scope": "source.lua"
+    },
+    "context:measureText": {
+        "body": "context:measureText(${1:font}, ${2:text}, ${3:style})",
+        "description": "Calculates width and height of the text.",
+        "prefix": "context:measureText(",
+        "scope": "source.lua"
+    },
+    "context:minPrice": {
+        "body": "context:minPrice()",
+        "description": "Returns a minimum price visible on vertical axis.",
+        "prefix": "context:minPrice(",
+        "scope": "source.lua"
+    },
+    "context:nextBar": {
+        "body": "context:nextBar()",
+        "description": "Gets the next bar in the enumeration of the visible bars.",
+        "prefix": "context:nextBar(",
+        "scope": "source.lua"
+    },
+    "context:pixelsToPoints": {
+        "body": "context:pixelsToPoints(${1:pixels})",
+        "description": "Converts pixels into polygraphic points.",
+        "prefix": "context:pixelsToPoints(",
+        "scope": "source.lua"
+    },
+    "context:pointOfPrice": {
+        "body": "context:pointOfPrice(${1:price})",
+        "description": "The method returns the position of the price on the chart area.",
+        "prefix": "context:pointOfPrice(",
+        "scope": "source.lua"
+    },
+    "context:pointsToPixels": {
+        "body": "context:pointsToPixels(${1:points})",
+        "description": "Converts polygraphic points into pixels.",
+        "prefix": "context:pointsToPixels(",
+        "scope": "source.lua"
+    },
+    "context:positionOfBar": {
+        "body": "context:positionOfBar(${1:index})",
+        "description": "Get the position of the bar on the chart area by the bar index.",
+        "prefix": "context:positionOfBar(",
+        "scope": "source.lua"
+    },
+    "context:positionOfDate": {
+        "body": "context:positionOfDate(${1:date})",
+        "description": "Get the position of the bar on the chart area by the date.",
+        "prefix": "context:positionOfDate(",
+        "scope": "source.lua"
+    },
+    "context:priceOfPoint": {
+        "body": "context:priceOfPoint(${1:y})",
+        "description": "The method return the price by its position on the chart area.",
+        "prefix": "context:priceOfPoint(",
+        "scope": "source.lua"
+    },
+    "context:priceWidth": {
+        "body": "context:priceWidth(${1:start}, ${2:end})",
+        "description": "Returns the width of the price band in pixels.",
+        "prefix": "context:priceWidth(",
+        "scope": "source.lua"
+    },
+    "context:resetClipRectangle": {
+        "body": "context:resetClipRectangle()",
+        "description": "Removes clip rectangle.",
+        "prefix": "context:resetClipRectangle(",
+        "scope": "source.lua"
+    },
+    "context:right": {
+        "body": "context:right()",
+        "description": "Returns X coordinate of bottom-right corner of the chart area.",
+        "prefix": "context:right(",
+        "scope": "source.lua"
+    },
+    "context:setClipRectangle": {
+        "body": "context:setClipRectangle(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2})",
+        "description": "Sets clip rectangle.",
+        "prefix": "context:setClipRectangle(",
+        "scope": "source.lua"
+    },
+    "context:setPixel": {
+        "body": "context:setPixel(${1:x}, ${2:y}, ${3:color}${4:[, transparency?]})",
+        "description": "Draws a pixel.",
+        "prefix": "context:setPixel(",
+        "scope": "source.lua"
+    },
+    "context:startEnumeration": {
+        "body": "context:startEnumeration()",
+        "description": "Initializes the enumeration of the visible bars.",
+        "prefix": "context:startEnumeration(",
+        "scope": "source.lua"
+    },
+    "context:top": {
+        "body": "context:top()",
+        "description": "Returns Y coordinate of top-left corner of the chart area.",
+        "prefix": "context:top(",
+        "scope": "source.lua"
+    },
+    "core": {
+        "body": "core",
+        "description": "The core functions and constants.",
+        "prefix": "core",
+        "scope": "source.lua"
+    },
+    "core.ASYNC_REDRAW": {
+        "body": "core.ASYNC_REDRAW",
+        "description": "The flag indicating that the indicator must be redrawn after async notification.",
+        "prefix": "core.ASYNC_REDRAW",
+        "scope": "source.lua"
+    },
+    "core.Bar": {
+        "body": "core.Bar",
+        "description": "The type of the indicator required source or of the output.",
+        "prefix": "core.Bar",
+        "scope": "source.lua"
+    },
+    "core.Both": {
+        "body": "core.Both",
+        "description": "The type of the strategy.",
+        "prefix": "core.Both",
+        "scope": "source.lua"
+    },
+    "core.COLOR_BACKGROUND": {
+        "body": "core.COLOR_BACKGROUND",
+        "description": "The identifier of the color (default color of chart background).",
+        "prefix": "core.COLOR_BACKGROUND",
+        "scope": "source.lua"
+    },
+    "core.COLOR_CUSTOMLEVEL": {
+        "body": "core.COLOR_CUSTOMLEVEL",
+        "description": "The identifier of the color (default color of custom level lines).",
+        "prefix": "core.COLOR_CUSTOMLEVEL",
+        "scope": "source.lua"
+    },
+    "core.COLOR_DOWNCANDLE": {
+        "body": "core.COLOR_DOWNCANDLE",
+        "description": "The identifier of the color (default color of descending candles).",
+        "prefix": "core.COLOR_DOWNCANDLE",
+        "scope": "source.lua"
+    },
+    "core.COLOR_LABEL": {
+        "body": "core.COLOR_LABEL",
+        "description": "The identifier of the color (default color of labels).",
+        "prefix": "core.COLOR_LABEL",
+        "scope": "source.lua"
+    },
+    "core.COLOR_LINE": {
+        "body": "core.COLOR_LINE",
+        "description": "The identifier of the color (default color of lines).",
+        "prefix": "core.COLOR_LINE",
+        "scope": "source.lua"
+    },
+    "core.COLOR_UPCANDLE": {
+        "body": "core.COLOR_UPCANDLE",
+        "description": "The identifier of the color (default color of ascending candles).",
+        "prefix": "core.COLOR_UPCANDLE",
+        "scope": "source.lua"
+    },
+    "core.colors": {
+        "body": "core.colors()",
+        "description": "Creates an color table.",
+        "prefix": "core.colors(",
+        "scope": "source.lua"
+    },
+    "core.CR_BOTTOM": {
+        "body": "core.CR_BOTTOM",
+        "description": "The type of the label coordinate.",
+        "prefix": "core.CR_BOTTOM",
+        "scope": "source.lua"
+    },
+    "core.CR_CENTER": {
+        "body": "core.CR_CENTER",
+        "description": "The type of the label coordinate.",
+        "prefix": "core.CR_CENTER",
+        "scope": "source.lua"
+    },
+    "core.CR_CHART": {
+        "body": "core.CR_CHART",
+        "description": "The type of the label coordinate.",
+        "prefix": "core.CR_CHART",
+        "scope": "source.lua"
+    },
+    "core.CR_LEFT": {
+        "body": "core.CR_LEFT",
+        "description": "The type of the label coordinate.",
+        "prefix": "core.CR_LEFT",
+        "scope": "source.lua"
+    },
+    "core.CR_RIGHT": {
+        "body": "core.CR_RIGHT",
+        "description": "The type of the label coordinate.",
+        "prefix": "core.CR_RIGHT",
+        "scope": "source.lua"
+    },
+    "core.CR_TOP": {
+        "body": "core.CR_TOP",
+        "description": "The type of the label coordinate.",
+        "prefix": "core.CR_TOP",
+        "scope": "source.lua"
+    },
+    "core.Dot": {
+        "body": "core.Dot",
+        "description": "The type of the indicator output.",
+        "prefix": "core.Dot",
+        "scope": "source.lua"
+    },
+    "core.FLAG_ACCOUNT": {
+        "body": "core.FLAG_ACCOUNT",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_ACCOUNT",
+        "scope": "source.lua"
+    },
+    "core.FLAG_ALLOW_TRADE": {
+        "body": "core.FLAG_ALLOW_TRADE",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_ALLOW_TRADE",
+        "scope": "source.lua"
+    },
+    "core.FLAG_BARPERIODS": {
+        "body": "core.FLAG_BARPERIODS",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_BARPERIODS",
+        "scope": "source.lua"
+    },
+    "core.FLAG_BARPERIODS_EDIT": {
+        "body": "core.FLAG_BARPERIODS_EDIT",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_BARPERIODS_EDIT",
+        "scope": "source.lua"
+    },
+    "core.FLAG_BIDASK": {
+        "body": "core.FLAG_BIDASK",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_BIDASK",
+        "scope": "source.lua"
+    },
+    "core.FLAG_DATE": {
+        "body": "core.FLAG_DATE",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_DATE",
+        "scope": "source.lua"
+    },
+    "core.FLAG_DATE_OR_NULL": {
+        "body": "core.FLAG_DATE_OR_NULL",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_DATE_OR_NULL",
+        "scope": "source.lua"
+    },
+    "core.FLAG_DATETIME": {
+        "body": "core.FLAG_DATETIME",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_DATETIME",
+        "scope": "source.lua"
+    },
+    "core.FLAG_DATETIME_OR_NULL": {
+        "body": "core.FLAG_DATETIME_OR_NULL",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_DATETIME_OR_NULL",
+        "scope": "source.lua"
+    },
+    "core.FLAG_EMAIL": {
+        "body": "core.FLAG_EMAIL",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_EMAIL",
+        "scope": "source.lua"
+    },
+    "core.FLAG_INDICATOR": {
+        "body": "core.FLAG_INDICATOR",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_INDICATOR",
+        "scope": "source.lua"
+    },
+    "core.FLAG_INSTRUMENTS": {
+        "body": "core.FLAG_INSTRUMENTS",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_INSTRUMENTS",
+        "scope": "source.lua"
+    },
+    "core.FLAG_LEVEL_STYLE": {
+        "body": "core.FLAG_LEVEL_STYLE",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_LEVEL_STYLE",
+        "scope": "source.lua"
+    },
+    "core.FLAG_LINE_STYLE": {
+        "body": "core.FLAG_LINE_STYLE",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_LINE_STYLE",
+        "scope": "source.lua"
+    },
+    "core.FLAG_ONLYINDICATORS": {
+        "body": "core.FLAG_ONLYINDICATORS",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_ONLYINDICATORS",
+        "scope": "source.lua"
+    },
+    "core.FLAG_ONLYOSCILLATORS": {
+        "body": "core.FLAG_ONLYOSCILLATORS",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_ONLYOSCILLATORS",
+        "scope": "source.lua"
+    },
+    "core.FLAG_ORDER": {
+        "body": "core.FLAG_ORDER",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_ORDER",
+        "scope": "source.lua"
+    },
+    "core.FLAG_PERIODS": {
+        "body": "core.FLAG_PERIODS",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_PERIODS",
+        "scope": "source.lua"
+    },
+    "core.FLAG_PERIODS_EDIT": {
+        "body": "core.FLAG_PERIODS_EDIT",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_PERIODS_EDIT",
+        "scope": "source.lua"
+    },
+    "core.FLAG_PRICE": {
+        "body": "core.FLAG_PRICE",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_PRICE",
+        "scope": "source.lua"
+    },
+    "core.FLAG_SOUND": {
+        "body": "core.FLAG_SOUND",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_SOUND",
+        "scope": "source.lua"
+    },
+    "core.FLAG_STRATEGY": {
+        "body": "core.FLAG_STRATEGY",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_STRATEGY",
+        "scope": "source.lua"
+    },
+    "core.FLAG_TRADE": {
+        "body": "core.FLAG_TRADE",
+        "description": "The parameter behavior flag.",
+        "prefix": "core.FLAG_TRADE",
+        "scope": "source.lua"
+    },
+    "core.H_Center": {
+        "body": "core.H_Center",
+        "description": "The horizonal alignment of a label.",
+        "prefix": "core.H_Center",
+        "scope": "source.lua"
+    },
+    "core.H_Left": {
+        "body": "core.H_Left",
+        "description": "The horizonal alignment of a label.",
+        "prefix": "core.H_Left",
+        "scope": "source.lua"
+    },
+    "core.H_Right": {
+        "body": "core.H_Right",
+        "description": "The horizonal alignment of a label.",
+        "prefix": "core.H_Right",
+        "scope": "source.lua"
+    },
+    "core.host": {
+        "body": "core.host",
+        "description": "The host application.",
+        "prefix": "core.host",
+        "scope": "source.lua"
+    },
+    "core.Indicator": {
+        "body": "core.Indicator",
+        "description": "The type of the indicator.",
+        "prefix": "core.Indicator",
+        "scope": "source.lua"
+    },
+    "core.indicators": {
+        "body": "core.indicators",
+        "description": "The indicator manager.",
+        "prefix": "core.indicators",
+        "scope": "source.lua"
+    },
+    "core.Line": {
+        "body": "core.Line",
+        "description": "The type of the indicator output.",
+        "prefix": "core.Line",
+        "scope": "source.lua"
+    },
+    "core.LINE_DASH": {
+        "body": "core.LINE_DASH",
+        "description": "The line style (dashed line).",
+        "prefix": "core.LINE_DASH",
+        "scope": "source.lua"
+    },
+    "core.LINE_DASHDOT": {
+        "body": "core.LINE_DASHDOT",
+        "description": "The line style (dash-dotted line).",
+        "prefix": "core.LINE_DASHDOT",
+        "scope": "source.lua"
+    },
+    "core.LINE_DOT": {
+        "body": "core.LINE_DOT",
+        "description": "The line style (dotted line).",
+        "prefix": "core.LINE_DOT",
+        "scope": "source.lua"
+    },
+    "core.LINE_NONE": {
+        "body": "core.LINE_NONE",
+        "description": "The line style (invisible line).",
+        "prefix": "core.LINE_NONE",
+        "scope": "source.lua"
+    },
+    "core.LINE_SOLID": {
+        "body": "core.LINE_SOLID",
+        "description": "The line style (solid line).",
+        "prefix": "core.LINE_SOLID",
+        "scope": "source.lua"
+    },
+    "core.Oscillator": {
+        "body": "core.Oscillator",
+        "description": "The type of the indicator.",
+        "prefix": "core.Oscillator",
+        "scope": "source.lua"
+    },
+    "core.OWNER_ADDITIONAL_AREA": {
+        "body": "core.OWNER_ADDITIONAL_AREA",
+        "description": "The indicator is applied on an additional area.",
+        "prefix": "core.OWNER_ADDITIONAL_AREA",
+        "scope": "source.lua"
+    },
+    "core.OWNER_INTERNAL": {
+        "body": "core.OWNER_INTERNAL",
+        "description": "The indicator is included in another indicator or strategy.",
+        "prefix": "core.OWNER_INTERNAL",
+        "scope": "source.lua"
+    },
+    "core.OWNER_MAIN_AREA": {
+        "body": "core.OWNER_MAIN_AREA",
+        "description": "The indicator is applied on the main chart area.",
+        "prefix": "core.OWNER_MAIN_AREA",
+        "scope": "source.lua"
+    },
+    "core.OWNER_UNKNOWN": {
+        "body": "core.OWNER_UNKNOWN",
+        "description": "The owner is unknown e.g. the command is executed in the Prepare() function while the indicator is not added on a chart yet.",
+        "prefix": "core.OWNER_UNKNOWN",
+        "scope": "source.lua"
+    },
+    "core.Signal": {
+        "body": "core.Signal",
+        "description": "The type of the strategy.",
+        "prefix": "core.Signal",
+        "scope": "source.lua"
+    },
+    "core.Strategy": {
+        "body": "core.Strategy",
+        "description": "The type of the strategy.",
+        "prefix": "core.Strategy",
+        "scope": "source.lua"
+    },
+    "core.Tick": {
+        "body": "core.Tick",
+        "description": "The type of the indicator required source.",
+        "prefix": "core.Tick",
+        "scope": "source.lua"
+    },
+    "core.TZ_EST": {
+        "body": "core.TZ_EST",
+        "description": "Time zone (New York time).",
+        "prefix": "core.TZ_EST",
+        "scope": "source.lua"
+    },
+    "core.TZ_FINANCIAL": {
+        "body": "core.TZ_FINANCIAL",
+        "description": "The financial time time zone.",
+        "prefix": "core.TZ_FINANCIAL",
+        "scope": "source.lua"
+    },
+    "core.TZ_GMT": {
+        "body": "core.TZ_GMT",
+        "description": "Time zone (Universal Coordinated Time).",
+        "prefix": "core.TZ_GMT",
+        "scope": "source.lua"
+    },
+    "core.TZ_LOCAL": {
+        "body": "core.TZ_LOCAL",
+        "description": "The user local time zone.",
+        "prefix": "core.TZ_LOCAL",
+        "scope": "source.lua"
+    },
+    "core.TZ_SERVER": {
+        "body": "core.TZ_SERVER",
+        "description": "The time zone of the server.",
+        "prefix": "core.TZ_SERVER",
+        "scope": "source.lua"
+    },
+    "core.TZ_TS": {
+        "body": "core.TZ_TS",
+        "description": "The time zone chosen to show dates in the host application.",
+        "prefix": "core.TZ_TS",
+        "scope": "source.lua"
+    },
+    "core.UpdateAll": {
+        "body": "core.UpdateAll",
+        "description": "Indicator update mode.",
+        "prefix": "core.UpdateAll",
+        "scope": "source.lua"
+    },
+    "core.UpdateLast": {
+        "body": "core.UpdateLast",
+        "description": "Indicator update mode.",
+        "prefix": "core.UpdateLast",
+        "scope": "source.lua"
+    },
+    "core.UpdateNew": {
+        "body": "core.UpdateNew",
+        "description": "Indicator update mode.",
+        "prefix": "core.UpdateNew",
+        "scope": "source.lua"
+    },
+    "core.V_Bottom": {
+        "body": "core.V_Bottom",
+        "description": "The vertical alignment of a label.",
+        "prefix": "core.V_Bottom",
+        "scope": "source.lua"
+    },
+    "core.V_Center": {
+        "body": "core.V_Center",
+        "description": "The vertical alignment of a label.",
+        "prefix": "core.V_Center",
+        "scope": "source.lua"
+    },
+    "core.V_Top": {
+        "body": "core.V_Top",
+        "description": "The vertical alignment of a label.",
+        "prefix": "core.V_Top",
+        "scope": "source.lua"
+    },
+    "core.View": {
+        "body": "core.View",
+        "description": "The type of the indicator.",
+        "prefix": "core.View",
+        "scope": "source.lua"
+    },
+    "creationStrategy": {
+        "body": "creationStrategy",
+        "description": "The creation strategy for tool.",
+        "prefix": "creationStrategy",
+        "scope": "source.lua"
+    },
+    "db": {
+        "body": "db",
+        "description": "The persistent storage.",
+        "prefix": "db",
+        "scope": "source.lua"
+    },
+    "core.DragClick": {
+        "body": "core.DragClick",
+        "description": "The section describes about DragClick creation pattern.",
+        "prefix": "core.DragClick",
+        "scope": "source.lua"
+    },
+    "core.DoubleClick": {
+        "body": "core.DoubleClick",
+        "description": "The section describes about DoubleClick creation pattern.",
+        "prefix": "core.DoubleClick",
+        "scope": "source.lua"
+    },
+    "host.ReferencePoints": {
+        "body": "host.ReferencePoints",
+        "description": "Return a reference points manager for add/remove points.",
+        "prefix": "host.ReferencePoints",
+        "scope": "source.lua"
+    },
+    "host.Window": {
+        "body": "host.Window",
+        "description": "Return window information table.",
+        "prefix": "host.Window",
+        "scope": "source.lua"
+    },
+    "http_loader": {
+        "body": "http_loader",
+        "description": "Http loader.",
+        "prefix": "http_loader",
+        "scope": "source.lua"
+    },
+    "http_lua": {
+        "body": "http_lua",
+        "description": "Http request manager.",
+        "prefix": "http_lua",
+        "scope": "source.lua"
+    },
+    "http_request": {
+        "body": "http_request",
+        "description": "Http Request.",
+        "prefix": "http_request",
+        "scope": "source.lua"
+    },
+    "indicator": {
+        "body": "indicator",
+        "description": "The profile of the indicator available at the moment of the initialization of your indicator.",
+        "prefix": "indicator",
+        "scope": "source.lua"
+    },
+    "indicator.parameters": {
+        "body": "indicator.parameters",
+        "description": "Returns the instance of the profile parameter set.",
+        "prefix": "indicator.parameters",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi": {
+        "body": "indicore3_ffi",
+        "description": "The ffi functions.",
+        "prefix": "indicore3_ffi",
+        "scope": "source.lua"
+    },
+    "instance": {
+        "body": "instance",
+        "description": "The instance of a nested indicator.",
+        "prefix": "instance",
+        "scope": "source.lua"
+    },
+    "instance.ask": {
+        "body": "instance.ask",
+        "description": "The ask prices of the associated instrument.",
+        "prefix": "instance.ask",
+        "scope": "source.lua"
+    },
+    "instance.bid": {
+        "body": "instance.bid",
+        "description": "The bid prices of the associated instrument.",
+        "prefix": "instance.bid",
+        "scope": "source.lua"
+    },
+    "core.date": {
+        "body": "core.date(${1:year}, ${2:month}, ${3:day})",
+        "description": "Creates date value.",
+        "prefix": "core.date(",
+        "scope": "source.lua"
+    },
+    "core.datetime": {
+        "body": "core.datetime(${1:year}, ${2:month}, ${3:day}, ${4:hour}, ${5:minute}, ${6:second})",
+        "description": "Creates date and time value.",
+        "prefix": "core.datetime(",
+        "scope": "source.lua"
+    },
+    "core.dateToTable": {
+        "body": "core.dateToTable(${1:date})",
+        "description": "Converts the date with a number format into the table.",
+        "prefix": "core.dateToTable(",
+        "scope": "source.lua"
+    },
+    "core.drawLine": {
+        "body": "core.drawLine(${1:pen}, ${2:x1}, ${3:y1}, ${4:x2}, ${5:y2}${6:[, transparency?]})",
+        "description": "Draws a line.",
+        "prefix": "core.drawLine(",
+        "scope": "source.lua"
+    },
+    "core.eraseStream": {
+        "body": "core.eraseStream(${1:output}, ${2:range})",
+        "description": "Sets no data to the specified range of the output stream.",
+        "prefix": "core.eraseStream(",
+        "scope": "source.lua"
+    },
+    "core.findDate": {
+        "body": "core.findDate(${1:stream}, ${2:date}, ${3:precise})",
+        "description": "Searches in the price stream for the specified date.",
+        "prefix": "core.findDate(",
+        "scope": "source.lua"
+    },
+    "core.formatDate": {
+        "body": "core.formatDate(${1:date})",
+        "description": "Formats date/time into a string.",
+        "prefix": "core.formatDate(",
+        "scope": "source.lua"
+    },
+    "indicators:create": {
+        "body": "indicators:create(${1:id}, ${2:source}, ${3:parameters...})",
+        "description": "Creates an instance of the indicator.",
+        "prefix": "indicators:create(",
+        "scope": "source.lua"
+    },
+    "indicators:findIndicator": {
+        "body": "indicators:findIndicator(${1:id})",
+        "description": "Gets the indicator profile by the identifier.",
+        "prefix": "indicators:findIndicator(",
+        "scope": "source.lua"
+    },
+    "core.isnontrading": {
+        "body": "core.isnontrading(${1:datetime}, ${2:tradingDayOffset})",
+        "description": "Checks whether the specified date and time is the regular non-trading hours.",
+        "prefix": "core.isnontrading(",
+        "scope": "source.lua"
+    },
+    "core.makeHttpLoader": {
+        "body": "core.makeHttpLoader()",
+        "description": "Creates an HTTP reader.",
+        "prefix": "core.makeHttpLoader(",
+        "scope": "source.lua"
+    },
+    "core.now": {
+        "body": "core.now()",
+        "description": "Returns the current local date and time.",
+        "prefix": "core.now(",
+        "scope": "source.lua"
+    },
+    "core.parseCsv": {
+        "body": "core.parseCsv(${1:string}${2:[, separator?]})",
+        "description": "Parses comma-separated values.",
+        "prefix": "core.parseCsv(",
+        "scope": "source.lua"
+    },
+    "core.range": {
+        "body": "core.range(${1:from}, ${2:to})",
+        "description": "Creates the range table for the statistics methods using the 'from' and 'to' indexes.",
+        "prefix": "core.range(",
+        "scope": "source.lua"
+    },
+    "core.rangeFrom": {
+        "body": "core.rangeFrom(${1:from}, ${2:length})",
+        "description": "Creates the range table for the statistics methods using the 'from' index and the size of the range.",
+        "prefix": "core.rangeFrom(",
+        "scope": "source.lua"
+    },
+    "core.rangeTo": {
+        "body": "core.rangeTo(${1:from}, ${2:length})",
+        "description": "Creates the range table for the statistics methods using the 'to' index and the size of the range.",
+        "prefix": "core.rangeTo(",
+        "scope": "source.lua"
+    },
+    "core.requires": {
+        "body": "core.requires(${1:major}, ${2:minor}${3[, exact?]})",
+        "description": "Checks whether the version of indicator core is correct.",
+        "prefix": "core.requires(",
+        "scope": "source.lua"
+    },
+    "core.rgb": {
+        "body": "core.rgb(${1:red}, ${2:green}, ${3:blue})",
+        "description": "Creates the color from the red, green, and blue components.",
+        "prefix": "core.rgb(",
+        "scope": "source.lua"
+    },
+    "core.tableToDate": {
+        "body": "core.tableToDate(${1:date})",
+        "description": "Converts the table into the date with a number format.",
+        "prefix": "core.tableToDate(",
+        "scope": "source.lua"
+    },
+    "core.touches": {
+        "body": "core.touches(${1:stream1}, ${2:stream2}, ${3:period1}${4:[, period2?]})",
+        "description": "Checks whether one stream touches the other stream at the specified position.",
+        "prefix": "core.touches(",
+        "scope": "source.lua"
+    },
+    "core.valuemap": {
+        "body": "core.valuemap()",
+        "description": "Creates a value map.",
+        "prefix": "core.valuemap(",
+        "scope": "source.lua"
+    },
+    "core.version": {
+        "body": "core.version()",
+        "description": "Returns the version of indicator core.",
+        "prefix": "core.version(",
+        "scope": "source.lua"
+    },
+    "core:app_path": {
+        "body": "core:app_path()",
+        "description": "Gets the path to lua5.1.dll",
+        "prefix": "core:app_path(",
+        "scope": "source.lua"
+    },
+    "creationStrategy:setMaxClickCount": {
+        "body": "creationStrategy:setMaxClickCount(${1:count})",
+        "description": "Sets max click count for the process of creating a tool.",
+        "prefix": "creationStrategy:setMaxClickCount(",
+        "scope": "source.lua"
+    },
+    "creationStrategy:setNeedParamsAfterPattern": {
+        "body": "creationStrategy:setNeedParamsAfterPattern(${1:needParams})",
+        "description": "Sets request for dialog on setting parameters after finishing creation pattern.",
+        "prefix": "creationStrategy:setNeedParamsAfterPattern(",
+        "scope": "source.lua"
+    },
+    "creationStrategy:setPattern": {
+        "body": "creationStrategy:setPattern(${1:type})",
+        "description": "Sets the type of the creation pattern.",
+        "prefix": "creationStrategy:setPattern(",
+        "scope": "source.lua"
+    },
+    "db:get": {
+        "body": "db:get(${1:name}${2:[, default?]})",
+        "description": "Gets the value from the persistent storage.",
+        "prefix": "db:get(",
+        "scope": "source.lua"
     }
+    
 }
