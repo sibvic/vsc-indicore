@@ -2398,6 +2398,23 @@
         "description": "Gets the value from the persistent storage.",
         "prefix": "db:get(",
         "scope": "source.lua"
+    },
+    "db:put": {
+        "body": "db:put(${1:name}, ${2:value})",
+        "description": "Saves the value to the persistent storage.",
+        "prefix": "db:put(",
+        "scope": "source.lua"
+    },
+    "core.ILanguageServiceIndicator": {
+        "body": "core.ILanguageServiceIndicator",
+        "description": "The type of the profile (Indicator).",
+        "prefix": "core.ILanguageServiceIndicator",
+        "scope": "source.lua"
+    },
+    "core.ILanguageServiceJs": {
+        "body": "core.ILanguageServiceJs",
+        "description": "The language of the profile (JavaScript).",
+        "prefix": "core.ILanguageServiceJs",
+        "scope": "source.lua"
     }
-    
 }

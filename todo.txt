@@ -4,17 +4,35 @@ Offers(table)
 Orders(table)
 Messages(table)
 Summary(table)
+Trades(table)
 
 context.tooltip
-core.ILanguageServiceIndicator
-core.ILanguageServiceJs
+
 core.ILanguageServiceLua
 core.ILanguageServiceNativeWin
 core.ILanguageServiceStrategy
 core.ILanguageServiceUnknownLanguage
 core.ILanguageServiceUnknownType
-db:put
 Draw(stage, context)
+Update()
+Update(period, mode)
+reference_points
+reference_points:removeReferencePoint
+reference_points:setReferencePoint
+resources
+resources:get
+storagedb
+storagedb.get_db
+strategy
+strategy.parameters
+strategy:description
+strategy:name
+strategy:setTag
+strategy:type
+valuemap
+valuemap:append
+window
+window.CurrentPane
 
 expat_lua
 expat_lua.ATTRIBUTE
@@ -312,8 +330,6 @@ mathex.studentDist
 mathex.sum
 mathex.weibullDist
 
-next (table [, index])
-
 output_stream
 output_stream:color
 output_stream:id
@@ -384,24 +400,6 @@ profile:profileType
 profile:requiredSource
 profile:type
 
-reference_points
-reference_points:removeReferencePoint
-reference_points:setReferencePoint
-resources
-resources:get
-
-select (index, ...)
-setmetatable (table, metatable)
-Signals and Strategies
-storagedb
-storagedb.get_db
-strategy
-strategy.parameters
-strategy:description
-strategy:name
-strategy:setTag
-strategy:type
-
 terminal
 terminal:alertEmail
 terminal:alertMessage
@@ -442,11 +440,7 @@ tool:description
 tool:icon
 tool:name
 tool:setTag
-tostring (e)
-Trades(table)
 Trading
-Trading Commands
-Trading Tables
 tradingtable
 tradingtable:enumerator
 tradingtable:find
@@ -458,17 +452,6 @@ tradingtable_enum:reset
 tradingtable_row
 tradingtable_row:cell
 tradingtable_row:refresh
-type (v)
-
-unpack (list [, i [, j]])
-Update()
-Update(period, mode)
-
-valuemap
-valuemap:append
-
-window
-window.CurrentPane
 
 xmldocument
 xmldocument.root

@@ -31,6 +31,9 @@
 * creationStrategy:setNeedParamsAfterPattern
 * creationStrategy:setPattern
 * db:get
+* db:put
+* core.ILanguageServiceIndicator
+* core.ILanguageServiceJs
 
 ## 0.7.0
 
