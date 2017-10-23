@@ -2416,5 +2416,240 @@
         "description": "The language of the profile (JavaScript).",
         "prefix": "core.ILanguageServiceJs",
         "scope": "source.lua"
+    },
+    "core.ILanguageServiceLua": {
+        "body": "core.ILanguageServiceLua",
+        "description": "The language of the profile (Lua).",
+        "prefix": "core.ILanguageServiceLua",
+        "scope": "source.lua"
+    },
+    "core.ILanguageServiceNativeWin": {
+        "body": "core.ILanguageServiceNativeWin",
+        "description": "The language of the profile (C++ for Windows).",
+        "prefix": "core.ILanguageServiceNativeWin",
+        "scope": "source.lua"
+    },
+    "core.ILanguageServiceStrategy": {
+        "body": "core.ILanguageServiceStrategy",
+        "description": "The type of the profile (Strategy).",
+        "prefix": "core.ILanguageServiceStrategy",
+        "scope": "source.lua"
+    },
+    "core.ILanguageServiceUnknownLanguage": {
+        "body": "core.ILanguageServiceUnknownLanguage",
+        "description": "The language of the profile (Undefined).",
+        "prefix": "core.ILanguageServiceUnknownLanguage",
+        "scope": "source.lua"
+    },
+    "core.ILanguageServiceUnknownType": {
+        "body": "core.ILanguageServiceUnknownType",
+        "description": "The type of the profile (Undefined).",
+        "prefix": "core.ILanguageServiceUnknownType",
+        "scope": "source.lua"
+    },
+    "Draw": {
+        "body": "function Draw(${1:stage}, ${2:context})",
+        "description": "The function is called every time when the chart that contains the tool is being repainted.",
+        "prefix": "function Draw(",
+        "scope": "source.lua"
+    },
+    "Update": {
+        "body": "function Update(${1:period}, ${2:mode})",
+        "description": "The indicator calculation.",
+        "prefix": "function Update(",
+        "scope": "source.lua"
+    },
+    "reference_points": {
+        "body": "reference_points",
+        "description": "The reference points manager.",
+        "prefix": "reference_points",
+        "scope": "source.lua"
+    },
+    ":removeReferencePoint": {
+        "body": ":removeReferencePoint(${1:id})",
+        "description": "Remove reference point.",
+        "prefix": ":removeReferencePoint(",
+        "scope": "source.lua"
+    },
+    ":setReferencePoint": {
+        "body": ":setReferencePoint(${1:id}, ${2:x}, ${3:y}, ${4:flags}, ${5:color}, ${6:thickness})",
+        "description": "Sets reference point.",
+        "prefix": ":setReferencePoint(",
+        "scope": "source.lua"
+    },
+    "resources": {
+        "body": "resources",
+        "description": "The content of the resource file.",
+        "prefix": "resources",
+        "scope": "source.lua"
+    },
+    "resources:get": {
+        "body": "resources:get(${1:id})",
+        "description": "Gets the resource string.",
+        "prefix": "resources:get(",
+        "scope": "source.lua"
+    },
+    "storagedb": {
+        "body": "storagedb",
+        "description": "The persistent storage manager.",
+        "prefix": "storagedb",
+        "scope": "source.lua"
+    },
+    "storagedb.get_db": {
+        "body": "storagedb.get_db(${1:name})",
+        "description": "Opens or creates the persistent storage.",
+        "prefix": "storagedb.get_db(",
+        "scope": "source.lua"
+    },
+    "strategy": {
+        "body": "strategy",
+        "description": "The profile of the strategy available at the moment of its initialization.",
+        "prefix": "strategy",
+        "scope": "source.lua"
+    },
+    "strategy.parameters": {
+        "body": "strategy.parameters",
+        "description": "Returns the instance of the profile parameter set.",
+        "prefix": "strategy.parameters",
+        "scope": "source.lua"
+    },
+    "strategy:description": {
+        "body": "strategy:description(${1:description})",
+        "description": "Sets the description.",
+        "prefix": "strategy:description(",
+        "scope": "source.lua"
+    },
+    "strategy:name": {
+        "body": "strategy:name(${1:name})",
+        "description": "Sets the name.",
+        "prefix": "strategy:name(",
+        "scope": "source.lua"
+    },
+    "strategy:setTag": {
+        "body": "strategy:setTag(${1:name}, ${2:value})",
+        "description": "Sets the tag value.",
+        "prefix": "strategy:setTag(",
+        "scope": "source.lua"
+    },
+    "strategy:type": {
+        "body": "strategy:type(${1:type})",
+        "description": "Sets the type of the strategy.",
+        "prefix": "strategy:type(",
+        "scope": "source.lua"
+    },
+    "valuemap": {
+        "body": "valuemap",
+        "description": "The value map.",
+        "prefix": "valuemap",
+        "scope": "source.lua"
+    },
+    "valuemap:append": {
+        "body": "valuemap:append({$1:valuemap})",
+        "description": "Adds the value map to the list of children valuemaps.",
+        "prefix": "valuemap:append(",
+        "scope": "source.lua"
+    },
+    "window": {
+        "body": "window",
+        "description": "The window information.",
+        "prefix": "window",
+        "scope": "source.lua"
+    },
+    "window.CurrentPane": {
+        "body": "window.CurrentPane",
+        "description": "Gets current pane.",
+        "prefix": "window.CurrentPane",
+        "scope": "source.lua"
+    },
+    "expat_lua": {
+        "body": "expat_lua",
+        "description": "",
+        "prefix": "expat_lua",
+        "scope": "source.lua"
+    },
+    "expat_lua.ATTRIBUTE": {
+        "body": "expat_lua.ATTRIBUTE",
+        "description": "The node type: attribute.",
+        "prefix": "expat_lua.ATTRIBUTE",
+        "scope": "source.lua"
+    },
+    "expat_lua.COMMENT": {
+        "body": "expat_lua.COMMENT",
+        "description": "The node type: comment.",
+        "prefix": "expat_lua.COMMENT",
+        "scope": "source.lua"
+    },
+    "expat_lua.ELEMENT": {
+        "body": "expat_lua.ELEMENT",
+        "description": "The node type: element.",
+        "prefix": "expat_lua.ELEMENT",
+        "scope": "source.lua"
+    },
+    "expat_lua.TEXT": {
+        "body": "expat_lua.TEXT",
+        "description": "The node type: text.",
+        "prefix": "expat_lua.TEXT",
+        "scope": "source.lua"
+    },
+    "expat_lua.parseDOM": {
+        "body": "expat_lua.parseDOM(${1:xml})",
+        "description": "Parses XML and builds DOM.",
+        "prefix": "expat_lua.parseDOM(",
+        "scope": "source.lua"
+    },
+    "expat_lua.parseSAX": {
+        "body": "expat_lua.parseSAX(${1:xml}, ${2:handler})",
+        "description": "Parses XML using SAX listener.",
+        "prefix": "expat_lua.parseSAX(",
+        "scope": "source.lua"
+    },
+    "expat_lua.utf8_to_ansi": {
+        "body": "expat_lua.utf8_to_ansi(${1:utf8})",
+        "description": "Converts UTF-8 string into the system default encoding.",
+        "prefix": "expat_lua.utf8_to_ansi(",
+        "scope": "source.lua"
+    },
+    "ExtAsyncOperationFinished": {
+        "body": "function ExtAsyncOperationFinished(${1:cookie}, ${2:success}, ${3:message})",
+        "description": "The function must be implemented in case helper.lua is used.",
+        "prefix": "function ExtAsyncOperationFinished(",
+        "scope": "source.lua"
+    },
+    "ExtSubscribe": {
+        "body": "function ExtSubscribe(${1:id}, ${2:instrument}, ${3:period}, ${4:bid}, ${5:kind})",
+        "description": "The function is designed to subscribe for bar histories in the strategies.",
+        "prefix": "function ExtSubscribe(",
+        "scope": "source.lua"
+    },
+    "ExtSubscribe1": {
+        "body": "function ExtSubscribe1(${1:id}, ${2:instrument}, ${3:period}, ${4:count}, ${5:bid}, ${6:kind})",
+        "description": "The function is designed to subscribe for bar histories in the strategies.",
+        "prefix": "function ExtSubscribe1(",
+        "scope": "source.lua"
+    },
+    "ExtUpdate": {
+        "body": "function ExtUpdate(${1:id}, ${2:source}, ${3:period})",
+        "description": "The function must be implemented in case helper.lua is used.",
+        "prefix": "function ExtUpdate(",
+        "scope": "source.lua"
+    },
+    "host:execute(\"calculatePositionOfDate\", ...)": {
+        "body": "host:execute(\"calculatePositionOfDate\", ${1:stream}, ${2:date})",
+        "description": "Searches for the specified date in the price stream.",
+        "prefix": "host:execute(\"calculatePositionOfDate\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"convertTime\", ...)": {
+        "body": "host:execute(\"convertTime\", ${1:tzFrom}, ${2:tzTo}, ${3:date})",
+        "description": "Converts the date and time between timezones.",
+        "prefix": "host:execute(\"convertTime\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"createFont\", ...)": {
+        "body": "host:execute(\"createFont\", ${1:facename}, ${2:size}, ${3:italic}, ${4:bold})",
+        "description": "Create a font for further usage for labels.",
+        "prefix": "host:execute(\"createFont\",",
+        "scope": "source.lua"
     }
+    
 }

@@ -1,5 +1,11 @@
 # Change log
 
+## 0.9.0
+
+### New in 0.9.0
+
+TODO
+
 ## 0.8.0
 
 ### New in 0.8.0
@@ -34,6 +40,45 @@
 * db:put
 * core.ILanguageServiceIndicator
 * core.ILanguageServiceJs
+* core.ILanguageServiceLua
+* core.ILanguageServiceNativeWin
+* core.ILanguageServiceStrategy
+* core.ILanguageServiceUnknownLanguage
+* core.ILanguageServiceUnknownType
+* Draw(stage, context)
+* Update()
+* reference_points
+* reference_points:removeReferencePoint
+* reference_points:setReferencePoint
+* resources
+* resources:get
+* storagedb
+* storagedb.get_db
+* strategy
+* strategy.parameters
+* strategy:description
+* strategy:name
+* strategy:setTag
+* strategy:type
+* valuemap
+* valuemap:append
+* window
+* window.CurrentPane
+* expat_lua
+* expat_lua.ATTRIBUTE
+* expat_lua.COMMENT
+* expat_lua.ELEMENT
+* expat_lua.TEXT
+* expat_lua.parseDOM
+* expat_lua.parseSAX
+* expat_lua.utf8_to_ansi
+* ExtAsyncOperationFinished function
+* ExtSubscribe function of helper.lua
+* ExtSubscribe1 function of helper.lua
+* ExtUpdate function
+* host:execute("calculatePositionOfDate", ...)
+* host:execute("convertTime", ...);
+* host:execute("createFont", ...);
 
 ## 0.7.0
 

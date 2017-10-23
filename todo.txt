@@ -7,48 +7,6 @@ Summary(table)
 Trades(table)
 
 context.tooltip
-
-core.ILanguageServiceLua
-core.ILanguageServiceNativeWin
-core.ILanguageServiceStrategy
-core.ILanguageServiceUnknownLanguage
-core.ILanguageServiceUnknownType
-Draw(stage, context)
-Update()
-Update(period, mode)
-reference_points
-reference_points:removeReferencePoint
-reference_points:setReferencePoint
-resources
-resources:get
-storagedb
-storagedb.get_db
-strategy
-strategy.parameters
-strategy:description
-strategy:name
-strategy:setTag
-strategy:type
-valuemap
-valuemap:append
-window
-window.CurrentPane
-
-expat_lua
-expat_lua.ATTRIBUTE
-expat_lua.COMMENT
-expat_lua.ELEMENT
-expat_lua.parseDOM
-expat_lua.parseSAX
-expat_lua.TEXT
-expat_lua.utf8_to_ansi
-ExtAsyncOperationFinished function
-ExtSubscribe function of helper.lua
-ExtSubscribe1 function of helper.lua
-ExtUpdate function
-host:execute("calculatePositionOfDate", ...)
-host:execute("convertTime", ...);
-host:execute("createFont", ...);
 host:execute("deleteFont", ...);
 host:execute("drawLabel", ...)
 host:execute("drawLabel1", ...)
