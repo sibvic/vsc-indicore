@@ -2650,6 +2650,174 @@
         "description": "Create a font for further usage for labels.",
         "prefix": "host:execute(\"createFont\",",
         "scope": "source.lua"
+    },
+    "host:execute(\"deleteFont\", ...)": {
+        "body": "host:execute(\"deleteFont\", ${1:font})",
+        "description": "Deletes a font.",
+        "prefix": "host:execute(\"deleteFont\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"drawLabel\", ...)": {
+        "body": "host:execute(\"drawLabel\", ${1:id}, ${2:date}, ${3:level}, ${4:text})",
+        "description": "Creates or replaces a label.",
+        "prefix": "host:execute(\"drawLabel\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"drawLabel1\", ...)": {
+        "body": "host:execute(\"drawLabel1\", ${1:id}, ${2:x}, ${3:xType}, ${4:y}, ${5:yType}, ${6:halign}, ${7:valign}, ${8:font}, ${9:color}, ${10:text})",
+        "description": "Creates or replaces a label (advanced version).",
+        "prefix": "host:execute(\"drawLabel1\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"drawLine\", ...)": {
+        "body": "host:execute(\"drawLine\", ${1:id}, ${2:fromDate}, ${3:fromLevel}, ${4:toDate}, ${5:toLevel}, ${6:color}${7:[, style?${8:[, width?${9:[, tooltip?]}]}]})",
+        "description": "Creates or replaces a label (advanced version).",
+        "prefix": "host:execute(\"drawLine\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"extendHistory\", ...)": {
+        "body": "host:execute(\"extendHistory\", ${1:cookie}, ${2:stream}, ${3:from}, ${4:to})",
+        "description": "Deprecated. Extends the previously loaded history in the specified date range.",
+        "prefix": "host:execute(\"extendHistory\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"getAskPrice\", ...)": {
+        "body": "host:execute(\"getAskPrice\")",
+        "description": "Returns the collection of the ask prices.",
+        "prefix": "host:execute(\"getAskPrice\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"getBidPrice\", ...)": {
+        "body": "host:execute(\"getBidPrice\")",
+        "description": "Returns the collection of the bid prices.",
+        "prefix": "host:execute(\"getBidPrice\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"getHistory\", ...)": {
+        "body": "host:execute(\"getHistory\", ${1:cookie}, ${2:instrument}, ${3:barSize}, ${4:from}, ${5:to}, ${6:bidOrAsk})",
+        "description": "Loads the history of the specified instrument.",
+        "prefix": "host:execute(\"getHistory\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"getHistory1\", ...)": {
+        "body": "host:execute(\"getHistory1\", ${1:cookie}, ${2:instrument}, ${3:barSize}, ${4:count}, ${5:to}, ${6:bidOrAsk})",
+        "description": "Loads the history of the specified instrument.",
+        "prefix": "host:execute(\"getHistory1\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"getIndicatorOwner\", ...)": {
+        "body": "host:execute(\"getIndicatorOwner\")",
+        "description": "Gets the owner of the indicator.",
+        "prefix": "host:execute(\"getIndicatorOwner\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"getProperty\", ...)": {
+        "body": "host:execute(\"getProperty\", ${1:name})",
+        "description": "Gets the user-define property.",
+        "prefix": "host:execute(\"getProperty\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"getSyncHistory\", ...)": {
+        "body": "host:execute(\"getSyncHistory\", ${1:instrument}, ${2:barSize}, ${3:bidOrAsk}, ${4:barsAtLeft}, ${5:commandIdSyncComplete}, ${6:commandIdSyncStarted})",
+        "description": "Loads the history of the specified instrument and keeps it synchronized with an indicator source.",
+        "prefix": "host:execute(\"getSyncHistory\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"getTradingDayOffset\", ...)": {
+        "body": "host:execute(\"getTradingDayOffset\")",
+        "description": "Returns an offset of the trading day start.",
+        "prefix": "host:execute(\"getTradingDayOffset\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"getTradingProperty\", ...)": {
+        "body": "host:execute(\"getTradingProperty\", ${1:name}, ${2:instrument}, ${3:account})",
+        "description": "Returns a trading property.",
+        "prefix": "host:execute(\"getTradingProperty\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"prompt\", ...)": {
+        "body": "host:execute(\"prompt\", ${1:cookie}, ${2:title}, ${3:label}, ${4:parameters})",
+        "description": "Shows a prompt box.",
+        "prefix": "host:execute(\"prompt\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"removeLabel\", ...)": {
+        "body": "host:execute(\"removeLabel\", ${1:id})",
+        "description": "Removes a previously created label.",
+        "prefix": "host:execute(\"removeLabel\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"removeLine\", ...)": {
+        "body": "host:execute(\"removeLine\", ${1:id})",
+        "description": "Removes a previously created line.",
+        "prefix": "host:execute(\"removeLine\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"setStatus\", ...)": {
+        "body": "host:execute(\"setStatus\", ${1:text})",
+        "description": "Displays additional information at right of indicators' label.",
+        "prefix": "host:execute(\"setStatus\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"setTimer\", ...)": {
+        "body": "host:execute(\"setTimer\", ${1:cookie}, ${2:timeout})",
+        "description": "Sets the timer.",
+        "prefix": "host:execute(\"setTimer\",",
+        "scope": "source.lua"
+    },
+    "host:execute(\"subscribeTradeEvents\", ...)": {
+        "body": "host:execute(\"subscribeTradeEvents\", ${1:cookie}, ${2:table})",
+        "description": "Subscribes a strategy or an indicator for trading events.",
+        "prefix": "host:execute(\"subscribeTradeEvents\",",
+        "scope": "source.lua"
+    },
+    "host:findTable": {
+        "body": "host:findTable(${1:tableId})",
+        "description": "Finds the trading table.",
+        "prefix": "host:findTable(",
+        "scope": "source.lua"
+    },
+    "host:version": {
+        "body": "host:version()",
+        "description": "Returns the application name and the version.",
+        "prefix": "host:version(",
+        "scope": "source.lua"
+    },
+    "http_loader.cancel": {
+        "body": "http_loader.cancel()",
+        "description": "Cancels currently executing load operation.",
+        "prefix": "http_loader.cancel(",
+        "scope": "source.lua"
+    },
+    "http_loader.load": {
+        "body": "http_loader.load(${1:host}, ${2:port}, ${3:object}, ${4:async})",
+        "description": "Loads an object using http interface",
+        "prefix": "http_loader.load(",
+        "scope": "source.lua"
+    },
+    "http_loader.loading": {
+        "body": "http_loader.loading()",
+        "description": "Checks whether the last load asynchronous operation is being executed.",
+        "prefix": "http_loader.loading(",
+        "scope": "source.lua"
+    },
+    "http_loader.response": {
+        "body": "http_loader.response()",
+        "description": "Returns the loaded object as a string.",
+        "prefix": "http_loader.response(",
+        "scope": "source.lua"
+    },
+    "http_loader.successful": {
+        "body": "http_loader.successful()",
+        "description": "Checks whether the load operation has been successfully finished.",
+        "prefix": "http_loader.successful(",
+        "scope": "source.lua"
+    },
+    "http_lua.createRequest": {
+        "body": "http_lua.createRequest()",
+        "description": "Creates a new request.",
+        "prefix": "http_lua.createRequest(",
+        "scope": "source.lua"
     }
     
 }

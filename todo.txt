@@ -7,34 +7,6 @@ Summary(table)
 Trades(table)
 
 context.tooltip
-host:execute("deleteFont", ...);
-host:execute("drawLabel", ...)
-host:execute("drawLabel1", ...)
-host:execute("drawLine", ...)
-host:execute("extendHistory", ...)
-host:execute("getAskPrice");
-host:execute("getBidPrice");
-host:execute("getHistory", ...)
-host:execute("getHistory1", ...)
-host:execute("getIndicatorOwner", ...)
-host:execute("getProperty", ...)
-host:execute("getSyncHistory", ...)
-host:execute("getTradingDayOffset")
-host:execute("getTradingProperty", ...);
-host:execute("prompt", ...);
-host:execute("removeLabel", ...)
-host:execute("removeLine", ...)
-host:execute("setStatus", ...);
-host:execute("setTimer", ...);
-host:execute("subscribeTradeEvents", ...);
-host:findTable
-host:version
-http_loader.cancel
-http_loader.load
-http_loader.loading
-http_loader.response
-http_loader.successful
-http_lua.createRequest
 http_lua.fromBase64
 http_lua.md2
 http_lua.toBase64

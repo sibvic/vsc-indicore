@@ -1,10 +1,42 @@
 # Change log
 
+## 0.10.0
+
+### New in 0.10.0
+
+TODO
+
 ## 0.9.0
 
 ### New in 0.9.0
 
-TODO
+* host:execute("deleteFont", ...);
+* host:execute("drawLabel", ...)
+* host:execute("drawLabel1", ...)
+* host:execute("drawLine", ...)
+* host:execute("extendHistory", ...)
+* host:execute("getAskPrice");
+* host:execute("getBidPrice");
+* host:execute("getHistory", ...)
+* host:execute("getIndicatorOwner", ...)
+* host:execute("getProperty", ...)
+* host:execute("getSyncHistory", ...)
+* host:execute("getTradingDayOffset")
+* host:execute("getTradingProperty", ...);
+* host:execute("prompt", ...);
+* host:execute("removeLabel", ...)
+* host:execute("removeLine", ...)
+* host:execute("setStatus", ...);
+* host:execute("setTimer", ...);
+* host:execute("subscribeTradeEvents", ...);
+* host:findTable
+* host:version
+* http_loader.cancel
+* http_loader.load
+* http_loader.loading
+* http_loader.response
+* http_loader.successful
+* http_lua.createRequest
 
 ## 0.8.0
 
