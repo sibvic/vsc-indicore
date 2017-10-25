@@ -2818,6 +2818,180 @@
         "description": "Creates a new request.",
         "prefix": "http_lua.createRequest(",
         "scope": "source.lua"
+    },
+    "http_lua.fromBase64": {
+        "body": "http_lua.fromBase64(${1:value})",
+        "description": "Parses Base64 encoded value and returns the string (possible the binary string).",
+        "prefix": "http_lua.fromBase64(",
+        "scope": "source.lua"
+    },
+    "http_lua.md2": {
+        "body": "http_lua.md2(${1:value})",
+        "description": "Calculates MD2 hash value for the string specified.",
+        "prefix": "http_lua.md2(",
+        "scope": "source.lua"
+    },
+    "http_lua.toBase64": {
+        "body": "http_lua.toBase64(${1:value})",
+        "description": "Converts a string into its base64 encoded value.",
+        "prefix": "http_lua.toBase64(",
+        "scope": "source.lua"
+    },
+    "http_lua.toHex": {
+        "body": "http_lua.toHex(${1:value})",
+        "description": "Converts a string into its hexadecimal presentation.",
+        "prefix": "http_lua.toHex(",
+        "scope": "source.lua"
+    },
+    "http_request:cancel": {
+        "body": "http_request:cancel()",
+        "description": "Cancels the currently executed request.",
+        "prefix": "http_request:cancel(",
+        "scope": "source.lua"
+    },
+    "http_request:httpStatus": {
+        "body": "http_request:httpStatus()",
+        "description": "Gets the status of the request execution.",
+        "prefix": "http_request:httpStatus(",
+        "scope": "source.lua"
+    },
+    "http_request:loading": {
+        "body": "http_request:loading()",
+        "description": "Checks whether the request is still being executed.",
+        "prefix": "http_request:loading(",
+        "scope": "source.lua"
+    },
+    "http_request:response": {
+        "body": "http_request:response()",
+        "description": "Gets the body of the response.",
+        "prefix": "http_request:response(",
+        "scope": "source.lua"
+    },
+    "http_request:responseHeader": {
+        "body": "http_request:responseHeader(${1:name}${2:[, index?]})",
+        "description": "Gets the response header value by the name.",
+        "prefix": "http_request:responseHeader(",
+        "scope": "source.lua"
+    },
+    "http_request:responseHeaders": {
+        "body": "http_request:responseHeaders()",
+        "description": "Gets all response headers.",
+        "prefix": "http_request:responseHeaders(",
+        "scope": "source.lua"
+    },
+    "http_request:setAgent": {
+        "body": "http_request:setAgent(${1:agentName})",
+        "description": "Set the name of the user agent.",
+        "prefix": "http_request:setAgent(",
+        "scope": "source.lua"
+    },
+    "http_request:setRequestHeader": {
+        "body": "http_request:setRequestHeader(${1:name}, ${2:value})",
+        "description": "Set the request header value.",
+        "prefix": "http_request:setRequestHeader(",
+        "scope": "source.lua"
+    },
+    "http_request:start": {
+        "body": "http_request:start(${1:url}${2:[, method?${3:[, data?]}]})",
+        "description": "Starts the data loading.",
+        "prefix": "http_request:start(",
+        "scope": "source.lua"
+    },
+    "http_request:success": {
+        "body": "http_request:success()",
+        "description": "Checks whether the load operation has been successfully finished.",
+        "prefix": "http_request:success(",
+        "scope": "source.lua"
+    },
+    "indicator:description": {
+        "body": "indicator:description(${1:description})",
+        "description": "Sets the description of the indicator.",
+        "prefix": "indicator:description(",
+        "scope": "source.lua"
+    },
+    "indicator:name": {
+        "body": "indicator:name(${1:name})",
+        "description": "Sets the name of the indicator.",
+        "prefix": "indicator:name(",
+        "scope": "source.lua"
+    },
+    "indicator:path": {
+        "body": "indicator:path()",
+        "description": "Gets the folder where the indicator file is located.",
+        "prefix": "indicator:path(",
+        "scope": "source.lua"
+    },
+    "indicator:requiredSource": {
+        "body": "indicator:requiredSource(${1:type})",
+        "description": "Sets the type of the required source of the indicator.",
+        "prefix": "indicator:requiredSource(",
+        "scope": "source.lua"
+    },
+    "indicator:setTag": {
+        "body": "indicator:setTag(${1:name}, ${2:value})",
+        "description": "Sets the tag value.",
+        "prefix": "indicator:setTag(",
+        "scope": "source.lua"
+    },
+    "indicator:type": {
+        "body": "indicator:type(${1:type})",
+        "description": "Sets the type of the indicator.",
+        "prefix": "indicator:type(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.barstream_getClose": {
+        "body": "indicore3_ffi.barstream_getClose(${1:stream}, ${2:index})",
+        "description": "The function returns the Close value of the specified period. The function is applicable only to a bar stream.",
+        "prefix": "indicore3_ffi.barstream_getClose(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.barstream_getHigh": {
+        "body": "indicore3_ffi.barstream_getHigh(${1:stream}, ${2:index})",
+        "description": "The function returns the High value of the specified period. The function is applicable only to a bar stream.",
+        "prefix": "indicore3_ffi.barstream_getHigh(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.barstream_getLow": {
+        "body": "indicore3_ffi.barstream_getLow(${1:stream}, ${2:index})",
+        "description": "The function returns the Low value of the specified period. The function is applicable only to a bar stream.",
+        "prefix": "indicore3_ffi.barstream_getLow(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.barstream_getOpen": {
+        "body": "indicore3_ffi.barstream_getOpen(${1:stream}, ${2:index})",
+        "description": "The function returns the Open value of the specified period. The function is applicable only to a bar stream.",
+        "prefix": "indicore3_ffi.barstream_getOpen(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_crosses": {
+        "body": "indicore3_ffi.core_crosses(${1:stream1}, ${2:stream2}, ${3:period1}, ${4:period2})",
+        "description": "The function check whether the stream crosses the other stream in any direction at the specified period.",
+        "prefix": "indicore3_ffi.core_crosses(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_crosses2": {
+        "body": "indicore3_ffi.core_crosses2(${1:stream1}, ${2:level}, ${3:period1})",
+        "description": "The function check whether the stream crosses the specified level in any direction at the specified period.",
+        "prefix": "indicore3_ffi.core_crosses2(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_crossesOver": {
+        "body": "indicore3_ffi.core_crossesOver(${1:stream1}, ${2:stream2}, ${3:period1}, ${4:period2})",
+        "description": "The function checks whether one stream crosses over the other stream at the specified period.",
+        "prefix": "indicore3_ffi.core_crossesOver(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_crossesOver2": {
+        "body": "indicore3_ffi.core_crossesOver2(${1:stream1}, ${2:level}, ${3:period1})",
+        "description": "The function checks whether one stream crosses over the specified level at the specified period.",
+        "prefix": "indicore3_ffi.core_crossesOver2(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_crossesOverOrTouch": {
+        "body": "indicore3_ffi.core_crossesOverOrTouch(${1:stream1}, ${2:stream2}, ${3:period1}, ${4:period2})",
+        "description": "The function checks whether the stream crosses over or touches the other stream at the specified position.",
+        "prefix": "indicore3_ffi.core_crossesOverOrTouch(",
+        "scope": "source.lua"
     }
     
 }

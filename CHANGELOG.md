@@ -1,10 +1,44 @@
 # Change log
 
+## 0.11.0
+
+### New in 0.11.0
+
+TODO
+
 ## 0.10.0
 
 ### New in 0.10.0
 
-TODO
+* http_lua.fromBase64
+* http_lua.md2
+* http_lua.toBase64
+* http_lua.toHex
+* http_request:cancel
+* http_request:httpStatus
+* http_request:loading
+* http_request:response
+* http_request:responseHeader
+* http_request:responseHeaders
+* http_request:setAgent
+* http_request:setRequestHeader
+* http_request:start
+* http_request:success
+* indicator:description
+* indicator:name
+* indicator:path
+* indicator:requiredSource
+* indicator:setTag
+* indicator:type
+* indicore3_ffi.barstream_getClose
+* indicore3_ffi.barstream_getHigh
+* indicore3_ffi.barstream_getLow
+* indicore3_ffi.barstream_getOpen
+* indicore3_ffi.core_crosses
+* indicore3_ffi.core_crosses2
+* indicore3_ffi.core_crossesOver
+* indicore3_ffi.core_crossesOver2
+* indicore3_ffi.core_crossesOverOrTouch
 
 ## 0.9.0
 
