@@ -2992,6 +2992,192 @@
         "description": "The function checks whether the stream crosses over or touches the other stream at the specified position.",
         "prefix": "indicore3_ffi.core_crossesOverOrTouch(",
         "scope": "source.lua"
+    },
+    "Init": {
+        "body": "function Init()",
+        "description": "The indicator profile initialization.",
+        "prefix": "function Init(",
+        "scope": "source.lua"
+    },
+    "instance.DATA": {
+        "body": "instance.DATA",
+        "description": "The property returns the output stream of the indicator. If the indicator produces more output streams than one, the property returns the first output stream.",
+        "prefix": "instance.DATA",
+        "scope": "source.lua"
+    },
+    "instance.parameters": {
+        "body": "instance.parameters",
+        "description": "The parameters of the strategy or signal instance.",
+        "prefix": "instance.parameters",
+        "scope": "source.lua"
+    },
+    "instance:getCandleOutput": {
+        "body": "instance:getCandleOutput(${1:index})",
+        "description": "The method returns the output candle group of the indicator as a bar stream by the group identifier.",
+        "prefix": "instance:getCandleOutput(",
+        "scope": "source.lua"
+    },
+    "instance:getCandleOutputsCount": {
+        "body": "instance:getCandleOutputsCount()",
+        "description": "The method returns the number of output candle groups of the indicator.",
+        "prefix": "instance:getCandleOutputsCount(",
+        "scope": "source.lua"
+    },
+    "instance:getStream": {
+        "body": "instance:getStream(${1:index})",
+        "description": "The method returns the output stream of the indicator by the stream index.",
+        "prefix": "instance:getStream(",
+        "scope": "source.lua"
+    },
+    "instance:getStreamCount": {
+        "body": "instance:getStreamCount()",
+        "description": "The method returns the number of output streams of the indicator.",
+        "prefix": "instance:getStreamCount(",
+        "scope": "source.lua"
+    },
+    "instance:getTextOutput": {
+        "body": "instance:getTextOutput(${1:index})",
+        "description": "The method returns the text output stream of the indicator by the stream index.",
+        "prefix": "instance:getTextOutput(",
+        "scope": "source.lua"
+    },
+    "instance:getTextOutputCount": {
+        "body": "instance:getTextOutputCount()",
+        "description": "The method returns the number of text output streams of the indicator.",
+        "prefix": "instance:getTextOutputCount(",
+        "scope": "source.lua"
+    },
+    "instance:name": {
+        "body": "instance:name()",
+        "description": "The method returns the name of the indicator instance.",
+        "prefix": "instance:name(",
+        "scope": "source.lua"
+    },
+    "instance:update": {
+        "body": "instance:update(${1:flag})",
+        "description": "The method forces the calculation of the nested indicator.",
+        "prefix": "instance:update(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_crossesOverOrTouch2": {
+        "body": "indicore3_ffi.core_crossesOverOrTouch2(${1:stream1}, ${2:level}, ${3:period1})",
+        "description": "The function checks whether the stream crosses over or touches the specified level at the specified position.",
+        "prefix": "indicore3_ffi.core_crossesOverOrTouch2(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_crossesUnder": {
+        "body": "indicore3_ffi.core_crossesUnder(${1:stream1}, ${2:stream2}, ${3:period1}, ${4:period2})",
+        "description": "The function checks whether the stream crosses under the other stream at the specified period.",
+        "prefix": "indicore3_ffi.core_crossesUnder(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_crossesUnder2": {
+        "body": "indicore3_ffi.core_crossesUnder2(${1:stream1}, ${2:level}, ${3:period1})",
+        "description": "The function checks whether the stream crosses under the specified level at the specified period.",
+        "prefix": "indicore3_ffi.core_crossesUnder2(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_crossesUnderOrTouch": {
+        "body": "indicore3_ffi.core_crossesUnderOrTouch(${1:stream1}, ${2:stream2}, ${3:period1}, ${4:period2})",
+        "description": "The function checks whether the stream crosses under or touches the other stream at the specified period.",
+        "prefix": "indicore3_ffi.core_crossesUnderOrTouch(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_crossesUnderOrTouch2": {
+        "body": "indicore3_ffi.core_crossesUnderOrTouch2(${1:stream1}, ${2:level}, ${3:period1})",
+        "description": "The function checks whether the stream crosses under or touches the specified level at the specified period.",
+        "prefix": "indicore3_ffi.core_crossesUnderOrTouch2(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_drawLine": {
+        "body": "indicore3_ffi.core_drawLine(${1:stream}, ${2:from}, ${3:to}, ${4:value1}, ${5:pos1}, ${6:value2}, ${7:pos2}, ${8:color})",
+        "description": "The function draws the line in the output stream.",
+        "prefix": "indicore3_ffi.core_drawLine(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_erase": {
+        "body": "indicore3_ffi.core_erase(${1:stream}, ${2:from}, ${3:to})",
+        "description": "The function sets no data to the specified range of periods in the output stream.",
+        "prefix": "indicore3_ffi.core_erase(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_findDate": {
+        "body": "indicore3_ffi.core_findDate(${1:stream}, ${2:date}, ${3:precise})",
+        "description": "The function searches the specified stream for the specified date. The function returns the index of the period to which the specified date belongs.",
+        "prefix": "indicore3_ffi.core_findDate(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_getCandle": {
+        "body": "indicore3_ffi.core_getCandle(${1:parsedCandle}, ${2:date}, ${3:dayOffset}, ${4:weekOffset}, ${5:pend})",
+        "description": "The function returns the start date of the period to which the specified date belongs.",
+        "prefix": "indicore3_ffi.core_getCandle(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_isNonTrading": {
+        "body": "indicore3_ffi.core_isNonTrading(${1:date}, ${2:dayOffset})",
+        "description": "The function checks whether the specified date and time belongs to the regular non-trading hours (weekend).",
+        "prefix": "indicore3_ffi.core_isNonTrading(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_avg": {
+        "body": "indicore3_ffi.core_math_avg(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the average value of the specified range of the stream values.",
+        "prefix": "indicore3_ffi.core_math_avg(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_cfft": {
+        "body": "indicore3_ffi.core_math_cfft(${1:array}, ${2:tn}, ${3:inverse})",
+        "description": "The function performs the fast complex fourier transform.",
+        "prefix": "indicore3_ffi.core_math_cfft(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_correlation": {
+        "body": "indicore3_ffi.core_math_correlation(${1:source1}, ${2:from1}, ${3:to1}, ${4:source2}, ${5:from2}, ${6:to2})",
+        "description": "The function calculates the correlation coefficient between two streams in the specified ranges.",
+        "prefix": "indicore3_ffi.core_math_correlation(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_covariance": {
+        "body": "indicore3_ffi.core_math_covariance(${1:source1}, ${2:from1}, ${3:to1}, ${4:source2}, ${5:from2}, ${6:to2})",
+        "description": "The function calculates the covariance between two streams in the specified ranges.",
+        "prefix": "indicore3_ffi.core_math_covariance(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_devsq": {
+        "body": "indicore3_ffi.core_math_devsq(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the sum of squares of deviations of data points from their sample mean of the specified range of the stream values.",
+        "prefix": "indicore3_ffi.core_math_devsq(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_fft": {
+        "body": "indicore3_ffi.core_math_fft(${1:array}, ${2:tn}, ${3:inverse})",
+        "description": "The function performs the fast real fourier transform.",
+        "prefix": "indicore3_ffi.core_math_fft(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_kurt": {
+        "body": "indicore3_ffi.core_math_kurt(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the kurtosis of a distribution of the specified range of the stream values.",
+        "prefix": "indicore3_ffi.core_math_kurt(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_lreg": {
+        "body": "indicore3_ffi.core_math_lreg(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the linear regression value of the specified range of the stream values.",
+        "prefix": "indicore3_ffi.core_math_lreg(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_lwma": {
+        "body": "indicore3_ffi.core_math_lwma(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the linear-weighted average value of the range of the stream values.",
+        "prefix": "indicore3_ffi.core_math_lwma(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_meandev": {
+        "body": "indicore3_ffi.core_math_meandev(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the mean deviation of the specified range of the stream values.",
+        "prefix": "indicore3_ffi.core_math_meandev(",
+        "scope": "source.lua"
     }
     
 }

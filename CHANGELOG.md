@@ -1,10 +1,46 @@
 # Change log
 
+## 0.12.0
+
+### New in 0.12.0
+
+* TODO
+
 ## 0.11.0
 
 ### New in 0.11.0
 
-TODO
+* Init()
+* instance.DATA
+* instance.parameters
+* instance:getCandleOutput
+* instance:getCandleOutputsCount
+* instance:getStream
+* instance:getStreamCount
+* instance:getTextOutput
+* instance:getTextOutputCount
+* instance:name
+* instance:update
+* indicore3_ffi.core_crossesOverOrTouch2
+* indicore3_ffi.core_crossesUnder
+* indicore3_ffi.core_crossesUnder2
+* indicore3_ffi.core_crossesUnderOrTouch
+* indicore3_ffi.core_crossesUnderOrTouch2
+* indicore3_ffi.core_drawLine
+* indicore3_ffi.core_erase
+* indicore3_ffi.core_findDate
+* indicore3_ffi.core_getCandle
+* indicore3_ffi.core_isNonTrading
+* indicore3_ffi.core_math_avg
+* indicore3_ffi.core_math_cfft
+* indicore3_ffi.core_math_correlation
+* indicore3_ffi.core_math_covariance
+* indicore3_ffi.core_math_devsq
+* indicore3_ffi.core_math_fft
+* indicore3_ffi.core_math_kurt
+* indicore3_ffi.core_math_lreg
+* indicore3_ffi.core_math_lwma
+* indicore3_ffi.core_math_meandev
 
 ## 0.10.0
 
