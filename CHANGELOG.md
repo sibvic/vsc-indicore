@@ -1,10 +1,48 @@
 # Change log
 
+## 0.13.0
+
+### New in 0.13.0
+
+* TODO
+
 ## 0.12.0
 
 ### New in 0.12.0
 
-* TODO
+* output_stream
+* output_stream:color
+* output_stream:id
+* output_stream:isBreak
+* output_stream:isVisible
+* output_stream:label
+* output_stream:level
+* output_stream:levelsCount
+* output_stream:lineStyle
+* output_stream:lineWidth
+* indicore3_ffi.core_math_median_s
+* indicore3_ffi.core_math_median_w
+* indicore3_ffi.core_math_regChannel
+* indicore3_ffi.core_math_skew
+* indicore3_ffi.core_math_slope_lreg
+* indicore3_ffi.core_math_stdev
+* indicore3_ffi.core_math_sum
+* indicore3_ffi.core_object_release
+* indicore3_ffi.core_parseCandle
+* indicore3_ffi.core_touches
+* indicore3_ffi.core_touches2
+* indicore3_ffi.host_getTradingTable
+* indicore3_ffi.indicatorinstance_update
+* indicore3_ffi.indicatorinstance_updateAll
+* indicore3_ffi.math2d_polygonToBezierShape
+* indicore3_ffi.math2d_polylineToBezierLine
+* indicore3_ffi.math2d_scaleShiftTransform
+* indicore3_ffi.odcontext_bottom
+* indicore3_ffi.odcontext_createFont
+* indicore3_ffi.odcontext_createHatchBrush
+* indicore3_ffi.odcontext_createPen
+* indicore3_ffi.odcontext_createSolidBrush
+* indicore3_ffi.odcontext_deleteObject
 
 ## 0.11.0
 

@@ -3178,6 +3178,198 @@
         "description": "The function calculates the mean deviation of the specified range of the stream values.",
         "prefix": "indicore3_ffi.core_math_meandev(",
         "scope": "source.lua"
+    },
+    ":color": {
+        "body": ":color(${1:index})",
+        "description": "The method returns the color of the stream graphical representation on the chart (line, bar, dot).",
+        "prefix": ":color(",
+        "scope": "source.lua"
+    },
+    ":id": {
+        "body": ":id()",
+        "description": "The method returns the identifier of the output stream.",
+        "prefix": ":id(",
+        "scope": "source.lua"
+    },
+    ":isBreak": {
+        "body": ":isBreak(${1:index})",
+        "description": "The method checks whether the specified period of the output stream is drawn on the chart (a break is set).",
+        "prefix": ":isBreak(",
+        "scope": "source.lua"
+    },
+    ":isVisible": {
+        "body": ":isVisible()",
+        "description": "The method checks whether the output stream is drawn on the chart.",
+        "prefix": ":isVisible(",
+        "scope": "source.lua"
+    },
+    ":label": {
+        "body": ":label()",
+        "description": "The method returns the short name of the output stream.",
+        "prefix": ":label(",
+        "scope": "source.lua"
+    },
+    ":level": {
+        "body": ":level(${1:index})",
+        "description": "The method returns the parameters of the level (horizontal line) that supplements the stream on the chart.",
+        "prefix": ":level(",
+        "scope": "source.lua"
+    },
+    ":levelsCount": {
+        "body": ":levelsCount(${1:index})",
+        "description": "The method returns the number of levels (horizontal lines) that supplement the stream on the chart.",
+        "prefix": ":levelsCount(",
+        "scope": "source.lua"
+    },
+    ":lineStyle": {
+        "body": ":lineStyle()",
+        "description": "The method returns the style of the line that represents the stream on the chart.",
+        "prefix": ":lineStyle(",
+        "scope": "source.lua"
+    },
+    ":lineWidth": {
+        "body": ":lineWidth()",
+        "description": "The method returns the width of the stream graphical representation on the chart (line, bar, dot).",
+        "prefix": ":lineWidth(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_median_s": {
+        "body": "indicore3_ffi.core_math_median_s(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the median value of the specified range of the stream values.",
+        "prefix": "indicore3_ffi.core_math_median_s(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_median_w": {
+        "body": "indicore3_ffi.core_math_median_w(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the median value of the specified range of the stream values by using the the Wirth's Kth-minimum function.",
+        "prefix": "indicore3_ffi.core_math_median_w(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_regChannel": {
+        "body": "indicore3_ffi.core_math_regChannel(${1:source}, ${2:from}, ${3:to}, ${4:a}, ${5:b}, ${6:dist}, ${7:raff})",
+        "description": "The function calculates the parameters of the regression channel.",
+        "prefix": "indicore3_ffi.core_math_regChannel(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_skew": {
+        "body": "indicore3_ffi.core_math_skew(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the skewness of a distribution of the specified range of the stream values.",
+        "prefix": "indicore3_ffi.core_math_skew(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_slope_lreg": {
+        "body": "indicore3_ffi.core_math_slope_lreg(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the linear regression slope of the specified range of the stream values.",
+        "prefix": "indicore3_ffi.core_math_slope_lreg(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_stdev": {
+        "body": "indicore3_ffi.core_math_stdev(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the standard deviation of the values of the range of the stream values.",
+        "prefix": "indicore3_ffi.core_math_stdev(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_math_sum": {
+        "body": "indicore3_ffi.core_math_sum(${1:source}, ${2:from}, ${3:to})",
+        "description": "The function calculates the sum of the specified range of the stream values. The function calculates the sum of the stream values specified as a range.",
+        "prefix": "indicore3_ffi.core_math_sum(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_object_release": {
+        "body": "indicore3_ffi.core_object_release(${1:object})",
+        "description": "The function releases the object.",
+        "prefix": "indicore3_ffi.core_object_release(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_parseCandle": {
+        "body": "indicore3_ffi.core_parseCandle(${1:bar})",
+        "description": "The function returns the identifier of the specified period time frame.",
+        "prefix": "indicore3_ffi.core_parseCandle(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_touches": {
+        "body": "indicore3_ffi.core_touches(${1:stream1}, ${2:stream2}, ${3:period1}, ${4:period2})",
+        "description": "The function checks whether the stream touches the other stream at the specified period.",
+        "prefix": "indicore3_ffi.core_touches(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.core_touches2": {
+        "body": "indicore3_ffi.core_touches2(${1:stream1}, ${2:level}, ${3:period1})",
+        "description": "The function checks whether the stream touches the specified level at the specified period.",
+        "prefix": "indicore3_ffi.core_touches2(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.host_getTradingTable": {
+        "body": "indicore3_ffi.host_getTradingTable(${1:host}, ${2:instance}, ${3:name})",
+        "description": "The function returns the specified trading table.",
+        "prefix": "indicore3_ffi.host_getTradingTable(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.indicatorinstance_update": {
+        "body": "indicore3_ffi.indicatorinstance_update(${1:instance}, ${2:refreshLast})",
+        "description": "The function forces the calculation of the nested indicator.",
+        "prefix": "indicore3_ffi.indicatorinstance_update(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.indicatorinstance_updateAll": {
+        "body": "indicore3_ffi.indicatorinstance_updateAll(${1:instance})",
+        "description": "The function forces the complete recalculation of the nested indicator.",
+        "prefix": "indicore3_ffi.indicatorinstance_updateAll(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.math2d_polygonToBezierShape": {
+        "body": "indicore3_ffi.math2d_polygonToBezierShape(${1:polygon}, ${2:smooth_factor})",
+        "description": "The function calculates a set of points for drawing the smooth bezier shape from the polygon.",
+        "prefix": "indicore3_ffi.math2d_polygonToBezierShape(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.math2d_polylineToBezierLine": {
+        "body": "indicore3_ffi.math2d_polylineToBezierLine(${1:polygon}, ${2:smooth_factor})",
+        "description": "The function calculates a set of points for drawing the smooth bezier line from the polyline.",
+        "prefix": "indicore3_ffi.math2d_polylineToBezierLine(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.math2d_scaleShiftTransform": {
+        "body": "indicore3_ffi.math2d_scaleShiftTransform(${1:points1}, ${2:org}, ${3:dst}, ${4:mindx}, ${5:mindy})",
+        "description": "The function performs the scale/shift transformations of the specified collection of points.",
+        "prefix": "indicore3_ffi.math2d_scaleShiftTransform(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_bottom": {
+        "body": "indicore3_ffi.odcontext_bottom(${1:context})",
+        "description": "The function returns the Y coordinate of the bottom-right corner of the chart area.",
+        "prefix": "indicore3_ffi.odcontext_bottom(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_createFont": {
+        "body": "indicore3_ffi.odcontext_createFont(${1:context}, ${2:objid}, ${3:face}, ${4:width}, ${5:height}, ${6:style})",
+        "description": "The function creates a GDI font.",
+        "prefix": "indicore3_ffi.odcontext_createFont(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_createHatchBrush": {
+        "body": "indicore3_ffi.odcontext_createHatchBrush(${1:context}, ${2:objid}, ${3:style}, ${4:color})",
+        "description": "The function creates a GDI pattern brush.",
+        "prefix": "indicore3_ffi.odcontext_createHatchBrush(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_createPen": {
+        "body": "indicore3_ffi.odcontext_createPen(${1:context}, ${2:objid}, ${3:style}, ${4:width}, ${5:color})",
+        "description": "The function creates a GDI pen.",
+        "prefix": "indicore3_ffi.odcontext_createPen(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_createSolidBrush": {
+        "body": "indicore3_ffi.odcontext_createSolidBrush(${1:context}, ${2:objid}, ${3:color})",
+        "description": "The function creates a GDI colored brush.",
+        "prefix": "indicore3_ffi.odcontext_createSolidBrush(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_deleteObject": {
+        "body": "indicore3_ffi.odcontext_deleteObject(${1:context}, ${2:objid})",
+        "description": "The function deletes a GDI object.",
+        "prefix": "indicore3_ffi.odcontext_deleteObject(",
+        "scope": "source.lua"
     }
     
 }
