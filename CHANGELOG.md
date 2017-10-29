@@ -1,10 +1,38 @@
 # Change log
 
+## 0.14.0
+
+### New in 0.14.0
+
+* TODO
+
 ## 0.13.0
 
 ### New in 0.13.0
 
-* TODO
+* output_stream:type
+* output_stream_impl:addLevel
+* output_stream_impl:getBookmark
+* output_stream_impl:set
+* output_stream_impl:setBookmark
+* output_stream_impl:setBreak
+* output_stream_impl:setColor
+* output_stream_impl:setPrecision
+* output_stream_impl:setStyle
+* output_stream_impl:setVisible
+* output_stream_impl:setWidth
+* indicore3_ffi.odcontext_drawArc
+* indicore3_ffi.odcontext_drawEllipse
+* indicore3_ffi.odcontext_drawGradientRectangle
+* indicore3_ffi.odcontext_drawIcon
+* indicore3_ffi.odcontext_drawLine
+* indicore3_ffi.odcontext_drawPicture
+* indicore3_ffi.odcontext_drawPictureTransparantBackground
+* indicore3_ffi.odcontext_drawPolygon
+* indicore3_ffi.odcontext_drawPolyline
+* indicore3_ffi.odcontext_drawRectangle
+* indicore3_ffi.odcontext_drawText
+* indicore3_ffi.odcontext_firstBar
 
 ## 0.12.0
 

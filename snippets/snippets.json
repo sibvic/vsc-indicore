@@ -3370,6 +3370,144 @@
         "description": "The function deletes a GDI object.",
         "prefix": "indicore3_ffi.odcontext_deleteObject(",
         "scope": "source.lua"
+    },
+    ":type": {
+        "body": ":type()",
+        "description": "The method returns the type (Line, Dot, Bar) of the output stream representation on the chart.",
+        "prefix": ":type(",
+        "scope": "source.lua"
+    },
+    ":addLevel": {
+        "body": ":addLevel(${1:level}${2:[, style?{3:[, width?${4:[, color?]}]}]})",
+        "description": "The method adds a level (horizontal line) to supplement the stream on the chart.",
+        "prefix": ":addLevel(",
+        "scope": "source.lua"
+    },
+    ":getBookmark": {
+        "body": ":getBookmark(${1:bookmark})",
+        "description": "The method returns the index of the previously bookmarked period.",
+        "prefix": ":getBookmark(",
+        "scope": "source.lua"
+    },
+    ":set": {
+        "body": ":set(${1:index}, ${2:value})",
+        "description": "The method sets the value to the specified period of the output stream.",
+        "prefix": ":set(",
+        "scope": "source.lua"
+    },
+    ":setBookmark": {
+        "body": ":setBookmark(${1:bookmark}, ${2:period})",
+        "description": "The method sets/removes a bookmark on the specified period in the output stream.",
+        "prefix": ":setBookmark(",
+        "scope": "source.lua"
+    },
+    ":setBreak": {
+        "body": ":setBreak(${1:index}, ${2:break})",
+        "description": "The method defines whether the specified period of the stream is drawn on a chart.",
+        "prefix": ":setBreak(",
+        "scope": "source.lua"
+    },
+    ":setColor": {
+        "body": ":setColor(${1:index}, ${2:color})",
+        "description": "The method sets the color of the stream graphical representation on the chart (line, bar, dot).",
+        "prefix": ":setColor(",
+        "scope": "source.lua"
+    },
+    ":setPrecision": {
+        "body": ":setPrecision(${1:precision})",
+        "description": "The method sets the precision (a number of digits after the decimal point) for the output stream values.",
+        "prefix": ":setPrecision(",
+        "scope": "source.lua"
+    },
+    ":setStyle": {
+        "body": ":setStyle(${1:style})",
+        "description": "The method sets the style of the line that represents the stream on the chart.",
+        "prefix": ":setStyle(",
+        "scope": "source.lua"
+    },
+    ":setVisible": {
+        "body": ":setVisible(${1:visible})",
+        "description": "The method defines whether the stream is drawn on a chart.",
+        "prefix": ":setVisible(",
+        "scope": "source.lua"
+    },
+    ":setWidth": {
+        "body": ":setWidth(${1:width})",
+        "description": "The method sets the width of a stream graphical representation of the chart.",
+        "prefix": ":setWidth(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_drawArc": {
+        "body": "indicore3_ffi.odcontext_drawArc(${1:context}, ${2:pen}, ${3:brush}, ${4:x1}, ${5:y1}, ${6:x2}, ${7:y2}, ${8:x3}, ${9:y3}, ${10:x4}, ${11:y4}, ${12:transparency})",
+        "description": "The function draws an arc.",
+        "prefix": "indicore3_ffi.odcontext_drawArc(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_drawEllipse": {
+        "body": "indicore3_ffi.odcontext_drawEllipse(${1:context}, ${2:pen}, ${3:brush}, ${4:x1}, ${5:y1}, ${6:x2}, ${7:y2}, ${8:transparency})",
+        "description": "The function draws an ellipse.",
+        "prefix": "indicore3_ffi.odcontext_drawEllipse(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_drawGradientRectangle": {
+        "body": "indicore3_ffi.odcontext_drawGradientRectangle(${1:context}, ${2:x1}, ${3:y1}, ${4:color1}, ${5:x2}, ${6:y2}, ${7:color2}, ${8:x3}, ${9:y3}, ${10:color3}, ${11:x4}, ${12:y4}, ${13:color4}, ${14:transparency})",
+        "description": "The function draws a gradient-filled rectangle.",
+        "prefix": "indicore3_ffi.odcontext_drawGradientRectangle(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_drawIcon": {
+        "body": "indicore3_ffi.odcontext_drawIcon(${1:context}, ${2:objid}, ${3:x}, ${4:y}, ${5:transparency})",
+        "description": "The function draws an icon.",
+        "prefix": "indicore3_ffi.odcontext_drawIcon(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_drawLine": {
+        "body": "indicore3_ffi.odcontext_drawLine(${1:context}, ${2:pen}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2}, ${7:transparency})",
+        "description": "The function draws a line.",
+        "prefix": "indicore3_ffi.odcontext_drawLine(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_drawPicture": {
+        "body": "indicore3_ffi.odcontext_drawPicture(${1:context}, ${2:objid}, ${3:x}, ${4:y}, ${5:transparency})",
+        "description": "The function draws a picture.",
+        "prefix": "indicore3_ffi.odcontext_drawPicture(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_drawPictureTransparantBackground": {
+        "body": "indicore3_ffi.odcontext_drawPictureTransparantBackground(${1:context}, ${2:objid}, ${3:x}, ${4:y}, ${5:transparency})",
+        "description": "The function draws a picture and use the specified color as a transparent background.",
+        "prefix": "indicore3_ffi.odcontext_drawPictureTransparantBackground(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_drawPolygon": {
+        "body": "indicore3_ffi.odcontext_drawPolygon(${1:context}, ${2:pen}, ${3:brush}, ${4:points}, ${5:transparency})",
+        "description": "The function draws a polygon.",
+        "prefix": "indicore3_ffi.odcontext_drawPolygon(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_drawPolyline": {
+        "body": "indicore3_ffi.odcontext_drawPolyline(${1:context}, ${2:pen}, ${3:points}, ${4:transparency})",
+        "description": "The function draws a polyline (a multi-segment zigzag line).",
+        "prefix": "indicore3_ffi.odcontext_drawPolyline(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_drawRectangle": {
+        "body": "indicore3_ffi.odcontext_drawRectangle(${1:context}, ${2:pen}, ${3:brush}, ${4:x1}, ${5:y1}, ${6:x2}, ${7:y2}, ${8:transparency})",
+        "description": "The function draws a rectangle.",
+        "prefix": "indicore3_ffi.odcontext_drawRectangle(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_drawText": {
+        "body": "indicore3_ffi.odcontext_drawText(${1:context}, ${2:font}, ${3:text}, ${4:color}, ${5:background}, ${6:x1}, ${7:y1}, ${8:x2}, ${9:y2}, ${10:style}, ${11:transparency})",
+        "description": "The function draws a text.",
+        "prefix": "indicore3_ffi.odcontext_drawText(",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_firstBar": {
+        "body": "indicore3_ffi.odcontext_firstBar(${1:context})",
+        "description": "The function returns the index of the first period of the indicator source stream that is visible on the chart.",
+        "prefix": "indicore3_ffi.odcontext_firstBar(",
+        "scope": "source.lua"
     }
     
 }
