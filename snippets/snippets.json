@@ -3508,6 +3508,180 @@
         "description": "The function returns the index of the first period of the indicator source stream that is visible on the chart.",
         "prefix": "indicore3_ffi.odcontext_firstBar(",
         "scope": "source.lua"
+    },
+    ".parameters": {
+        "body": ".parameters",
+        "description": "The parameters.",
+        "prefix": ".parameters",
+        "scope": "source.lua"
+    },
+    ".source": {
+        "body": ".source",
+        "description": "The property returns the source stream of the indicator.",
+        "prefix": ".source",
+        "scope": "source.lua"
+    },
+    ":addCopyStream": {
+        "body": ":addCopyStream(${1:id}, ${2:type}, ${3:fullName}, ${4:label}, ${5:color}, ${6:style}, ${7:width}, ${8:hoffset}, ${9:voffset}, ${10:voosetrel}, ${11:offstlevels}, ${12:stream})",
+        "description": "The method creates a copy of the specified output stream. The copy is shifted against the original stream horizontally and vertically by the specified levels.",
+        "prefix": ":addCopyStream",
+        "scope": "source.lua"
+    },
+    ":addInternalStream": {
+        "body": ":addInternalStream(${1:firstPeriod}, ${2:extent})",
+        "description": "The method adds an output stream for the indicator internal purposes.",
+        "prefix": ":addInternalStream",
+        "scope": "source.lua"
+    },
+    ":addStream": {
+        "body": ":addStream(${1:id}, ${2:type}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
+        "description": "The method adds an output stream to the indicator.",
+        "prefix": ":addStream",
+        "scope": "source.lua"
+    },
+    ":addViewBar": {
+        "body": ":addViewBar(${1:date})",
+        "description": "The method adds a period into the output streams of the the view indicator.",
+        "prefix": ":addViewBar",
+        "scope": "source.lua"
+    },
+    ":createCandleGroup": {
+        "body": ":createCandleGroup(${1:label}, ${2:id}, ${3:open}, ${4:high}, ${5:low}, ${6:close}${7:[, volume?${8:[, barSize?${9:[, isBar?]}]}]})",
+        "description": "The method groups four or five output streams into a candle.",
+        "prefix": ":createCandleGroup",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_indexOfBar": {
+        "body": "indicore3_ffi.odcontext_indexOfBar(${1:context}, ${2:x})",
+        "description": "The function returns the index of the period by the period x-coordinate on the chart.",
+        "prefix": "indicore3_ffi.odcontext_indexOfBar",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_lastBar": {
+        "body": "indicore3_ffi.odcontext_lastBar(${1:context})",
+        "description": "The function returns the index of the last period of the indicator source stream that is visible on the chart.",
+        "prefix": "indicore3_ffi.odcontext_lastBar",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_left": {
+        "body": "indicore3_ffi.odcontext_left(${1:context})",
+        "description": "The function returns the X coordinate of the top-left corner of the chart area.",
+        "prefix": "indicore3_ffi.odcontext_left",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_loadIcon": {
+        "body": "indicore3_ffi.odcontext_loadIcon(${1:context}, ${2:objid}, ${3:accessor}, ${4:filename})",
+        "description": "The function loads a GDI icon from the file.",
+        "prefix": "indicore3_ffi.odcontext_loadIcon",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_loadPicture": {
+        "body": "indicore3_ffi.odcontext_loadPicture(${1:context}, ${2:objid}, ${3:accessor}, ${4:filename})",
+        "description": "The function loads a GDI picture from the file.",
+        "prefix": "indicore3_ffi.odcontext_loadPicture",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_maxPrice": {
+        "body": "indicore3_ffi.odcontext_maxPrice(${1:context})",
+        "description": "The function returns a maximum value on the chart vertical axis which is visible on the chart.",
+        "prefix": "indicore3_ffi.odcontext_maxPrice",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_measureText": {
+        "body": "indicore3_ffi.odcontext_measureText(${1:context})",
+        "description": "The function returns a maximum value on the chart vertical axis which is visible on the chart.",
+        "prefix": "indicore3_ffi.odcontext_measureText",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_minPrice": {
+        "body": "indicore3_ffi.odcontext_minPrice(${1:context})",
+        "description": "The function returns a minimum value on the chart vertical axis which is visible on the chart.",
+        "prefix": "indicore3_ffi.odcontext_minPrice",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_nextBar": {
+        "body": "indicore3_ffi.odcontext_nextBar(${1:context}, ${2:nb})",
+        "description": "The function returns the coordinates of the next period in the enumeration of the visible periods.",
+        "prefix": "indicore3_ffi.odcontext_nextBar",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_pixelsToPoints": {
+        "body": "indicore3_ffi.odcontext_pixelsToPoints(${1:context}, ${2:pixels})",
+        "description": "The fucntion converts the pixels into the polygraphic points.",
+        "prefix": "indicore3_ffi.odcontext_pixelsToPoints",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_pointOfPrice": {
+        "body": "indicore3_ffi.odcontext_pointOfPrice(${1:context}, ${2:price})",
+        "description": "The function returns the y-coordinate of the value of the vertical axis on the chart.",
+        "prefix": "indicore3_ffi.odcontext_pointOfPrice",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_pointsToPixels": {
+        "body": "indicore3_ffi.odcontext_pointsToPixels(${1:context}, ${2:points})",
+        "description": "The function converts the polygraphic points into the pixels.",
+        "prefix": "indicore3_ffi.odcontext_pointsToPixels",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_positionOfBar": {
+        "body": "indicore3_ffi.odcontext_positionOfBar(${1:context}, ${2:index}. ${3:p})",
+        "description": "The function returns the coordinates of the period on the chart by the period index.",
+        "prefix": "indicore3_ffi.odcontext_positionOfBar",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_priceWidth": {
+        "body": "indicore3_ffi.odcontext_priceWidth(${1:context}, ${2:from}, ${3:to})",
+        "description": "The function returns the width of the price band in pixels.",
+        "prefix": "indicore3_ffi.odcontext_priceWidth",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_right": {
+        "body": "indicore3_ffi.odcontext_right(${1:context})",
+        "description": "The function returns the X coordinate of the bottom-right corner of the chart area.",
+        "prefix": "indicore3_ffi.odcontext_right",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_setPixel": {
+        "body": "indicore3_ffi.odcontext_setPixel(${1:context}, ${2:x}, ${3:y}, ${4:color}, ${5:transparency})",
+        "description": "The function draws a pixel on the chart.",
+        "prefix": "indicore3_ffi.odcontext_setPixel",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_startEnumeration": {
+        "body": "indicore3_ffi.odcontext_startEnumeration(${1:context})",
+        "description": "The function initializes the enumeration of the visible periods on the chart.",
+        "prefix": "indicore3_ffi.odcontext_startEnumeration",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_tooltip": {
+        "body": "indicore3_ffi.odcontext_tooltip(${1:context}, ${2:x1}, ${3:y1}, ${4:x2}, ${5:y2}, ${6:text})",
+        "description": "The function creates a tooltip to be shown when the mouse cursor stops over the specified area.",
+        "prefix": "indicore3_ffi.odcontext_tooltip",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odcontext_top": {
+        "body": "indicore3_ffi.odcontext_top(${1:context})",
+        "description": "The function returns the Y coordinate of the top-left corner of the chart area.",
+        "prefix": "indicore3_ffi.odcontext_top",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odpoints_addPoint": {
+        "body": "indicore3_ffi.odpoints_addPoint(${1:context})",
+        "description": "The function returns the Y coordinate of the top-left corner of the chart area.",
+        "prefix": "indicore3_ffi.odpoints_addPoint",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odpoints_addXY": {
+        "body": "indicore3_ffi.odpoints_addXY(${1:points}, ${2:index}, ${3:x}, ${4:y})",
+        "description": "The function adds a new point to the end of the collection.",
+        "prefix": "indicore3_ffi.odpoints_addXY",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odpoints_allocate": {
+        "body": "indicore3_ffi.odpoints_allocate(${1:points}, ${2:n})",
+        "description": "The function allocate memory for the specified number of points of the specified collection.",
+        "prefix": "indicore3_ffi.odpoints_allocate",
+        "scope": "source.lua"
     }
     
 }

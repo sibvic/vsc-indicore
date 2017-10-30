@@ -1,10 +1,45 @@
 # Change log
 
+## 0.15.0
+
+### New in 0.15.0
+
+* TODO
+
 ## 0.14.0
 
 ### New in 0.14.0
 
-* TODO
+* instance_impl.parameters
+* instance_impl.source
+* instance_impl:addCopyStream
+* instance_impl:addInternalStream
+* instance_impl:addStream
+* instance_impl:addViewBar
+* instance_impl:createCandleGroup
+* indicore3_ffi.odcontext_indexOfBar
+* indicore3_ffi.odcontext_lastBar
+* indicore3_ffi.odcontext_left
+* indicore3_ffi.odcontext_loadIcon
+* indicore3_ffi.odcontext_loadPicture
+* indicore3_ffi.odcontext_maxPrice
+* indicore3_ffi.odcontext_measureText
+* indicore3_ffi.odcontext_minPrice
+* indicore3_ffi.odcontext_nextBar
+* indicore3_ffi.odcontext_pixelsToPoints
+* indicore3_ffi.odcontext_pointOfPrice
+* indicore3_ffi.odcontext_pointsToPixels
+* indicore3_ffi.odcontext_positionOfBar
+* indicore3_ffi.odcontext_priceOfPoint
+* indicore3_ffi.odcontext_priceWidth
+* indicore3_ffi.odcontext_right
+* indicore3_ffi.odcontext_setPixel
+* indicore3_ffi.odcontext_startEnumeration
+* indicore3_ffi.odcontext_tooltip
+* indicore3_ffi.odcontext_top
+* indicore3_ffi.odpoints_addPoint
+* indicore3_ffi.odpoints_addXY
+* indicore3_ffi.odpoints_allocate
 
 ## 0.13.0
 
