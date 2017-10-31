@@ -1,10 +1,52 @@
 # Change log
 
+## 0.16.0
+
+### New in 0.16.0
+
+* TODO
+
 ## 0.15.0
 
 ### New in 0.15.0
 
-* TODO
+* instance_impl:createChannelGroup
+* instance_impl:createFromToBarGroup
+* instance_impl:createTextOutput
+* instance_impl:drawOnMainChart
+* instance_impl:initView
+* instance_impl:name
+* instance_impl:ownerDrawn
+* instance_impl:setLabelColor
+* instance_impl:updateFrom
+* indicore3_ffi.odpoints_create
+* indicore3_ffi.odpoints_get
+* indicore3_ffi.odpoints_setPoint
+* indicore3_ffi.odpoints_setXY
+* indicore3_ffi.odpoints_size
+* indicore3_ffi.outputstream_getBreak
+* indicore3_ffi.outputstream_getColor
+* indicore3_ffi.outputstream_setBreak
+* indicore3_ffi.outputstreamimpl_getBookmark
+* indicore3_ffi.outputstreamimpl_set
+* indicore3_ffi.outputstreamimpl_setBookmark
+* indicore3_ffi.outputstreamimpl_setColor
+* indicore3_ffi.parameterconstant_delete
+* indicore3_ffi.parameterconstant_get_bool
+* indicore3_ffi.parameterconstant_get_double
+* indicore3_ffi.parameterconstant_get_int
+* indicore3_ffi.parameterconstant_get_string
+* indicore3_ffi.parameterconstant_new_bool
+* indicore3_ffi.parameterconstant_new_double
+* indicore3_ffi.parameterconstant_new_int
+* indicore3_ffi.parameterconstant_new_string
+* indicore3_ffi.stream_displayPrecision
+* indicore3_ffi.stream_first
+* indicore3_ffi.stream_getPrice
+* indicore3_ffi.stream_getVolume
+* indicore3_ffi.stream_isAlive
+* indicore3_ffi.stream_isBar
+* indicore3_ffi.stream_isBid
 
 ## 0.14.0
 

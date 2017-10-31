@@ -3682,6 +3682,228 @@
         "description": "The function allocate memory for the specified number of points of the specified collection.",
         "prefix": "indicore3_ffi.odpoints_allocate",
         "scope": "source.lua"
+    },
+    ":createChannelGroup": {
+        "body": ":createChannelGroup(${1:label}, ${2:id}, ${3:first}, ${4:second}, ${5:color}, ${6:alpha}${7:[, mode?]})",
+        "description": "The method groups two output streams into a channel.",
+        "prefix": ":createChannelGroup",
+        "scope": "source.lua"
+    },
+    ":createFromToBarGroup": {
+        "body": ":createFromToBarGroup(${1:label}, ${2:id}, ${3:first}, ${4:second}, ${5:color})",
+        "description": "The method groups two output streams into a from/to bar.",
+        "prefix": ":createFromToBarGroup",
+        "scope": "source.lua"
+    },
+    ":createTextOutput": {
+        "body": ":createTextOutput(${1:label}, ${2:id}, ${3:font}, ${4:size}, ${5:halign}, ${6:valign}, ${7:color}, ${8:extent})",
+        "description": "The method adds an text output stream to the indicator.",
+        "prefix": ":createTextOutput",
+        "scope": "source.lua"
+    },
+    ":drawOnMainChart": {
+        "body": ":drawOnMainChart(${1:ownerDrawnFlag})",
+        "description": "The method notifies the host application that the indicator is an owner drawn indicator and it uses the main chart area.",
+        "prefix": ":drawOnMainChart",
+        "scope": "source.lua"
+    },
+    ":initView": {
+        "body": ":initView(${1:instrument}, ${2:precision}, ${3:pointSize}, ${4:isBid}, ${5:isAlive})",
+        "description": "The method initializes the output stream of a view indicator.",
+        "prefix": ":initView",
+        "scope": "source.lua"
+    },
+    ":name": {
+        "body": ":name()",
+        "description": "The method sets the name of the indicator instance.",
+        "prefix": ":name",
+        "scope": "source.lua"
+    },
+    ":ownerDrawn": {
+        "body": ":ownerDrawn(${1:ownerDrawnFlag})",
+        "description": "The method notifies the host application that the indicator is an owner drawn indicator.",
+        "prefix": ":ownerDrawn",
+        "scope": "source.lua"
+    },
+    ":setLabelColor": {
+        "body": ":setLabelColor(${1:color})",
+        "description": "The method sets the color of the indicator label.",
+        "prefix": ":setLabelColor",
+        "scope": "source.lua"
+    },
+    ":updateFrom": {
+        "body": ":updateFrom(${1:period})",
+        "description": "The method forces recalculation of the indicator output streams starting at the specified period.",
+        "prefix": ":updateFrom",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odpoints_create": {
+        "body": "indicore3_ffi.odpoints_create()",
+        "description": "The function creates an empty collection of points. The collection is used by the ffi functions to draw polylines and polygons.",
+        "prefix": "indicore3_ffi.odpoints_create",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odpoints_get": {
+        "body": "indicore3_ffi.odpoints_get(${1:points}, ${2:index}, ${3:lp})",
+        "description": "The function returns the coordinates of the specified point of the collection by the point index.",
+        "prefix": "indicore3_ffi.odpoints_get",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odpoints_setPoint": {
+        "body": "indicore3_ffi.odpoints_setPoint(${1:points}, ${2:index}, ${3:lp})",
+        "description": "The function sets the coordinates to the existing point of the collection. The coordinates are defined as a structure.",
+        "prefix": "indicore3_ffi.odpoints_setPoint",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odpoints_setXY": {
+        "body": "indicore3_ffi.odpoints_setXY(${1:points}, ${2:index}, ${3:x}, ${4:y})",
+        "description": "The function sets the coordinates to the existing point of the collection.",
+        "prefix": "indicore3_ffi.odpoints_setXY",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.odpoints_size": {
+        "body": "indicore3_ffi.odpoints_size(${1:points})",
+        "description": "The function returns the number of points in the collection.",
+        "prefix": "indicore3_ffi.odpoints_size",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.outputstream_getBreak": {
+        "body": "indicore3_ffi.outputstream_getBreak(${1:stream}, ${2:index})",
+        "description": "The function checks whether the specified period of the output stream is drawn on the chart (a break is set).",
+        "prefix": "indicore3_ffi.outputstream_getBreak",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.outputstream_getColor": {
+        "body": "indicore3_ffi.outputstream_getColor(${1:stream}, ${2:index})",
+        "description": "The function returns the color of the stream graphical representation on the chart (line, bar, dot).",
+        "prefix": "indicore3_ffi.outputstream_getColor",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.outputstream_setBreak": {
+        "body": "indicore3_ffi.outputstream_setBreak(${1:stream}, ${2:index}, ${3:lbreak})",
+        "description": "The function defines whether the specified period of the stream is drawn on the chart.",
+        "prefix": "indicore3_ffi.outputstream_setBreak",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.outputstreamimpl_getBookmark": {
+        "body": "indicore3_ffi.outputstreamimpl_getBookmark(${1:stream}, ${2:bk})",
+        "description": "The function returns the index of the previously bookmarked period.",
+        "prefix": "indicore3_ffi.outputstreamimpl_getBookmark",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.outputstreamimpl_set": {
+        "body": "indicore3_ffi.outputstreamimpl_set(${1:stream}, ${2:index}, ${3:value})",
+        "description": "The function sets the value to the specified period of the output stream.",
+        "prefix": "indicore3_ffi.outputstreamimpl_set",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.outputstreamimpl_setBookmark": {
+        "body": "indicore3_ffi.outputstreamimpl_setBookmark(${1:stream}, ${2:bk}, ${3:index})",
+        "description": "The function sets/removes a bookmark on the specified period in the output stream.",
+        "prefix": "indicore3_ffi.outputstreamimpl_setBookmark",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.outputstreamimpl_setColor": {
+        "body": "indicore3_ffi.outputstreamimpl_setColor(${1:stream}, ${2:index}, ${3:value})",
+        "description": "The function sets the color of the stream graphical representation on the chart at the specified period (line, bar, dot).",
+        "prefix": "indicore3_ffi.outputstreamimpl_setColor",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.parameterconstant_delete": {
+        "body": "indicore3_ffi.parameterconstant_delete(${1:v})",
+        "description": "The function deletes a value returned by the tradingtablerow_value() or created by the parameterconstant_new_int(), parameterconstant_new_double(), parameterconstant_new_bool(), parameterconstant_new_string() functions.",
+        "prefix": "indicore3_ffi.parameterconstant_delete",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.parameterconstant_get_bool": {
+        "body": "indicore3_ffi.parameterconstant_get_bool(${1:v})",
+        "description": "The function converts a boolean value returned by the tradingtablerow_value() function to the Lua boolean data type.",
+        "prefix": "indicore3_ffi.parameterconstant_get_bool",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.parameterconstant_get_double": {
+        "body": "indicore3_ffi.parameterconstant_get_double(${1:v})",
+        "description": "The function converts a double value returned by the tradingtablerow_value() function to the Lua number data type.",
+        "prefix": "indicore3_ffi.parameterconstant_get_double",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.parameterconstant_get_int": {
+        "body": "indicore3_ffi.parameterconstant_get_int(${1:v})",
+        "description": "The function converts an integer value returned by the tradingtablerow_value() function to the Lua number data type.",
+        "prefix": "indicore3_ffi.parameterconstant_get_int",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.parameterconstant_get_string": {
+        "body": "indicore3_ffi.parameterconstant_get_string(${1:v})",
+        "description": "The function converts a sting value returned by the tradingtablerow_value() function to the Lua string data type.",
+        "prefix": "indicore3_ffi.parameterconstant_get_string",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.parameterconstant_new_bool": {
+        "body": "indicore3_ffi.parameterconstant_new_bool(${1:value})",
+        "description": "The function creates the boolean variable that can be passed to the indicore3_ffi.tradingtable_findAll() and indicore3_ffi.tradingtable_findRow() functions as the key parameter value.",
+        "prefix": "indicore3_ffi.parameterconstant_new_bool",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.parameterconstant_new_double": {
+        "body": "indicore3_ffi.parameterconstant_new_double(${1:value})",
+        "description": "The function creates the double variable that can be passed to the indicore3_ffi.tradingtable_findAll() and indicore3_ffi.tradingtable_findRow() functions as the key parameter value.",
+        "prefix": "indicore3_ffi.parameterconstant_new_double",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.parameterconstant_new_int": {
+        "body": "indicore3_ffi.parameterconstant_new_int(${1:value})",
+        "description": "The function creates the integer value that can be passed to the indicore3_ffi.tradingtable_findAll() and indicore3_ffi.tradingtable_findRow() functions as the key parameter value.",
+        "prefix": "indicore3_ffi.parameterconstant_new_int",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.parameterconstant_new_string": {
+        "body": "indicore3_ffi.parameterconstant_new_string(${1:value})",
+        "description": "The function creates the string variable that can be passed to the indicore3_ffi.tradingtable_findAll() and indicore3_ffi.tradingtable_findRow() functions as the key parameter value.",
+        "prefix": "indicore3_ffi.parameterconstant_new_string",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_displayPrecision": {
+        "body": "indicore3_ffi.stream_displayPrecision(${1:stream})",
+        "description": "The function returns the precision (a number of digits after the decimal point) of the stream values for displaying on a chart.",
+        "prefix": "indicore3_ffi.stream_displayPrecision",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_first": {
+        "body": "indicore3_ffi.stream_first(${1:stream})",
+        "description": "The function returns the index of the first period that contains data in the stream.",
+        "prefix": "indicore3_ffi.stream_first",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_getPrice": {
+        "body": "indicore3_ffi.stream_getPrice(${1:stream}, ${2:index})",
+        "description": "The function returns the value of the specified period.",
+        "prefix": "indicore3_ffi.stream_getPrice",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_getVolume": {
+        "body": "indicore3_ffi.stream_getVolume(${1:stream}, ${2:index})",
+        "description": "The function returns the trading volume of the specified period of the bar stream.",
+        "prefix": "indicore3_ffi.stream_getVolume",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_isAlive": {
+        "body": "indicore3_ffi.stream_isAlive(${1:stream})",
+        "description": "The function checks whether the stream is subscribed for the updates.",
+        "prefix": "indicore3_ffi.stream_isAlive",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_isBar": {
+        "body": "indicore3_ffi.stream_isBar(${1:stream})",
+        "description": "The function checks whether the stream is a bar stream.",
+        "prefix": "indicore3_ffi.stream_isBar",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_isBid": {
+        "body": "indicore3_ffi.stream_isBid(${1:stream})",
+        "description": "The function checks which prices (bid or ask) the stream contains.",
+        "prefix": "indicore3_ffi.stream_isBid",
+        "scope": "source.lua"
     }
     
 }
