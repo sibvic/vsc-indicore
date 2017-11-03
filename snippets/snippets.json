@@ -3904,6 +3904,198 @@
         "description": "The function checks which prices (bid or ask) the stream contains.",
         "prefix": "indicore3_ffi.stream_isBid",
         "scope": "source.lua"
+    },
+    "ownerdraw_points": {
+        "body": "ownerdraw_points",
+        "description": "The collection of the points for drawing polylines and polygons.",
+        "prefix": "ownerdraw_points",
+        "scope": "source.lua"
+    },
+    "ownerdraw_points.new": {
+        "body": "ownerdraw_points.new()",
+        "description": "Creates a new instance of the table.",
+        "prefix": "ownerdraw_points.new",
+        "scope": "source.lua"
+    },
+    "ownerdraw_points:add": {
+        "body": "ownerdraw_points:add(${1:x}, ${2:y})",
+        "description": "Adds a new point to the collection.",
+        "prefix": "ownerdraw_points:add",
+        "scope": "source.lua"
+    },
+    "ownerdraw_points:get": {
+        "body": "ownerdraw_points:get(${1:index})",
+        "description": "Returns coordinates of the point by its index.",
+        "prefix": "ownerdraw_points:get",
+        "scope": "source.lua"
+    },
+    "ownerdraw_points:set": {
+        "body": "ownerdraw_points:set(${1:index}, ${2:x}, ${2:y})",
+        "description": "Changes the coordinates of an existing point of the collection.",
+        "prefix": "ownerdraw_points:set",
+        "scope": "source.lua"
+    },
+    "ownerdraw_points:size": {
+        "body": "ownerdraw_points:size()",
+        "description": "Returns the number of points in the collection.",
+        "prefix": "ownerdraw_points:size",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_name": {
+        "body": "indicore3_ffi.stream_name(${1:stream})",
+        "description": "Returns the number of points in the collection.",
+        "prefix": "indicore3_ffi.stream_name",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_pipSize": {
+        "body": "indicore3_ffi.stream_pipSize(${1:stream})",
+        "description": "The function returns the smallest possible change of the instrument price.",
+        "prefix": "indicore3_ffi.stream_pipSize",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_precision": {
+        "body": "indicore3_ffi.stream_precision(${1:stream})",
+        "description": "The function returns the precision (a number of digits after the decimal point) of the stream values.",
+        "prefix": "indicore3_ffi.stream_precision",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_size": {
+        "body": "indicore3_ffi.stream_size(${1:stream})",
+        "description": "The function returns the number of periods in the stream.",
+        "prefix": "indicore3_ffi.stream_size",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_supportsVolume": {
+        "body": "indicore3_ffi.stream_supportsVolume(${1:stream})",
+        "description": "The function checks whether the bar stream supports the trading volume.",
+        "prefix": "indicore3_ffi.stream_supportsVolume",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.stream_timeframe": {
+        "body": "indicore3_ffi.stream_timeframe(${1:stream})",
+        "description": "The function returns the time frame of the stream periods.",
+        "prefix": "indicore3_ffi.stream_timeframe",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.textoutput_getLevel": {
+        "body": "indicore3_ffi.textoutput_getLevel(${1:stream}, ${2:index})",
+        "description": "The function returns the numeric value of the level on the chart vertical scale at which the text label is placed.",
+        "prefix": "indicore3_ffi.textoutput_getLevel",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.textoutput_getText": {
+        "body": "indicore3_ffi.textoutput_getText(${1:stream}, ${2:index})",
+        "description": "The function returns the text of the label.",
+        "prefix": "indicore3_ffi.textoutput_getText",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.textoutput_size": {
+        "body": "indicore3_ffi.textoutput_size(${1:stream})",
+        "description": "The function returns the number of periods in the text output stream.",
+        "prefix": "indicore3_ffi.textoutput_size",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.textoutputimpl_set": {
+        "body": "indicore3_ffi.textoutputimpl_set(${1:stream}, ${2:index}, ${3:price}, ${4:text}, ${5:tt}, ${6:color})",
+        "description": "The function sets the text label at the specified level and the specified period.",
+        "prefix": "indicore3_ffi.textoutputimpl_set",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.textoutputimpl_setNoData": {
+        "body": "indicore3_ffi.textoutputimpl_setNoData(${1:stream}, ${2:index})",
+        "description": "The function removes the text label from the specified period.",
+        "prefix": "indicore3_ffi.textoutputimpl_setNoData",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.thisindicatorinstance_updateFrom": {
+        "body": "indicore3_ffi.thisindicatorinstance_updateFrom(${1:instance}, ${2:period})",
+        "description": "The function forces the calculation of the indicator output streams starting at the specified period.",
+        "prefix": "indicore3_ffi.thisindicatorinstance_updateFrom",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.thisindicatorinstance_view_addBar": {
+        "body": "indicore3_ffi.thisindicatorinstance_view_addBar(${1:instance}, ${2:date})",
+        "description": "The function adds a bar into the output streams of the the view indicator.",
+        "prefix": "indicore3_ffi.thisindicatorinstance_view_addBar",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.tradingtable_enumerator": {
+        "body": "indicore3_ffi.tradingtable_enumerator(${1:table})",
+        "description": "The function creates an enumerator for the specified trading table.",
+        "prefix": "indicore3_ffi.tradingtable_enumerator",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.tradingtable_findAll": {
+        "body": "indicore3_ffi.tradingtable_findAll(${1:table}, ${2:column}, ${3:key})",
+        "description": "The function searches the trading table for rows with the specifies column value.",
+        "prefix": "indicore3_ffi.tradingtable_findAll",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.tradingtable_findRow": {
+        "body": "indicore3_ffi.tradingtable_findRow(${1:table}, ${2:column}, ${3:key})",
+        "description": "The function searches the trading table for a row with the specified column value.",
+        "prefix": "indicore3_ffi.tradingtable_findRow",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.tradingtable_version": {
+        "body": "indicore3_ffi.tradingtable_version(${1:table})",
+        "description": "The function returns a version of the table content. The version changes each time when a row is added or deleted from the table.",
+        "prefix": "indicore3_ffi.tradingtable_version",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.tradingtableenumerator_next": {
+        "body": "indicore3_ffi.tradingtableenumerator_next(${1:enumerator})",
+        "description": "The function returns the next row of the table by using the specified enumerator.",
+        "prefix": "indicore3_ffi.tradingtableenumerator_next",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.tradingtableenumerator_reset": {
+        "body": "indicore3_ffi.tradingtableenumerator_reset(${1:enumerator})",
+        "description": "The function resets the specified enumerator.",
+        "prefix": "indicore3_ffi.tradingtableenumerator_reset",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.tradingtablerow_refresh": {
+        "body": "indicore3_ffi.tradingtablerow_refresh(${1:row})",
+        "description": "The function refreshes the data in the specified row.",
+        "prefix": "indicore3_ffi.tradingtablerow_refresh",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi.tradingtablerow_value": {
+        "body": "indicore3_ffi.tradingtablerow_value(${1:row})",
+        "description": "The function refreshes the data in the specified row.",
+        "prefix": "indicore3_ffi.tradingtablerow_value",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi:odcontext_drawBezierLine": {
+        "body": "indicore3_ffi:odcontext_drawBezierLine(${1:row})",
+        "description": "The function refreshes the data in the specified row.",
+        "prefix": "indicore3_ffi:odcontext_drawBezierLine",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi:odcontext_drawBezierShape": {
+        "body": "indicore3_ffi:odcontext_drawBezierShape(${1:context}, ${2:pen}, ${3:brush}, ${4:points}, ${5:transparency})",
+        "description": "The function draws and fills a cubic Bezier shape.",
+        "prefix": "indicore3_ffi:odcontext_drawBezierShape",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi:odcontext_resetClipRectangle": {
+        "body": "indicore3_ffi:odcontext_resetClipRectangle(${1:context})",
+        "description": "The function removes clip rectangle.",
+        "prefix": "indicore3_ffi:odcontext_resetClipRectangle",
+        "scope": "source.lua"
+    },
+    "indicore3_ffi:odcontext_setClipRectangle": {
+        "body": "indicore3_ffi:odcontext_setClipRectangle(${1:context}, ${2:left}, ${3:top}, ${4:right}, ${5:bottom})",
+        "description": "The function sets a clip rectangle.",
+        "prefix": "indicore3_ffi:odcontext_setClipRectangle",
+        "scope": "source.lua"
+    },
+    "interop": {
+        "body": "interop",
+        "description": "The Lua interoperation.",
+        "prefix": "interop",
+        "scope": "source.lua"
     }
     
 }
