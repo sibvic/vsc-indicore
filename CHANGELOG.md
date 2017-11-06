@@ -1,10 +1,45 @@
 # Change log
 
+## 0.18.0
+
+### New in 0.18.0
+
+* TODO
+
 ## 0.17.0
 
 ### New in 0.17.0
 
-* TODO
+* interop:instance
+* interop:isalive
+* interop:size
+* interop_instance:indicatorOutput
+* interop_instance:invoke
+* interop_instance:isIndicator
+* math2d
+* math2d.cartesianToPolar
+* math2d.isPointInRect
+* math2d.isPointOnLine
+* math2d.isPointOnSegment
+* math2d.lineEllipseIntersection
+* math2d.lineEquation
+* math2d.lineIntersection
+* math2d.lineRectangleIntersection
+* math2d.polarToCartesian
+* math2d.polygonToBezierShape
+* math2d.polylineToBezierLine
+* math2d.projectPointOnLine
+* math2d.scaleShiftTransform
+* math2d.segmentIntersection
+* math2d.segmentRectangleIntersection
+* mathex
+* mathex.avg
+* mathex.betaDist
+* mathex.betaDistInv
+* mathex.binomDist
+* mathex.cfft
+* mathex.chiDist
+* mathex.correl
 
 ## 0.16.0
 

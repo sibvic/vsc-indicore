@@ -4096,6 +4096,186 @@
         "description": "The Lua interoperation.",
         "prefix": "interop",
         "scope": "source.lua"
+    },
+    "interop:instance": {
+        "body": "interop:instance(${1:index})",
+        "description": "Gets an instance by the index.",
+        "prefix": "interop:instance",
+        "scope": "source.lua"
+    },
+    "interop:isalive": {
+        "body": "interop:isalive(${1:instance})",
+        "description": "Checks whether interop instance is alive.",
+        "prefix": "interop:isalive",
+        "scope": "source.lua"
+    },
+    "interop:size": {
+        "body": "interop:size()",
+        "description": "Gets number of instances currently executed.",
+        "prefix": "interop:size",
+        "scope": "source.lua"
+    },
+    ":indicatorOutput": {
+        "body": ":indicatorOutput()",
+        "description": "Gets the output streams of the indicator.",
+        "prefix": ":indicatorOutput",
+        "scope": "source.lua"
+    },
+    ":invoke": {
+        "body": ":invoke(${1:name}, ${2:...})",
+        "description": "Invokes a verb to the other instance.",
+        "prefix": ":invoke",
+        "scope": "source.lua"
+    },
+    ":isIndicator": {
+        "body": ":isIndicator()",
+        "description": "Checks whether the interop instance is an indicator.",
+        "prefix": ":isIndicator",
+        "scope": "source.lua"
+    },
+    "math2d": {
+        "body": "math2d",
+        "description": "Two-dimensional geometry calculations.",
+        "prefix": "math2d",
+        "scope": "source.lua"
+    },
+    "math2d.cartesianToPolar": {
+        "body": "math2d.cartesianToPolar(${1:x}, ${2:y})",
+        "description": "Converts Cartesian coordinates into polar coordinates.",
+        "prefix": "math2d.cartesianToPolar",
+        "scope": "source.lua"
+    },
+    "math2d.isPointInRect": {
+        "body": "math2d.isPointInRect(${1:x}, ${2:y}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2})",
+        "description": "Checks whether a point is inside the rectangle.",
+        "prefix": "math2d.isPointInRect",
+        "scope": "source.lua"
+    },
+    "math2d.isPointOnLine": {
+        "body": "math2d.isPointOnLine(${1:x}, ${2:y}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2})",
+        "description": "Checks whether a point belongs to a line.",
+        "prefix": "math2d.isPointOnLine",
+        "scope": "source.lua"
+    },
+    "math2d.isPointOnSegment": {
+        "body": "math2d.isPointOnSegment(${1:x}, ${2:y}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2})",
+        "description": "Checks whether a point belongs to a segment.",
+        "prefix": "math2d.isPointOnSegment",
+        "scope": "source.lua"
+    },
+    "math2d.lineEllipseIntersection": {
+        "body": "math2d.lineEllipseIntersection(${1:ex1}, ${2:ey1}, ${3:ex2}, ${4:ey2}, ${5:lx1}, ${6:ly1}, ${7:lx2}, ${8:ly2})",
+        "description": "Calculates the intersection points of a line and an ellipse.",
+        "prefix": "math2d.lineEllipseIntersection",
+        "scope": "source.lua"
+    },
+    "math2d.lineEquation": {
+        "body": "math2d.lineEquation(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2})",
+        "description": "Calculates coefficients of the line equation.",
+        "prefix": "math2d.lineEquation",
+        "scope": "source.lua"
+    },
+    "math2d.lineIntersection": {
+        "body": "math2d.lineIntersection(${1:l1x1}, ${2:l1y1}, ${3:l1x2}, ${4:l1y2}, ${5:l2x1}, ${6:l2y1}, ${7:l2x2}, ${8:l2y2})",
+        "description": "Calculates the intersection point of two lines.",
+        "prefix": "math2d.lineIntersection",
+        "scope": "source.lua"
+    },
+    "math2d.lineRectangleIntersection": {
+        "body": "math2d.lineRectangleIntersection(${1:rx1}, ${2:ry1}, ${3:rx2}, ${4:ry2}, ${5:lx1}, ${6:ly1}, ${7:lx2}, ${8:ly2})",
+        "description": "Calculates the intersection points of a line and a rectangle.",
+        "prefix": "math2d.lineRectangleIntersection",
+        "scope": "source.lua"
+    },
+    "math2d.polarToCartesian": {
+        "body": "math2d.polarToCartesian(${1:r}, ${2:p})",
+        "description": "Converts polar coordinates into Cartesian coordinates.",
+        "prefix": "math2d.polarToCartesian",
+        "scope": "source.lua"
+    },
+    "math2d.polygonToBezierShape": {
+        "body": "math2d.polygonToBezierShape(${1:points}, ${2:smooth})",
+        "description": "Calculates a point set for drawing a smooth bezier shape from polygon.",
+        "prefix": "math2d.polygonToBezierShape",
+        "scope": "source.lua"
+    },
+    "math2d.polylineToBezierLine": {
+        "body": "math2d.polylineToBezierLine(${1:points}, ${2:smooth})",
+        "description": "Calculate a point set for drawing a smooth bezier line from a polyline.",
+        "prefix": "math2d.polylineToBezierLine",
+        "scope": "source.lua"
+    },
+    "math2d.projectPointOnLine": {
+        "body": "math2d.projectPointOnLine(${1:x}, ${2:y}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2})",
+        "description": "Finds a projection of the point on the line.",
+        "prefix": "math2d.projectPointOnLine",
+        "scope": "source.lua"
+    },
+    "math2d.scaleShiftTransform": {
+        "body": "math2d.scaleShiftTransform(${1:points}, ${2:base_points}, ${3:base_points_projected}${4:[, xfilter?${5:[, yfilter?]]}})",
+        "description": "Performs scale/shift transformations of the set of points.",
+        "prefix": "math2d.scaleShiftTransform",
+        "scope": "source.lua"
+    },
+    "math2d.segmentIntersection": {
+        "body": "math2d.segmentIntersection(${1:l1x1}, ${2:l1y1}, ${3:l1x2}, ${4:l1y2}, ${5:l2x1}, ${6:l2y1}, ${7:l2x2}, ${8:l2y2})",
+        "description": "Calculates the intersection point of segments lines.",
+        "prefix": "math2d.segmentIntersection",
+        "scope": "source.lua"
+    },
+    "math2d.segmentRectangleIntersection": {
+        "body": "math2d.segmentRectangleIntersection(${1:rx1}, ${2:ry1}, ${3:rx2}, ${4:ry2}, ${5:lx1}, ${6:ly1}, ${7:lx2}, ${8:ly2})",
+        "description": "Calculates the intersection points of a segment and a rectangle.",
+        "prefix": "math2d.segmentRectangleIntersection",
+        "scope": "source.lua"
+    },
+    "mathex": {
+        "body": "mathex",
+        "description": "The extended mathematical functions.",
+        "prefix": "mathex",
+        "scope": "source.lua"
+    },
+    "mathex.avg": {
+        "body": "mathex.avg(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the average value of the stream values in the specified range.",
+        "prefix": "mathex.avg",
+        "scope": "source.lua"
+    },
+    "mathex.betaDist": {
+        "body": "mathex.betaDist(${1:x}, ${2:a}, ${3:b})",
+        "description": "Returns the beta distribution.",
+        "prefix": "mathex.betaDist",
+        "scope": "source.lua"
+    },
+    "mathex.betaDistInv": {
+        "body": "mathex.betaDistInv(${1:p}, ${2:a}, ${3:b})",
+        "description": "Returns the inverse beta distribution.",
+        "prefix": "mathex.betaDistInv",
+        "scope": "source.lua"
+    },
+    "mathex.binomDist": {
+        "body": "mathex.binomDist(${1:trials}, ${2:succeeds}, ${3:p})",
+        "description": "Returns the individual term binomial distribution probability.",
+        "prefix": "mathex.binomDist",
+        "scope": "source.lua"
+    },
+    "mathex.cfft": {
+        "body": "mathex.cfft(${1:array})",
+        "description": "Performs fast complex fourier transform.",
+        "prefix": "mathex.cfft",
+        "scope": "source.lua"
+    },
+    "mathex.chiDist": {
+        "body": "mathex.chiDist(${1:x}, ${2:n})",
+        "description": "Returns the one-tailed probability of the chi-squared distribution.",
+        "prefix": "mathex.chiDist",
+        "scope": "source.lua"
+    },
+    "mathex.correl": {
+        "body": "mathex.correl(${1:first_stream}, ${2:second_stream}, ${3:first_from}, ${4:first_to}, ${5:second_from}, ${6:second_to})",
+        "description": "Calculates the correlation coefficient between two streams in the specified ranges",
+        "prefix": "mathex.correl",
+        "scope": "source.lua"
     }
     
 }
