@@ -4273,8 +4273,230 @@
     },
     "mathex.correl": {
         "body": "mathex.correl(${1:first_stream}, ${2:second_stream}, ${3:first_from}, ${4:first_to}, ${5:second_from}, ${6:second_to})",
-        "description": "Calculates the correlation coefficient between two streams in the specified ranges",
+        "description": "Calculates the correlation coefficient between two streams in the specified ranges.",
         "prefix": "mathex.correl",
+        "scope": "source.lua"
+    },
+    "pane": {
+        "body": "pane",
+        "description": "The pane information.",
+        "prefix": "pane",
+        "scope": "source.lua"
+    },
+    "pane.Data": {
+        "body": "pane.Data",
+        "description": "Gets the pane data.",
+        "prefix": "pane.Data",
+        "scope": "source.lua"
+    },
+    ":getStream": {
+        "body": ":getStream()",
+        "description": "The method returns stream of the specified index for pane.",
+        "prefix": ":getStream",
+        "scope": "source.lua"
+    },
+    ":getStreamCount": {
+        "body": ":getStreamCount()",
+        "description": "The method returns the number of stream in the pane.",
+        "prefix": ":getStreamCount",
+        "scope": "source.lua"
+    },
+    "mathex.covar": {
+        "body": "mathex.covar(${1:first_stream}, ${2:second_stream}, ${3:first_from}, ${4:first_to}, ${5:second_from}, ${6:second_to})",
+        "description": "Calculates the covariance between two streams in the specified ranges.",
+        "prefix": "mathex.covar",
+        "scope": "source.lua"
+    },
+    "mathex.devsq": {
+        "body": "mathex.devsq(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the sum of squares of deviations of data points from their sample mean of the stream values in the specified range.",
+        "prefix": "mathex.devsq",
+        "scope": "source.lua"
+    },
+    "mathex.expDist": {
+        "body": "mathex.expDist(${1:x}, ${2:lambda})",
+        "description": "Returns the exponential distribution.",
+        "prefix": "mathex.expDist",
+        "scope": "source.lua"
+    },
+    "mathex.fDist": {
+        "body": "mathex.fDist(${1:x}, ${2:n}, {3:m})",
+        "description": "Returns the F probability distribution.",
+        "prefix": "mathex.fDist",
+        "scope": "source.lua"
+    },
+    "mathex.fDistInv": {
+        "body": "mathex.fDistInv(${1:x}, ${2:n}, {3:m})",
+        "description": "Returns the inverse F probability distribution.",
+        "prefix": "mathex.fDistInv",
+        "scope": "source.lua"
+    },
+    "mathex.fft": {
+        "body": "mathex.fft(${1:array})",
+        "description": "Performs fast real fourier transform.",
+        "prefix": "mathex.fft",
+        "scope": "source.lua"
+    },
+    "mathex.gammaDist": {
+        "body": "mathex.gammaDist(${1:x}, ${2:a}, ${3:scale})",
+        "description": "Returns the gamma distribution.",
+        "prefix": "mathex.gammaDist",
+        "scope": "source.lua"
+    },
+    "mathex.gammaln": {
+        "body": "mathex.gammaln(${1:x})",
+        "description": "Returns the natural logarithm of the gamma function.",
+        "prefix": "mathex.gammaln",
+        "scope": "source.lua"
+    },
+    "mathex.geomean": {
+        "body": "mathex.geomean(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the geometric mean value of the stream values in the specified range.",
+        "prefix": "mathex.geomean",
+        "scope": "source.lua"
+    },
+    "mathex.icfft": {
+        "body": "mathex.icfft(${1:array})",
+        "description": "Performs inverse fast complex fourier transform.",
+        "prefix": "mathex.icfft",
+        "scope": "source.lua"
+    },
+    "mathex.ifft": {
+        "body": "mathex.ifft(${1:array})",
+        "description": "Performs inverse fast real fourier transform.",
+        "prefix": "mathex.ifft",
+        "scope": "source.lua"
+    },
+    "mathex.kurt": {
+        "body": "mathex.kurt(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the kurtosis of a distribution of the stream values in the specified range.",
+        "prefix": "mathex.kurt",
+        "scope": "source.lua"
+    },
+    "mathex.lreg": {
+        "body": "mathex.lreg(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the linear regression value of the stream values in the specified range.",
+        "prefix": "mathex.lreg",
+        "scope": "source.lua"
+    },
+    "mathex.lregSlope": {
+        "body": "mathex.lregSlope(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the linear regression slope of the stream values in the specified range.",
+        "prefix": "mathex.lregSlope",
+        "scope": "source.lua"
+    },
+    "mathex.lwma": {
+        "body": "mathex.lwma(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the linear-weighted average value of the stream values in the specified range.",
+        "prefix": "mathex.lwma",
+        "scope": "source.lua"
+    },
+    "mathex.makeArray": {
+        "body": "mathex.makeArray(${1:size})",
+        "description": "Creates static 1-dimension array of numbers.",
+        "prefix": "mathex.makeArray",
+        "scope": "source.lua"
+    },
+    "mathex.max2": {
+        "body": "mathex.max2(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Finds two maximal values and their positions in the specified stream and in the specified range.",
+        "prefix": "mathex.max2",
+        "scope": "source.lua"
+    },
+    "mathex.meandev": {
+        "body": "mathex.meandev(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the mean deviation of the stream values in the specified range.",
+        "prefix": "mathex.meandev",
+        "scope": "source.lua"
+    },
+    "mathex.median_s": {
+        "body": "mathex.median_s(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the median value using sort function.",
+        "prefix": "mathex.median_s",
+        "scope": "source.lua"
+    },
+    "mathex.median_w": {
+        "body": "mathex.median_w(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the median value using Wirth's Kth-minimum function.",
+        "prefix": "mathex.median_w",
+        "scope": "source.lua"
+    },
+    "mathex.min2": {
+        "body": "mathex.min2(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Finds two minimal values and their positions in the specified stream and in the specified range.",
+        "prefix": "mathex.min2",
+        "scope": "source.lua"
+    },
+    "mathex.minmax": {
+        "body": "mathex.minmax(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Finds both the minimal and the maximal value in the range.",
+        "prefix": "mathex.minmax",
+        "scope": "source.lua"
+    },
+    "mathex.normalDist": {
+        "body": "mathex.normalDist(${1:x}, ${2:mean}, ${3:variation})",
+        "description": "Returns the normal distribution.",
+        "prefix": "mathex.normalDist",
+        "scope": "source.lua"
+    },
+    "mathex.poissonDist": {
+        "body": "mathex.poissonDist(${1:x}, ${2:mean})",
+        "description": "Returns the Poisson's distribution.",
+        "prefix": "mathex.poissonDist",
+        "scope": "source.lua"
+    },
+    "mathex.regChannel": {
+        "body": "mathex.regChannel(${1:x}, ${2:mean})",
+        "description": "Calculate the regression channel parameters.",
+        "prefix": "mathex.regChannel",
+        "scope": "source.lua"
+    },
+    "mathex.skew": {
+        "body": "mathex.skew(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the skewness of a distribution of the stream values in the specified range.",
+        "prefix": "mathex.skew",
+        "scope": "source.lua"
+    },
+    "mathex.stdev": {
+        "body": "mathex.stdev(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the standard deviation of the values of the stream values in the specified range.",
+        "prefix": "mathex.stdev",
+        "scope": "source.lua"
+    },
+    "mathex.studentDist": {
+        "body": "mathex.studentDist(${1:x}, ${2:n})",
+        "description": "Returns the Student's two-tailed t-distribution.",
+        "prefix": "mathex.studentDist",
+        "scope": "source.lua"
+    },
+    "mathex.sum": {
+        "body": "mathex.sum(${1:stream}, ${2:range}${3:[, to?]})",
+        "description": "Calculates the sum of the stream values in the specified range.",
+        "prefix": "mathex.sum",
+        "scope": "source.lua"
+    },
+    "mathex.weibullDist": {
+        "body": "mathex.weibullDist(${1:x}, ${2:a}, ${3:variation})",
+        "description": "Returns the Weibull's distribution.",
+        "prefix": "mathex.weibullDist",
+        "scope": "source.lua"
+    },
+    "parameters": {
+        "body": "parameters",
+        "description": "The indicator or strategy or tool parameters.",
+        "prefix": "parameters",
+        "scope": "source.lua"
+    },
+    "parameters.new": {
+        "body": "parameters.new()",
+        "description": "Creates a new instance of a parameters table.",
+        "prefix": "parameters.new",
+        "scope": "source.lua"
+    },
+    "parameters:addBoolean": {
+        "body": "parameters:addBoolean(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
+        "description": "Adds a new boolean parameter.",
+        "prefix": "parameters:addBoolean",
         "scope": "source.lua"
     }
     
