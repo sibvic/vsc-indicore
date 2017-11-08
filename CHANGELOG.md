@@ -1,10 +1,55 @@
 # Change log
 
+## 0.20.0
+
+### New in 0.20.0
+
+* TODO
+
 ## 0.19.0
 
 ### New in 0.19.0
 
-* TODO
+* parameters:addColor
+* parameters:addDate
+* parameters:addDouble
+* parameters:addFile
+* parameters:addInteger
+* parameters:addString
+* parameters:getBoolean
+* parameters:addGroup
+* parameters:addIntegerAlternative
+* parameters:addStringAlternative
+* parameters:getColor
+* parameters:getCustomParameters
+* parameters:getDouble
+* parameters:getFile
+* parameters:getInteger
+* parameters:getString
+* parameters:setBoolean
+* parameters:setColor
+* parameters:setDouble
+* parameters:setFlag
+* parameters:setInteger
+* parameters:setString
+* profile
+* profile:createInstance
+* profile:description
+* profile:id
+* profile:name
+* profile:parameters
+* profile:profileLanguage
+* profile:profileType
+* profile:requiredSource
+* profile:type
+* terminal
+* terminal:alertEmail
+* terminal:alertMessage
+* terminal:alertSound
+* terminal:execute
+* text_output:color
+* text_output:font
+* text_output:get
 
 ## 0.18.0
 

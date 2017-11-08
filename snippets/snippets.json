@@ -4498,6 +4498,239 @@
         "description": "Adds a new boolean parameter.",
         "prefix": "parameters:addBoolean",
         "scope": "source.lua"
+    },
+    "parameters:addColor": {
+        "body": "parameters:addColor(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
+        "description": "Adds a new color parameter.",
+        "prefix": "parameters:addColor",
+        "scope": "source.lua"
+    },
+    "parameters:addDate": {
+        "body": "parameters:addDate(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
+        "description": "Adds a date or date/time parameter.",
+        "prefix": "parameters:addDate",
+        "scope": "source.lua"
+    },
+    "parameters:addDouble": {
+        "body": "parameters:addDouble(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}})",
+        "description": "Adds a new double parameter.",
+        "prefix": "parameters:addDouble",
+        "scope": "source.lua"
+    },
+    "parameters:addFile": {
+        "body": "parameters:addFile(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
+        "description": "Adds a file parameter.",
+        "prefix": "parameters:addFile",
+        "scope": "source.lua"
+    },
+    "parameters:addInteger": {
+        "body": "parameters:addInteger(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}})",
+        "description": "Adds a new integer parameter.",
+        "prefix": "parameters:addInteger",
+        "scope": "source.lua"
+    },
+    "parameters:addString": {
+        "body": "parameters:addString(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
+        "description": "Adds a new string parameter.",
+        "prefix": "parameters:addString",
+        "scope": "source.lua"
+    },
+    "parameters:getBoolean": {
+        "body": "parameters:getBoolean(${1:id})",
+        "description": "Gets a boolean value of the indicator parameter.",
+        "prefix": "parameters:getBoolean",
+        "scope": "source.lua"
+    },
+    "parameters:addGroup": {
+        "body": "parameters:addGroup(${1:name})",
+        "description": "Starts the group of the parameters.",
+        "prefix": "parameters:addGroup",
+        "scope": "source.lua"
+    },
+    "parameters:addIntegerAlternative": {
+        "body": "parameters:addIntegerAlternative(${1:id}, ${2:name}, ${3:description}, ${4:value})",
+        "description": "Adds an alternative for the integer parameter.",
+        "prefix": "parameters:addIntegerAlternative",
+        "scope": "source.lua"
+    },
+    "parameters:addStringAlternative": {
+        "body": "parameters:addStringAlternative(${1:id}, ${2:name}, ${3:description}, ${4:value})",
+        "description": "Adds an alternative for the string parameter.",
+        "prefix": "parameters:addStringAlternative",
+        "scope": "source.lua"
+    },
+    "parameters:getColor": {
+        "body": "parameters:getColor(${1:id})",
+        "description": "Gets a color value of the indicator parameter.",
+        "prefix": "parameters:getColor",
+        "scope": "source.lua"
+    },
+    "parameters:getCustomParameters": {
+        "body": "parameters:getCustomParameters()",
+        "description": "Gets information about the parameters set associated with this parameter.",
+        "prefix": "parameters:getCustomParameters",
+        "scope": "source.lua"
+    },
+    "parameters:getDouble": {
+        "body": "parameters:getDouble(${1:id})",
+        "description": "Gets a real number value of the indicator parameter.",
+        "prefix": "parameters:getDouble",
+        "scope": "source.lua"
+    },
+    "parameters:getFile": {
+        "body": "parameters:getFile(${1:id})",
+        "description": "Gets a file name value of the indicator parameter.",
+        "prefix": "parameters:getFile",
+        "scope": "source.lua"
+    },
+    "parameters:getInteger": {
+        "body": "parameters:getInteger(${1:id})",
+        "description": "Gets an integer value of the indicator parameter.",
+        "prefix": "parameters:getInteger",
+        "scope": "source.lua"
+    },
+    "parameters:getString": {
+        "body": "parameters:getString(${1:id})",
+        "description": "Gets a string value of the indicator parameter.",
+        "prefix": "parameters:getString",
+        "scope": "source.lua"
+    },
+    "parameters:setBoolean": {
+        "body": "parameters:setBoolean(${1:id}, ${2:value})",
+        "description": "Sets a boolean value of the indicator parameter.",
+        "prefix": "parameters:setBoolean",
+        "scope": "source.lua"
+    },
+    "parameters:setColor": {
+        "body": "parameters:setColor(${1:id}, ${2:value})",
+        "description": "Sets a real number value of the indicator parameter.",
+        "prefix": "parameters:setColor",
+        "scope": "source.lua"
+    },
+    "parameters:setFlag": {
+        "body": "parameters:setFlag(${1:id}, ${2:flag})",
+        "description": "Sets the parameter's flag.",
+        "prefix": "parameters:setFlag",
+        "scope": "source.lua"
+    },
+    "parameters:setInteger": {
+        "body": "parameters:setInteger(${1:id}, ${2:value})",
+        "description": "Sets an integer value of the indicator parameter.",
+        "prefix": "parameters:setInteger",
+        "scope": "source.lua"
+    },
+    "parameters:setString": {
+        "body": "parameters:setString(${1:id}, ${2:value})",
+        "description": "Sets a string value of the indicator parameter.",
+        "prefix": "parameters:setString",
+        "scope": "source.lua"
+    },
+    "profile": {
+        "body": "profile",
+        "description": "The profile of other indicator.",
+        "prefix": "profile",
+        "scope": "source.lua"
+    },
+    "profile:createInstance": {
+        "body": "profile:createInstance(${1:source}, ${2:parameters})",
+        "description": "Creates a new instance of the indicator.",
+        "prefix": "profile:createInstance",
+        "scope": "source.lua"
+    },
+    "profile:description": {
+        "body": "profile:description()",
+        "description": "Gets the description of the indicator.",
+        "prefix": "profile:description",
+        "scope": "source.lua"
+    },
+    "profile:id": {
+        "body": "profile:id()",
+        "description": "Gets the unique identifier of the indicator.",
+        "prefix": "profile:id",
+        "scope": "source.lua"
+    },
+    "profile:name": {
+        "body": "profile:name()",
+        "description": "Gets the name of the indicator.",
+        "prefix": "profile:name",
+        "scope": "source.lua"
+    },
+    "profile:parameters": {
+        "body": "profile:parameters()",
+        "description": "Gets a set of the parameters.",
+        "prefix": "profile:parameters",
+        "scope": "source.lua"
+    },
+    "profile:profileLanguage": {
+        "body": "profile:profileLanguage()",
+        "description": "Gets the language of the profile (Lua, JavaScript, C++ for Windows).",
+        "prefix": "profile:profileLanguage",
+        "scope": "source.lua"
+    },
+    "profile:profileType": {
+        "body": "profile:profileType()",
+        "description": "Gets the type of the profile (Indicator, Strategy).",
+        "prefix": "profile:profileType",
+        "scope": "source.lua"
+    },
+    "profile:requiredSource": {
+        "body": "profile:requiredSource()",
+        "description": "Gets the type of the required source of the indicator.",
+        "prefix": "profile:requiredSource",
+        "scope": "source.lua"
+    },
+    "profile:type": {
+        "body": "profile:type()",
+        "description": "Gets the type of the indicator.",
+        "prefix": "profile:type",
+        "scope": "source.lua"
+    },
+    "terminal": {
+        "body": "terminal",
+        "description": "The table which is used to get access to the trading terminal functions.",
+        "prefix": "terminal",
+        "scope": "source.lua"
+    },
+    "terminal:alertEmail": {
+        "body": "terminal:alertEmail(${1:email}, ${2:subject}, {$3:text})",
+        "description": "Sends an e-mail.",
+        "prefix": "terminal:alertEmail",
+        "scope": "source.lua"
+    },
+    "terminal:alertMessage": {
+        "body": "terminal:alertMessage(${1:instrument}, ${2:price}, {$3:message}, ${4:time})",
+        "description": "Shows a alert (signal) message.",
+        "prefix": "terminal:alertMessage",
+        "scope": "source.lua"
+    },
+    "terminal:alertSound": {
+        "body": "terminal:alertSound(${1:file}, ${2:recurrent})",
+        "description": "Plays a sound.",
+        "prefix": "terminal:alertSound",
+        "scope": "source.lua"
+    },
+    "terminal:execute": {
+        "body": "terminal:execute(${1:cookie}, ${2:valuemap})",
+        "description": "Executes the command.",
+        "prefix": "terminal:execute",
+        "scope": "source.lua"
+    },
+    "color (text output)": {
+        "body": ":color()",
+        "description": "The method returns the color of the labels.",
+        "prefix": ":color",
+        "scope": "source.lua"
+    },
+    "font (text output)": {
+        "body": ":font()",
+        "description": "The method returns the name and the size of the font that is used to draw the labels.",
+        "prefix": ":font",
+        "scope": "source.lua"
+    },
+    "get (text output)": {
+        "body": ":get(${1:index})",
+        "description": "The method returns the text label that is set at the specified period.",
+        "prefix": ":get",
+        "scope": "source.lua"
     }
-    
 }
