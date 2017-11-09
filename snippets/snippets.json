@@ -4732,5 +4732,251 @@
         "description": "The method returns the text label that is set at the specified period.",
         "prefix": ":get",
         "scope": "source.lua"
+    },
+    "halign (text output)": {
+        "body": ":halign()",
+        "description": "The method returns the horizontal alignment of the text labels.",
+        "prefix": ":halign",
+        "scope": "source.lua"
+    },
+    "hasData (text output)": {
+        "body": ":hasData()",
+        "description": "The method checks whether the specified period of the stream has a text label.",
+        "prefix": ":hasData",
+        "scope": "source.lua"
+    },
+    "id (text output)": {
+        "body": ":id()",
+        "description": "The method returns the identifier of the text output stream.",
+        "prefix": ":id",
+        "scope": "source.lua"
+    },
+    "label (text output)": {
+        "body": ":label()",
+        "description": "The method returns the short name of the text output stream.",
+        "prefix": ":label",
+        "scope": "source.lua"
+    },
+    "size (text output)": {
+        "body": ":size()",
+        "description": "The method returns the number of periods in the text output stream.",
+        "prefix": ":size",
+        "scope": "source.lua"
+    },
+    "valign (text output)": {
+        "body": ":valign()",
+        "description": "The method returns the vertical alignment of the labels.",
+        "prefix": ":valign",
+        "scope": "source.lua"
+    },
+    "set (text output impl)": {
+        "body": ":set(${1:index}, ${2:level}, ${3:label}${4:[, tooltip?${5:[, color?]}]})",
+        "description": "The method sets the text label at the specified level and the specified period.",
+        "prefix": ":set",
+        "scope": "source.lua"
+    },
+    "setNoData (text output impl)": {
+        "body": ":setNoData(${1:index})",
+        "description": "The method removes the text label from the specified period.",
+        "prefix": ":setNoData",
+        "scope": "source.lua"
+    },
+    "barSize (tick stream)": {
+        "body": ":barSize()",
+        "description": "The method returns the time frame of the stream periods.",
+        "prefix": ":barSize",
+        "scope": "source.lua"
+    },
+    "date (tick stream)": {
+        "body": ":date()",
+        "description": "The method returns the date and time of the specified period.",
+        "prefix": ":date",
+        "scope": "source.lua"
+    },
+    "first (tick stream)": {
+        "body": ":first()",
+        "description": "The method returns the index of the first period that contains data in the stream.",
+        "prefix": ":first",
+        "scope": "source.lua"
+    },
+    "getDisplayPrecision (tick stream)": {
+        "body": ":getDisplayPrecision()",
+        "description": "The method returns the precision (a number of digits after the decimal point) of the stream values for displaying on a chart.",
+        "prefix": ":getDisplayPrecision",
+        "scope": "source.lua"
+    },
+    "getPrecision (tick stream)": {
+        "body": ":getPrecision()",
+        "description": "The method returns the precision (a number of digits after the decimal point) of the stream values.",
+        "prefix": ":getPrecision",
+        "scope": "source.lua"
+    },
+    "hasData (tick stream)": {
+        "body": ":hasData()",
+        "description": "The method checks whether the specified period of the stream has data.",
+        "prefix": ":hasData",
+        "scope": "source.lua"
+    },
+    "instrument (tick stream)": {
+        "body": ":instrument()",
+        "description": "The method returns the name of the instrument the prices of which the stream provides.",
+        "prefix": ":instrument",
+        "scope": "source.lua"
+    },
+    "isAlive (tick stream)": {
+        "body": ":isAlive()",
+        "description": "The method checks whether the stream is subscribed for the updates, i.e. the stream is \"alive\".",
+        "prefix": ":isAlive",
+        "scope": "source.lua"
+    },
+    "isBar (tick stream)": {
+        "body": ":isBar()",
+        "description": "The method checks whether the stream is a bar stream.",
+        "prefix": ":isBar",
+        "scope": "source.lua"
+    },
+    "isBid (tick stream)": {
+        "body": ":isBid()",
+        "description": "The method checks which prices (bid or ask) the stream provides.",
+        "prefix": ":isBid",
+        "scope": "source.lua"
+    },
+    "name (tick stream)": {
+        "body": ":name()",
+        "description": "The method returns the name of the stream.",
+        "prefix": ":name",
+        "scope": "source.lua"
+    },
+    "serial (tick stream)": {
+        "body": ":serial({$1:index})",
+        "description": "The method returns the unique identifier of the specified period.",
+        "prefix": ":serial",
+        "scope": "source.lua"
+    },
+    "size (tick stream)": {
+        "body": ":size({$1:index})",
+        "description": "The method returns the number of periods in the stream.",
+        "prefix": ":size",
+        "scope": "source.lua"
+    },
+    "tick (tick stream)": {
+        "body": ":tick({$1:index})",
+        "description": "The method returns the value of the specified period.",
+        "prefix": ":tick",
+        "scope": "source.lua"
+    },
+    "tool": {
+        "body": "tool",
+        "description": "The profile of the tool available at the moment of its initialization.",
+        "prefix": "tool",
+        "scope": "source.lua"
+    },
+    "tool.creationStrategy": {
+        "body": "tool.creationStrategy",
+        "description": "Returns the instance of the creation strategy table.",
+        "prefix": "tool.creationStrategy",
+        "scope": "source.lua"
+    },
+    "tool.parameters": {
+        "body": "tool.parameters",
+        "description": "Returns the instance of the profile parameter set.",
+        "prefix": "tool.parameters",
+        "scope": "source.lua"
+    },
+    "tool:description": {
+        "body": "tool:description(${1:description})",
+        "description": "Sets the description.",
+        "prefix": "tool:description",
+        "scope": "source.lua"
+    },
+    "tool:icon": {
+        "body": "tool:icon(${1:path})",
+        "description": "Associate a custom icon with the tool.",
+        "prefix": "tool:icon",
+        "scope": "source.lua"
+    },
+    "tool:setTag": {
+        "body": "tool:setTag(${1:name}, ${2:value})",
+        "description": "Sets the tag value.",
+        "prefix": "tool:setTag",
+        "scope": "source.lua"
+    },
+    "tool:name": {
+        "body": "tool:name(${1:name})",
+        "description": "Sets the name.",
+        "prefix": "tool:name",
+        "scope": "source.lua"
+    },
+    "enumerator (tradingtable)": {
+        "body": ":enumerator()",
+        "description": "Creates a new enumerator for the table.",
+        "prefix": ":enumerator",
+        "scope": "source.lua"
+    },
+    "find (tradingtable)": {
+        "body": ":find(${1:column}, ${2:key})",
+        "description": "Finds a row in the table.",
+        "prefix": ":find",
+        "scope": "source.lua"
+    },
+    "findAll (tradingtable)": {
+        "body": ":findAll(${1:column}, ${2:key})",
+        "description": "Finds rows in the table by the specified value.",
+        "prefix": ":findAll",
+        "scope": "source.lua"
+    },
+    "version (tradingtable)": {
+        "body": ":version()",
+        "description": "Returns the version of the table content.",
+        "prefix": ":version",
+        "scope": "source.lua"
+    },
+    "next (tradingtable enum)": {
+        "body": ":next()",
+        "description": "Returns the next row of the table.",
+        "prefix": ":next",
+        "scope": "source.lua"
+    },
+    "reset (tradingtable enum)": {
+        "body": ":reset()",
+        "description": "Resets the enumerator.",
+        "prefix": ":reset",
+        "scope": "source.lua"
+    },
+    "cell (tradingtable row)": {
+        "body": ":cell(${1:name})",
+        "description": "Gets a column's value of the row.",
+        "prefix": ":cell",
+        "scope": "source.lua"
+    },
+    "refresh (tradingtable row)": {
+        "body": ":refresh()",
+        "description": "Refreshes the data of the row.",
+        "prefix": ":refresh",
+        "scope": "source.lua"
+    },
+    "xmldocument": {
+        "body": "xmldocument",
+        "description": "The XML document in DOM model.",
+        "prefix": "xmldocument",
+        "scope": "source.lua"
+    },
+    "xmldocument.root": {
+        "body": "xmldocument.root",
+        "description": "Gets the root element of the document.",
+        "prefix": "xmldocument.root",
+        "scope": "source.lua"
+    },
+    "xmlelement": {
+        "body": "xmlelement",
+        "description": "The XML element in DOM model.",
+        "prefix": "xmlelement",
+        "scope": "source.lua"
+    },
+    "xmlelement:attributesCount": {
+        "body": "xmlelement:attributesCount()",
+        "description": "Gets number of attributes in the element.",
+        "prefix": "xmlelement:attributesCount",
+        "scope": "source.lua"
     }
 }

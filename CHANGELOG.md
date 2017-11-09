@@ -1,10 +1,56 @@
 # Change log
 
+## 0.21.0
+
+### New in 0.21.0
+
+* TODO
+
 ## 0.20.0
 
 ### New in 0.20.0
 
-* TODO
+* text_output:halign
+* text_output:hasData
+* text_output:id
+* text_output:label
+* text_output:size
+* text_output:valign
+* text_output_impl:set
+* text_output_impl:setNoData
+* tick_stream:barSize
+* tick_stream:date
+* tick_stream:first
+* tick_stream:getDisplayPrecision
+* tick_stream:getPrecision
+* tick_stream:hasData
+* tick_stream:instrument
+* tick_stream:isAlive
+* tick_stream:isBar
+* tick_stream:isBid
+* tick_stream:name
+* tick_stream:serial
+* tick_stream:size
+* tick_stream:tick
+* tool
+* tool.creationStrategy
+* tool.parameters
+* tool:description
+* tool:icon
+* tool:setTag
+* tool:name
+* tradingtable:enumerator
+* tradingtable:find
+* tradingtable:findAll
+* tradingtable:version
+* tradingtable_enum:next
+* tradingtable_enum:reset
+* tradingtable_row:cell
+* tradingtable_row:refresh
+* xmldocument
+* xmldocument.root
+* xmlelement
+* xmlelement:attributesCount
 
 ## 0.19.0
 
