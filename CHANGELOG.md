@@ -1,10 +1,33 @@
 # Change log
 
-## 0.21.0
+## 1.0.0
 
-### New in 0.21.0
+### New in 1.0.0
 
-* TODO
+* xmlelement:elementsCount
+* xmlelement:findAttribute
+* xmlelement:getAttribute
+* xmlelement:getElement
+* xmlelement:getNode
+* xmlelement:nodesCount
+* xmlelement:text
+* xmlhandler.endCDATA
+* xmlhandler.endNamespace
+* xmlhandler.processingInstruction
+* xmlhandler.startNamespace
+* xmlhandler:characters
+* xmlhandler:comment
+* xmlhandler:endElement
+* xmlhandler:startCDATA
+* xmlhandler:startElement
+* xmlnode.namespaceURI
+* xmlnode:fullName
+* xmlnode:hasNamespace
+* xmlnode:name
+* xmlnode:prefix
+* xmlnode:value
+* xmlnode:type
+* context.tooltip
 
 ## 0.20.0
 

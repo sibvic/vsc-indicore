@@ -4973,10 +4973,154 @@
         "prefix": "xmlelement",
         "scope": "source.lua"
     },
-    "xmlelement:attributesCount": {
-        "body": "xmlelement:attributesCount()",
+    "attributesCount (xmlelement)": {
+        "body": ":attributesCount()",
         "description": "Gets number of attributes in the element.",
-        "prefix": "xmlelement:attributesCount",
+        "prefix": ":attributesCount",
+        "scope": "source.lua"
+    },
+    "elementsCount (xmlelement)": {
+        "body": ":elementsCount()",
+        "description": "Gets number of elements in the element.",
+        "prefix": ":elementsCount",
+        "scope": "source.lua"
+    },
+    "findAttribute (xmlelement)": {
+        "body": ":findAttribute({1:name}{2:[, namespace?]})",
+        "description": "Gets attribute by the name.",
+        "prefix": ":findAttribute",
+        "scope": "source.lua"
+    },
+    "getAttribute (xmlelement)": {
+        "body": ":getAttribute({1:index})",
+        "description": "Gets attribute by the index.",
+        "prefix": ":getAttribute",
+        "scope": "source.lua"
+    },
+    "getElement (xmlelement)": {
+        "body": ":getElement({1:index})",
+        "description": "Gets children element by the index.",
+        "prefix": ":getElement",
+        "scope": "source.lua"
+    },
+    "getNode (xmlelement)": {
+        "body": ":getNode({1:index})",
+        "description": "Gets node by the index.",
+        "prefix": ":getNode",
+        "scope": "source.lua"
+    },
+    "nodesCount (xmlelement)": {
+        "body": ":nodesCount()",
+        "description": "Gets number of nodes in the element.",
+        "prefix": ":nodesCount",
+        "scope": "source.lua"
+    },
+    "text (xmlelement)": {
+        "body": ":text()",
+        "description": "Gets the text inside the element",
+        "prefix": ":text",
+        "scope": "source.lua"
+    },
+    "endCDATA (xmlhandler)": {
+        "body": ".endCDATA()",
+        "description": "Receives notification of the end of the CDATA section.",
+        "prefix": ".endCDATA",
+        "scope": "source.lua"
+    },
+    "endNamespace (xmlhandler)": {
+        "body": ".endNamespace()",
+        "description": "Receives notification of the end of the XML name space scope.",
+        "prefix": ".endNamespace",
+        "scope": "source.lua"
+    },
+    "processingInstruction (xmlhandler)": {
+        "body": ".processingInstruction(${1:target}, ${2:data})",
+        "description": "Receives notification of the XML processing instruction.",
+        "prefix": ".processingInstruction",
+        "scope": "source.lua"
+    },
+    "startNamespace (xmlhandler)": {
+        "body": ".startNamespace(${1:prefix}, ${2:uri})",
+        "description": "Receives notification of the start of the XML name space scope.",
+        "prefix": ".startNamespace",
+        "scope": "source.lua"
+    },
+    "characters (xmlhandler)": {
+        "body": ":characters(${1:data})",
+        "description": "Receives notification of character data inside an element.",
+        "prefix": ":characters",
+        "scope": "source.lua"
+    },
+    "comment (xmlhandler)": {
+        "body": ":comment(${1:data})",
+        "description": "Receives notification of XML comment.",
+        "prefix": ":comment",
+        "scope": "source.lua"
+    },
+    "endElement (xmlhandler)": {
+        "body": ":endElement(${1:name})",
+        "description": "Receives notification of the end of an element.",
+        "prefix": ":endElement",
+        "scope": "source.lua"
+    },
+    "startCDATA (xmlhandler)": {
+        "body": ":startCDATA()",
+        "description": "Receives notification of the begin of the CDATA section.",
+        "prefix": ":startCDATA",
+        "scope": "source.lua"
+    },
+    "startElement (xmlhandler)": {
+        "body": ":startElement(${1:name}, ${2:attributes})",
+        "description": "Receives notification of the start of an element.",
+        "prefix": ":startElement",
+        "scope": "source.lua"
+    },
+    "namespaceURI (xmlnode)": {
+        "body": ".namespaceURI()",
+        "description": "Gets node name space.",
+        "prefix": ".namespaceURI",
+        "scope": "source.lua"
+    },
+    "fullName (xmlnode)": {
+        "body": ":fullName()",
+        "description": "Gets full name of the node.",
+        "prefix": ":fullName",
+        "scope": "source.lua"
+    },
+    "hasNamespace (xmlnode)": {
+        "body": ":hasNamespace()",
+        "description": "Checks whether node has name space.",
+        "prefix": ":hasNamespace",
+        "scope": "source.lua"
+    },
+    "name (xmlnode)": {
+        "body": ":name()",
+        "description": "Gets node name.",
+        "prefix": ":name",
+        "scope": "source.lua"
+    },
+    "prefix (xmlnode)": {
+        "body": ":prefix()",
+        "description": "Gets node name space prefix.",
+        "prefix": ":prefix",
+        "scope": "source.lua"
+    },
+    "value (xmlnode)": {
+        "body": ":value()",
+        "description": "Gets the value of the node.",
+        "prefix": ":value",
+        "scope": "source.lua"
+    },
+    "type (xmlnode)": {
+        "body": ":type()",
+        "description": "Gets the type of the node.",
+        "prefix": ":type",
+        "scope": "source.lua"
+    },
+    "context.tooltip": {
+        "body": "context.tooltip(${1:left}, ${2:top}, ${3:right}, ${4:bottom}, ${5:text})",
+        "description": "Creates a new tooltip to be shown when the mouse cursor stops over the area specified.",
+        "prefix": "context.tooltip",
         "scope": "source.lua"
     }
 }
