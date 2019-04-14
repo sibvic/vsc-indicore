@@ -2610,7 +2610,7 @@
         "scope": "source.lua"
     },
     "ExtAsyncOperationFinished": {
-        "body": "function ExtAsyncOperationFinished(${1:cookie}, ${2:success}, ${3:message})",
+        "body": "function ExtAsyncOperationFinished(${1:cookie}, ${2:success}, ${3:message}, ${4:message1}, ${5:message2})",
         "description": "The function must be implemented in case helper.lua is used.",
         "prefix": "function ExtAsyncOperationFinished(",
         "scope": "source.lua"
