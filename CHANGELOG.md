@@ -1,5 +1,11 @@
 # Change log
 
+## 1.0.1
+
+### New in 1.0.1
+
+* Fixed ExtAsyncOperation
+
 ## 1.0.0
 
 ### New in 1.0.0
