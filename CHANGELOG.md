@@ -1,5 +1,11 @@
 # Change log
 
+## 1.0.2
+
+### New in 1.0.2
+
+* Fixed function AsyncOperationFinished
+
 ## 1.0.1
 
 ### New in 1.0.1

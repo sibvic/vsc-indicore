@@ -1260,7 +1260,7 @@
         "scope": "source.lua"
     },
     "AsyncOperationFinished": {
-        "body": "AsyncOperationFinished(${1:cookie}, ${2:successful}, ${3:message}, ${4:message1}, ${5:message2})",
+        "body": "function AsyncOperationFinished(${1:cookie}, ${2:successful}, ${3:message}, ${4:message1}, ${5:message2})",
         "description": "The notification that an asynchronous operation is finished.",
         "prefix": "function AsyncOperationFinished",
         "scope": "source.lua"
