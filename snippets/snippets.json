@@ -3549,8 +3549,8 @@
         "body": 
         [
             "${1:stream_name} = instance:addStream(${2:id}, ${3:type}, ${4:fullName}, ${5:label}, ${6:color}, ${7:firstPeriod}, ${8:extent});",
-            "{1:stream_name}:setWidth(${9:width});",
-            "{1:stream_name}:setStyle(${10:style});"
+            "${1:stream_name}:setWidth(${9:width});",
+            "${1:stream_name}:setStyle(${10:style});"
         ],
         "description": "The method adds an output stream to the indicator.",
         "prefix": "addStreamStyled",
