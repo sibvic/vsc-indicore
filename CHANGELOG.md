@@ -1,5 +1,12 @@
 # Change log
 
+## 1.1.0
+
+### New in 1.1.0
+
+* assignParam pattern (param = instance.parameters.param;)
+* addStreamStyled (addStream + setWidth + setStyle)
+
 ## 1.0.2
 
 ### New in 1.0.2

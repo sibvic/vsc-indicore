@@ -1326,79 +1326,79 @@
         "scope": "source.lua"
     },
     "ChangeParameters": {
-        "body": "ChangeParameters()",
+        "body": "function ChangeParameters()",
         "description": "The notification that the parameter set has been changed on the fly.",
         "prefix": "function ChangeParameters(",
         "scope": "source.lua"
     },
     "CheckParameters": {
-        "body": "CheckParameters(${1:parameters})",
+        "body": "function CheckParameters(${1:parameters})",
         "description": "The request to check the parameters before changing the parameters on the fly.",
         "prefix": "function CheckParameters(",
         "scope": "source.lua"
     },
     "Click": {
-        "body": "Click(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "body": "function Click(${1:x}, ${2:y}, ${3:price}, ${4:date})",
         "description": "Mouse Button Click Event.",
         "prefix": "function Click(",
         "scope": "source.lua"
     },
     "CreationStarted": {
-        "body": "CreationStarted()",
+        "body": "function CreationStarted()",
         "description": "The start of tool initialization.",
         "prefix": "function CreationStarted(",
         "scope": "source.lua"
     },
     "CreationFinished": {
-        "body": "CreationFinished()",
+        "body": "function CreationFinished()",
         "description": "The finish of tool initialization.",
         "prefix": "function CreationFinished(",
         "scope": "source.lua"
     },
     "Drag": {
-        "body": "Drag(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "body": "function Drag(${1:x}, ${2:y}, ${3:price}, ${4:date})",
         "description": "Mouse Drag Event.",
         "prefix": "function Drag(",
         "scope": "source.lua"
     },
     "DoubleClick": {
-        "body": "DoubleClick(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "body": "function DoubleClick(${1:x}, ${2:y}, ${3:price}, ${4:date})",
         "description": "Mouse Drag Event.",
         "prefix": "function DoubleClick(",
         "scope": "source.lua"
     },
     "DragEnd": {
-        "body": "DragEnd(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "body": "function DragEnd(${1:x}, ${2:y}, ${3:price}, ${4:date})",
         "description": "Mouse Button Double Click Event.",
         "prefix": "function DragEnd(",
         "scope": "source.lua"
     },
     "MoveStart": {
-        "body": "MoveStart()",
+        "body": "function MoveStart()",
         "description": "The start of shape of tool moving.",
         "prefix": "function MoveStart(",
         "scope": "source.lua"
     },
     "Move": {
-        "body": "Move(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "body": "function Move(${1:x}, ${2:y}, ${3:price}, ${4:date})",
         "description": "The moving of shape of tool.",
         "prefix": "function Move(",
         "scope": "source.lua"
     },
     "MoveFinished": {
-        "body": "MoveFinished()",
+        "body": "function MoveFinished()",
         "description": "The finish of shape of tool moving.",
         "prefix": "function MoveFinished(",
         "scope": "source.lua"
     },
     "MoveReferencePointStart": {
-        "body": "MoveReferencePointStart(${1:pointID})",
+        "body": "function MoveReferencePointStart(${1:pointID})",
         "description": "The start of reference point moving.",
         "prefix": "function MoveReferencePointStart(",
         "scope": "source.lua"
     },
     "MoveReferencePoint": {
-        "body": "MoveReferencePoint(${1:x}, ${2:y}, ${3:price}, ${4:date})",
+        "body": "function MoveReferencePoint(${1:x}, ${2:y}, ${3:price}, ${4:date})",
         "description": "The moving of shape of tool.",
         "prefix": "function MoveReferencePoint(",
         "scope": "source.lua"
@@ -1410,13 +1410,13 @@
         "scope": "source.lua"
     },
     "Prepare": {
-        "body": "Prepare(${1:nameOnly})",
+        "body": "function Prepare(${1:nameOnly})",
         "description": "The tool initialization.",
         "prefix": "function Prepare(",
         "scope": "source.lua"
     },
     "ReleaseInstance": {
-        "body": "ReleaseInstance()",
+        "body": "function ReleaseInstance()",
         "description": "The tool instance finalization.",
         "prefix": "function ReleaseInstance(",
         "scope": "source.lua"
@@ -3537,6 +3537,23 @@
         "body": ":addStream(${1:id}, ${2:type}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
         "description": "The method adds an output stream to the indicator.",
         "prefix": ":addStream",
+        "scope": "source.lua"
+    },
+    "assignParam": {
+        "body": "${1:param_name} = instance.parameters.${1:param_name};",
+        "description": "Assign a parameter.",
+        "prefix": "assignParam",
+        "scope": "source.lua"
+    },
+    "addStreamStyled": {
+        "body": 
+        [
+            "${1:stream_name} = instance:addStream(${2:id}, ${3:type}, ${4:fullName}, ${5:label}, ${6:color}, ${7:firstPeriod}, ${8:extent});",
+            "{1:stream_name}:setWidth(${9:width});",
+            "{1:stream_name}:setStyle(${10:style});"
+        ],
+        "description": "The method adds an output stream to the indicator.",
+        "prefix": "addStreamStyled",
         "scope": "source.lua"
     },
     ":addViewBar": {
