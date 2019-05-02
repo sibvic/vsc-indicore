@@ -3522,25 +3522,25 @@
         "scope": "source.lua"
     },
     ":addCopyStream": {
-        "body": ":addCopyStream(${1:id}, ${2:type}, ${3:fullName}, ${4:label}, ${5:color}, ${6:style}, ${7:width}, ${8:hoffset}, ${9:voffset}, ${10:voosetrel}, ${11:offstlevels}, ${12:stream})",
+        "body": "instance::addCopyStream(${1:id}, ${2:core.Dot|core.Line|core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:style}, ${7:width}, ${8:hoffset}, ${9:voffset}, ${10:voosetrel}, ${11:offstlevels}, ${12:stream})",
         "description": "The method creates a copy of the specified output stream. The copy is shifted against the original stream horizontally and vertically by the specified levels.",
-        "prefix": ":addCopyStream",
+        "prefix": "addCopyStream",
         "scope": "source.lua"
     },
-    ":addInternalStream": {
-        "body": ":addInternalStream(${1:firstPeriod}, ${2:extent})",
+    "addInternalStream": {
+        "body": "instance:addInternalStream(${1:firstPeriod}, ${2:extent})",
         "description": "The method adds an output stream for the indicator internal purposes.",
-        "prefix": ":addInternalStream",
+        "prefix": "addInternalStream",
         "scope": "source.lua"
     },
-    ":addStream": {
-        "body": ":addStream(${1:id}, ${2:type}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
+    "addStream": {
+        "body": "instance:addStream(${1:id}, ${2:core.Dot|core.Line|core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
         "description": "The method adds an output stream to the indicator.",
-        "prefix": ":addStream",
+        "prefix": "addStream",
         "scope": "source.lua"
     },
     "assignParam": {
-        "body": "${1:param_name} = instance.parameters.${1:param_name};",
+        "body": "${CLIPBOARD:param_name} = instance.parameters.${CLIPBOARD:param_name};",
         "description": "Assign a parameter.",
         "prefix": "assignParam",
         "scope": "source.lua"
@@ -3548,7 +3548,7 @@
     "addStreamStyled": {
         "body": 
         [
-            "${1:stream_name} = instance:addStream(${2:id}, ${3:type}, ${4:fullName}, ${5:label}, ${6:color}, ${7:firstPeriod}, ${8:extent});",
+            "${1:stream_name} = instance:addStream(${2:id}, ${3:core.Dot|core.Line|core.Bar}, ${4:fullName}, ${5:label}, ${6:color}, ${7:firstPeriod}, ${8:extent});",
             "${1:stream_name}:setWidth(${9:width});",
             "${1:stream_name}:setStyle(${10:style});"
         ],

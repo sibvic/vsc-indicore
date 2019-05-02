@@ -1,5 +1,12 @@
 # Change log
 
+## 1.1.2
+
+### New in 1.1.2
+
+* Options for addStream
+* Use of clipboard value for assignParam
+
 ## 1.1.1
 
 ### New in 1.1.1
