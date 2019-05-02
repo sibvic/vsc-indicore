@@ -4924,6 +4924,19 @@
         "prefix": "tool:name",
         "scope": "source.lua"
     },
+    "enumTable": {
+        "body": 
+        [ 
+            "local ${2:enum} = core.host:findTable(\"${1:offers|orders|trades|closed trades}\"):enumerator();",
+            "local ${3:row} = ${2:enum}:next();",
+            "while ${3:row} ~= nil do",
+            "    ${3:row} = ${2:enum}:next();",
+            "end" 
+        ],
+        "description": "Enumerates a table",
+        "prefix": "enumTable",
+        "scope": "source.lua"
+    },
     "enumerator (tradingtable)": {
         "body": ":enumerator()",
         "description": "Creates a new enumerator for the table.",

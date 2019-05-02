@@ -1,5 +1,11 @@
 # Change log
 
+## 1.1.3
+
+### New in 1.1.3
+
+* enumTable pattern
+
 ## 1.1.2
 
 ### New in 1.1.2
@@ -229,40 +235,3 @@
 * mathex.cfft
 * mathex.chiDist
 * mathex.correl
-
-## 0.16.0
-
-### New in 0.16.0
-
-* ownerdraw_points
-* ownerdraw_points.new
-* ownerdraw_points:add
-* ownerdraw_points:get
-* ownerdraw_points:set
-* ownerdraw_points:size
-* indicore3_ffi.stream_name
-* indicore3_ffi.stream_pipSize
-* indicore3_ffi.stream_precision
-* indicore3_ffi.stream_size
-* indicore3_ffi.stream_supportsVolume
-* indicore3_ffi.stream_timeframe
-* indicore3_ffi.textoutput_getLevel
-* indicore3_ffi.textoutput_getText
-* indicore3_ffi.textoutput_size
-* indicore3_ffi.textoutputimpl_set
-* indicore3_ffi.textoutputimpl_setNoData
-* indicore3_ffi.thisindicatorinstance_updateFrom
-* indicore3_ffi.thisindicatorinstance_view_addBar
-* indicore3_ffi.tradingtable_enumerator
-* indicore3_ffi.tradingtable_findAll
-* indicore3_ffi.tradingtable_findRow
-* indicore3_ffi.tradingtable_version
-* indicore3_ffi.tradingtableenumerator_next
-* indicore3_ffi.tradingtableenumerator_reset
-* indicore3_ffi.tradingtablerow_refresh
-* indicore3_ffi.tradingtablerow_value
-* indicore3_ffi:odcontext_drawBezierLine
-* indicore3_ffi:odcontext_drawBezierShape
-* indicore3_ffi:odcontext_resetClipRectangle
-* indicore3_ffi:odcontext_setClipRectangle
-* interop
