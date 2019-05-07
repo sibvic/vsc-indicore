@@ -4,7 +4,10 @@
 
 ### New in 1.1.3
 
-* enumTable pattern
+* enumTable snippet
+* createCustomIndicator snippet
+* assignParam will use a clipboard value
+* assignParamManual will ask a user to type a parameter name
 
 ## 1.1.2
 

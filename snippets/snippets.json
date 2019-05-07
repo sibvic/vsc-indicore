@@ -2279,6 +2279,19 @@
         "prefix": "core.formatDate(",
         "scope": "source.lua"
     },
+    "createCustomIndicator": {
+        "body": 
+        [
+            "local profile = core.indicators:findIndicator(${1:id});",
+            "assert(profile ~= nil, \"Please, download and install \" .. ${1:id} .. \".LUA indicator\");",
+            "local indicatorParams = profile:parameters();",
+            "--set parameters here indicatorParams:setBoolean(\"name\", val);",
+            "{4:indi} = indicators:create(${1:id}, ${2:source}, ${3:indicatorParams})"
+        ],
+        "description": "Creates an instance of the custom indicator.",
+        "prefix": "createCustomIndicator",
+        "scope": "source.lua"
+    },
     "indicators:create": {
         "body": "indicators:create(${1:id}, ${2:source}, ${3:parameters...})",
         "description": "Creates an instance of the indicator.",
@@ -3541,8 +3554,14 @@
     },
     "assignParam": {
         "body": "${CLIPBOARD:param_name} = instance.parameters.${CLIPBOARD:param_name};",
-        "description": "Assign a parameter.",
+        "description": "Assign a parameter (use clipboard).",
         "prefix": "assignParam",
+        "scope": "source.lua"
+    },
+    "assignParamManual": {
+        "body": "${1:param_name} = instance.parameters.${1:param_name};",
+        "description": "Assign a parameter.",
+        "prefix": "assignParamManual",
         "scope": "source.lua"
     },
     "addStreamStyled": {
