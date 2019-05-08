@@ -1409,10 +1409,20 @@
         "prefix": "function MoveReferencePointFinished(",
         "scope": "source.lua"
     },
-    "Prepare": {
-        "body": "function Prepare(${1:nameOnly})",
+    "indicatorPrepare": {
+        "body": 
+        [
+            "function Prepare(${1:nameOnly})",
+            "    source = instance.source;",
+            "    local name = string.format(\"%s(%s)\", profile:id(), source:name());",
+            "    instance:name(name);",
+            "    if nameOnly then",
+            "        return ;",
+            "    end;",
+            "end"
+        ],
         "description": "The tool initialization.",
-        "prefix": "function Prepare(",
+        "prefix": "indicatorPrepare",
         "scope": "source.lua"
     },
     "ReleaseInstance": {
@@ -2730,10 +2740,10 @@
         "prefix": "host:execute(\"getProperty\",",
         "scope": "source.lua"
     },
-    "host:execute(\"getSyncHistory\", ...)": {
-        "body": "host:execute(\"getSyncHistory\", ${1:instrument}, ${2:barSize}, ${3:bidOrAsk}, ${4:barsAtLeft}, ${5:commandIdSyncComplete}, ${6:commandIdSyncStarted})",
+    "getSyncHistory": {
+        "body": "core.host:execute(\"getSyncHistory\", ${1:instrument}, ${2:barSize}, ${3:bidOrAsk}, ${4:barsAtLeft}, ${5:commandIdSyncComplete}, ${6:commandIdSyncStarted})",
         "description": "Loads the history of the specified instrument and keeps it synchronized with an indicator source.",
-        "prefix": "host:execute(\"getSyncHistory\",",
+        "prefix": "getSyncHistory",
         "scope": "source.lua"
     },
     "host:execute(\"getTradingDayOffset\", ...)": {
@@ -3535,7 +3545,7 @@
         "scope": "source.lua"
     },
     ":addCopyStream": {
-        "body": "instance::addCopyStream(${1:id}, ${2:core.Dot|core.Line|core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:style}, ${7:width}, ${8:hoffset}, ${9:voffset}, ${10:voosetrel}, ${11:offstlevels}, ${12:stream})",
+        "body": "instance::addCopyStream(${1:id}, ${2|core.Dot,core.Line,core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:style}, ${7:width}, ${8:hoffset}, ${9:voffset}, ${10:voosetrel}, ${11:offstlevels}, ${12:stream})",
         "description": "The method creates a copy of the specified output stream. The copy is shifted against the original stream horizontally and vertically by the specified levels.",
         "prefix": "addCopyStream",
         "scope": "source.lua"
@@ -3547,27 +3557,33 @@
         "scope": "source.lua"
     },
     "addStream": {
-        "body": "instance:addStream(${1:id}, ${2:core.Dot|core.Line|core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
+        "body": "instance:addStream(${1:id}, ${2|core.Dot,core.Line,core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
         "description": "The method adds an output stream to the indicator.",
         "prefix": "addStream",
         "scope": "source.lua"
     },
-    "assignParam": {
+    "addStreamClipboard": {
+        "body": "instance:addStream(${CLIPBOARD:id}, ${1|core.Dot,core.Line,core.Bar}, ${2:fullName}, ${3:label}, ${4:color}, ${5:firstPeriod}, ${6:extent})",
+        "description": "The method adds an output stream to the indicator.",
+        "prefix": "addStreamClipboard",
+        "scope": "source.lua"
+    },
+    "assignParamClipboard": {
         "body": "${CLIPBOARD:param_name} = instance.parameters.${CLIPBOARD:param_name};",
         "description": "Assign a parameter (use clipboard).",
         "prefix": "assignParam",
         "scope": "source.lua"
     },
-    "assignParamManual": {
+    "assignParam": {
         "body": "${1:param_name} = instance.parameters.${1:param_name};",
         "description": "Assign a parameter.",
-        "prefix": "assignParamManual",
+        "prefix": "assignParam",
         "scope": "source.lua"
     },
     "addStreamStyled": {
         "body": 
         [
-            "${1:stream_name} = instance:addStream(${2:id}, ${3:core.Dot|core.Line|core.Bar}, ${4:fullName}, ${5:label}, ${6:color}, ${7:firstPeriod}, ${8:extent});",
+            "${1:stream_name} = instance:addStream(${2:id}, ${3|core.Dot,core.Line,core.Bar}, ${4:fullName}, ${5:label}, ${6:color}, ${7:firstPeriod}, ${8:extent});",
             "${1:stream_name}:setWidth(${9:width});",
             "${1:stream_name}:setStyle(${10:style});"
         ],
@@ -4557,6 +4573,26 @@
         "body": "parameters:addFile(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a file parameter.",
         "prefix": "parameters:addFile",
+        "scope": "source.lua"
+    },
+    "addLineStyleParam": {
+        "body": 
+        [
+            "indicator.parameters:addInteger(\"${1:id}\", \"${2:name}\", \"${3:description}\", ${4|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT});",
+            "indicator.parameters:setFlag(\"${1:id}\", core.FLAG_LINE_STYLE);"
+        ],
+        "description": "Adds a new line style parameter.",
+        "prefix": "addLineStyleParam",
+        "scope": "source.lua"
+    },
+    "addLineStyleParamClipboard": {
+        "body": 
+        [
+            "indicator.parameters:addInteger(\"${CLIPBOARD:id}\", \"${1:name}\", \"${2:description}\", ${3|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT});",
+            "indicator.parameters:setFlag(\"${CLIPBOARD:id}\", core.FLAG_LINE_STYLE);"
+        ],
+        "description": "Adds a new line style parameter.",
+        "prefix": "addLineStyleParamClipboard",
         "scope": "source.lua"
     },
     "parameters:addInteger": {
