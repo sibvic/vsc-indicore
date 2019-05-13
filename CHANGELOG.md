@@ -7,6 +7,8 @@
 * addLineStyleParam and addLineStyleParamClipboard for indicator's line style parameter
 * addStreamClipboard
 * indicatorPrepare
+* strategyTimeframeParam, indicatorTimeframeParam for timeframe parameter
+* addLineWidthParamClipboard, addLineWidthParam for indicator's line width parameter
 
 ## 1.1.3
 

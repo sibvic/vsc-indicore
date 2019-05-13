@@ -1833,6 +1833,26 @@
         "prefix": "core.FLAG_ALLOW_TRADE",
         "scope": "source.lua"
     },
+    "strategyTimeframeParam": {
+        "body": 
+        [
+            "strategy.parameters:addString(\"{1:timeframe}\", \"{2:name}\", \"\", \"{3:m5}\");",
+            "strategy.parameters:setFlag(\"{1:timeframe}\", {4|core.FLAG_PERIODS,core.FLAG_BARPERIODS});"
+        ],
+        "description": "The parameter behavior flag.",
+        "prefix": "strategyTimeframeParam",
+        "scope": "source.lua"
+    },
+    "indicatorTimeframeParam": {
+        "body": 
+        [
+            "indicator.parameters:addString(\"{1:timeframe}\", \"{2:name}\", \"\", \"{3:m5}\");",
+            "indicator.parameters:setFlag(\"{1:timeframe}\", {4|core.FLAG_PERIODS,core.FLAG_BARPERIODS});"
+        ],
+        "description": "The parameter behavior flag.",
+        "prefix": "indicatorTimeframeParam",
+        "scope": "source.lua"
+    },
     "core.FLAG_BARPERIODS": {
         "body": "core.FLAG_BARPERIODS",
         "description": "The parameter behavior flag.",
@@ -2296,7 +2316,7 @@
             "assert(profile ~= nil, \"Please, download and install \" .. ${1:id} .. \".LUA indicator\");",
             "local indicatorParams = profile:parameters();",
             "--set parameters here indicatorParams:setBoolean(\"name\", val);",
-            "{4:indi} = indicators:create(${1:id}, ${2:source}, ${3:indicatorParams})"
+            "{4:indi} = core.indicators:create(${1:id}, ${2:source}, ${3:indicatorParams})"
         ],
         "description": "Creates an instance of the custom indicator.",
         "prefix": "createCustomIndicator",
@@ -4573,6 +4593,18 @@
         "body": "parameters:addFile(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a file parameter.",
         "prefix": "parameters:addFile",
+        "scope": "source.lua"
+    },
+    "addLineWidthParam": {
+        "body": "indicator.parameters:addInteger(\"${1:id}\", \"${2:name}\", \"${3:description}\", ${4:1}, 1, 5)",
+        "description": "Adds a new line style parameter.",
+        "prefix": "addLineWidthParam",
+        "scope": "source.lua"
+    },
+    "addLineWidthParamClipboard": {
+        "body": "indicator.parameters:addInteger(\"${CLIPBOARD:id}\", \"${1:name}\", \"${2:description}\", ${3:1}, 1, 5)",
+        "description": "Adds a new line style parameter.",
+        "prefix": "addLineWidthParamClipboard",
         "scope": "source.lua"
     },
     "addLineStyleParam": {
