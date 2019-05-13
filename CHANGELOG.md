@@ -5,10 +5,12 @@
 ### New in 1.1.4
 
 * addLineStyleParam and addLineStyleParamClipboard for indicator's line style parameter
-* addStreamClipboard
+* addStreamClipboard, addStreamOscillator, addStreamOscillatorClipboard
 * indicatorPrepare
 * strategyTimeframeParam, indicatorTimeframeParam for timeframe parameter
 * addLineWidthParamClipboard, addLineWidthParam for indicator's line width parameter
+* indicatorAddBooleanParam, strategyAddBooleanParam, indicatorAddBooleanParamClipboard, strategyAddBooleanParamClipboard for a boolean parameter
+* tradingOffsets (getTradingWeekOffset + getTradingDayOffset)
 
 ## 1.1.3
 
