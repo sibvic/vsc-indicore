@@ -1163,6 +1163,16 @@
         "prefix": "host:trace",
         "scope": "source.lua"
     },
+    "tradingOffsets": {
+        "body": 
+        [
+            "{$1:tradingWeekOffset} = core.host:execute(\"getTradingWeekOffset\");",
+            "{$2:tradingDayOffset} = core.host:execute(\"getTradingDayOffset\");"
+        ],
+        "description": "Returns an offset of the trading week start.",
+        "prefix": "tradingOffsets",
+        "scope": "source.lua"
+    },
     "host:execute(\"getTradingWeekOffset\")": {
         "body": "host:execute(\"getTradingWeekOffset\")",
         "description": "Returns an offset of the trading week start.",
@@ -3577,15 +3587,35 @@
         "scope": "source.lua"
     },
     "addStream": {
-        "body": "instance:addStream(${1:id}, ${2|core.Dot,core.Line,core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
+        "body": "${1:id} = instance:addStream(${1:id}, ${2|core.Dot,core.Line,core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
         "description": "The method adds an output stream to the indicator.",
         "prefix": "addStream",
         "scope": "source.lua"
     },
     "addStreamClipboard": {
-        "body": "instance:addStream(${CLIPBOARD:id}, ${1|core.Dot,core.Line,core.Bar}, ${2:fullName}, ${3:label}, ${4:color}, ${5:firstPeriod}, ${6:extent})",
+        "body": "${CLIPBOARD:id} = instance:addStream(${CLIPBOARD:id}, ${1|core.Dot,core.Line,core.Bar}, ${2:fullName}, ${3:label}, ${4:color}, ${5:firstPeriod}, ${6:extent})",
         "description": "The method adds an output stream to the indicator.",
         "prefix": "addStreamClipboard",
+        "scope": "source.lua"
+    },
+    "addStreamOscillator": {
+        "body": 
+        [
+            "${1:id} = instance:addStream(${1:id}, ${2|core.Dot,core.Line,core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
+            "${1:id}:setPrecision(math.max(2, instance.source:getPrecision()));"
+        ],
+        "description": "The method adds an output stream to the indicator.",
+        "prefix": "addStreamOscillator",
+        "scope": "source.lua"
+    },
+    "addStreamOscillatorClipboard": {
+        "body": 
+        [
+            "${CLIPBOARD:id} = instance:addStream(${CLIPBOARD:id}, ${1|core.Dot,core.Line,core.Bar}, ${2:fullName}, ${3:label}, ${4:color}, ${5:firstPeriod}, ${6:extent})",
+            "${CLIPBOARD:id}:setPrecision(math.max(2, instance.source:getPrecision()));"
+        ],
+        "description": "The method adds an output stream to the indicator.",
+        "prefix": "addStreamOscillatorClipboard",
         "scope": "source.lua"
     },
     "assignParamClipboard": {
@@ -4565,12 +4595,6 @@
         "prefix": "parameters.new",
         "scope": "source.lua"
     },
-    "parameters:addBoolean": {
-        "body": "parameters:addBoolean(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
-        "description": "Adds a new boolean parameter.",
-        "prefix": "parameters:addBoolean",
-        "scope": "source.lua"
-    },
     "parameters:addColor": {
         "body": "parameters:addColor(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a new color parameter.",
@@ -4593,6 +4617,30 @@
         "body": "parameters:addFile(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a file parameter.",
         "prefix": "parameters:addFile",
+        "scope": "source.lua"
+    },
+    "indicatorAddBooleanParam": {
+        "body": "indicator.parameters:addBoolean(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
+        "description": "Adds a new boolean parameter.",
+        "prefix": "indicatorAddBooleanParam",
+        "scope": "source.lua"
+    },
+    "strategyAddBooleanParam": {
+        "body": "strategy.parameters:addBoolean(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
+        "description": "Adds a new boolean parameter.",
+        "prefix": "strategyAddBooleanParam",
+        "scope": "source.lua"
+    },
+    "indicatorAddBooleanParamClipboard": {
+        "body": "indicator.parameters:addBoolean(${CLIPBOARD:id}, ${1:name}, ${2:description}, ${3:defaultValue})",
+        "description": "Adds a new boolean parameter.",
+        "prefix": "indicatorAddBooleanParamClipboard",
+        "scope": "source.lua"
+    },
+    "strategyAddBooleanParamClipboard": {
+        "body": "strategy.parameters:addBoolean(${CLIPBOARD:id}, ${1:name}, ${2:description}, ${3:defaultValue})",
+        "description": "Adds a new boolean parameter.",
+        "prefix": "strategyAddBooleanParamClipboard",
         "scope": "source.lua"
     },
     "addLineWidthParam": {
