@@ -1,5 +1,12 @@
 # Change log
 
+## 1.1.5
+
+### New in 1.1.5
+
+* bugfixes
+* functionDraw snippet
+
 ## 1.1.4
 
 ### New in 1.1.4
@@ -172,46 +179,3 @@
 * text_output:color
 * text_output:font
 * text_output:get
-
-## 0.18.0
-
-### New in 0.18.0
-
-* pane
-* pane.Data
-* paneData
-* paneData:getStream
-* paneData:getStreamCount
-* mathex.covar
-* mathex.devsq
-* mathex.expDist
-* mathex.fDist
-* mathex.fDistInv
-* mathex.fft
-* mathex.gammaDist
-* mathex.gammaln
-* mathex.geomean
-* mathex.icfft
-* mathex.ifft
-* mathex.kurt
-* mathex.lreg
-* mathex.lregSlope
-* mathex.lwma
-* mathex.makeArray
-* mathex.max2
-* mathex.meandev
-* mathex.median_s
-* mathex.median_w
-* mathex.min2
-* mathex.minmax
-* mathex.normalDist
-* mathex.poissonDist
-* mathex.regChannel
-* mathex.skew
-* mathex.stdev
-* mathex.studentDist
-* mathex.sum
-* mathex.weibullDist
-* parameters
-* parameters.new
-* parameters:addBoolean
