@@ -1847,7 +1847,7 @@
         "body": 
         [
             "strategy.parameters:addString(\"{1:timeframe}\", \"{2:name}\", \"\", \"{3:m5}\");",
-            "strategy.parameters:setFlag(\"{1:timeframe}\", {4:core.FLAG_PERIODS,core.FLAG_BARPERIODS});"
+            "strategy.parameters:setFlag(\"{1:timeframe}\", {4|core.FLAG_PERIODS,core.FLAG_BARPERIODS|});"
         ],
         "description": "The parameter behavior flag.",
         "prefix": "strategyTimeframeParam",
@@ -1857,7 +1857,7 @@
         "body": 
         [
             "indicator.parameters:addString(\"{1:timeframe}\", \"{2:name}\", \"\", \"{3:m5}\");",
-            "indicator.parameters:setFlag(\"{1:timeframe}\", {4:core.FLAG_PERIODS,core.FLAG_BARPERIODS});"
+            "indicator.parameters:setFlag(\"{1:timeframe}\", {4|core.FLAG_PERIODS,core.FLAG_BARPERIODS|});"
         ],
         "description": "The parameter behavior flag.",
         "prefix": "indicatorTimeframeParam",
@@ -3586,7 +3586,7 @@
         "scope": "source.lua"
     },
     ":addCopyStream": {
-        "body": "instance::addCopyStream(${1:id}, ${2:core.Dot,core.Line,core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:style}, ${7:width}, ${8:hoffset}, ${9:voffset}, ${10:voosetrel}, ${11:offstlevels}, ${12:stream})",
+        "body": "instance::addCopyStream(${1:id}, ${2|core.Dot,core.Line,core.Bar|}, ${3:fullName}, ${4:label}, ${5:color}, ${6:style}, ${7:width}, ${8:hoffset}, ${9:voffset}, ${10:voosetrel}, ${11:offstlevels}, ${12:stream})",
         "description": "The method creates a copy of the specified output stream. The copy is shifted against the original stream horizontally and vertically by the specified levels.",
         "prefix": "addCopyStream",
         "scope": "source.lua"
@@ -3598,13 +3598,13 @@
         "scope": "source.lua"
     },
     "addStream": {
-        "body": "${1:id} = instance:addStream(${1:id}, ${2:core.Dot,core.Line,core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
+        "body": "${1:id} = instance:addStream(${1:id}, ${2|core.Dot,core.Line,core.Bar|}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
         "description": "The method adds an output stream to the indicator.",
         "prefix": "addStream",
         "scope": "source.lua"
     },
     "addStreamClipboard": {
-        "body": "${CLIPBOARD:id} = instance:addStream(${CLIPBOARD:id}, ${1:core.Dot,core.Line,core.Bar}, ${2:fullName}, ${3:label}, ${4:color}, ${5:firstPeriod}, ${6:extent})",
+        "body": "${CLIPBOARD:id} = instance:addStream(${CLIPBOARD:id}, ${1|core.Dot,core.Line,core.Bar|}, ${2:fullName}, ${3:label}, ${4:color}, ${5:firstPeriod}, ${6:extent})",
         "description": "The method adds an output stream to the indicator.",
         "prefix": "addStreamClipboard",
         "scope": "source.lua"
@@ -3612,7 +3612,7 @@
     "addStreamOscillator": {
         "body": 
         [
-            "${1:id} = instance:addStream(${1:id}, ${2:core.Dot,core.Line,core.Bar}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
+            "${1:id} = instance:addStream(${1:id}, ${2|core.Dot,core.Line,core.Bar|}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
             "${1:id}:setPrecision(math.max(2, instance.source:getPrecision()));"
         ],
         "description": "The method adds an output stream to the indicator.",
@@ -3622,7 +3622,7 @@
     "addStreamOscillatorClipboard": {
         "body": 
         [
-            "${CLIPBOARD:id} = instance:addStream(${CLIPBOARD:id}, ${1:core.Dot,core.Line,core.Bar}, ${2:fullName}, ${3:label}, ${4:color}, ${5:firstPeriod}, ${6:extent})",
+            "${CLIPBOARD:id} = instance:addStream(${CLIPBOARD:id}, ${1|core.Dot,core.Line,core.Bar|}, ${2:fullName}, ${3:label}, ${4:color}, ${5:firstPeriod}, ${6:extent})",
             "${CLIPBOARD:id}:setPrecision(math.max(2, instance.source:getPrecision()));"
         ],
         "description": "The method adds an output stream to the indicator.",
@@ -3644,7 +3644,7 @@
     "addStreamStyled": {
         "body": 
         [
-            "${1:stream_name} = instance:addStream(${2:id}, ${3:core.Dot,core.Line,core.Bar}, ${4:fullName}, ${5:label}, ${6:color}, ${7:firstPeriod}, ${8:extent});",
+            "${1:stream_name} = instance:addStream(${2:id}, ${3|core.Dot,core.Line,core.Bar|}, ${4:fullName}, ${5:label}, ${6:color}, ${7:firstPeriod}, ${8:extent});",
             "${1:stream_name}:setWidth(${9:width});",
             "${1:stream_name}:setStyle(${10:style});"
         ],
@@ -4669,7 +4669,7 @@
     "addLineStyleParam": {
         "body": 
         [
-            "indicator.parameters:addInteger(\"${1:id}\", \"${2:name}\", \"${3:description}\", ${4:core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT});",
+            "indicator.parameters:addInteger(\"${1:id}\", \"${2:name}\", \"${3:description}\", ${4|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT|});",
             "indicator.parameters:setFlag(\"${1:id}\", core.FLAG_LINE_STYLE);"
         ],
         "description": "Adds a new line style parameter.",
@@ -4679,7 +4679,7 @@
     "addLineStyleParamClipboard": {
         "body": 
         [
-            "indicator.parameters:addInteger(\"${CLIPBOARD:id}\", \"${1:name}\", \"${2:description}\", ${3:core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT});",
+            "indicator.parameters:addInteger(\"${CLIPBOARD:id}\", \"${1:name}\", \"${2:description}\", ${3|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT|});",
             "indicator.parameters:setFlag(\"${CLIPBOARD:id}\", core.FLAG_LINE_STYLE);"
         ],
         "description": "Adds a new line style parameter.",
