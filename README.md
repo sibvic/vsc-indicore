@@ -12,4 +12,4 @@ Based on [keyring/vsc-lua](https://github.com/keyring/vsc-lua)
 
 ## Donations gratefully accepted.
 
-* [Donate via Paypal])(https://paypal.me/sibvic)
+* [Donate via Paypal](https://paypal.me/sibvic)
