@@ -6,10 +6,11 @@ You can find more information about Indicore functions at [FXCodebase](http://ww
 
 Based on [keyring/vsc-lua](https://github.com/keyring/vsc-lua)
 
-## Code snippets for other platforms
+## Related projects
 
-* [MetaTrade 4/MQL4](https://github.com/sibvic/vsc-mq4-snippets)
+* [Lint utility for indicators/strategies](https://github.com/sibvic/fxlint)
+* [MT4/MQL4 Code Snippets for Visual Studio Code](https://github.com/sibvic/vsc-mq4-snippets)
 
 ## Donations gratefully accepted.
 
-* [Donate via Paypal](https://paypal.me/sibvic)
+* [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/sibvic)
