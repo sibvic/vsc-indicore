@@ -1428,7 +1428,7 @@
             "    instance:name(name);",
             "    if nameOnly then",
             "        return ;",
-            "    end;",
+            "    end",
             "end"
         ],
         "description": "The tool initialization.",
