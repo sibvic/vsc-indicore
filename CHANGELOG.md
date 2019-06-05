@@ -5,6 +5,7 @@
 ### New in 1.1.6
 
 * Bug fixes
+* addLineParamsClipboard and addLineParams for adding color, width and style parameters
 
 ## 1.1.5
 
