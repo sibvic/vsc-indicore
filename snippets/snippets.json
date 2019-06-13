@@ -4710,6 +4710,62 @@
         "prefix": "addLineStyleParamClipboard",
         "scope": "source.lua"
     },
+    "addLineParamsTool": {
+        "body": 
+        [
+            "tool.parameters:addColor(\"${1:id}_color\", \"${2:name} Color\", \"${3:description} Color\", ${4:defaultValue});",
+            "tool.parameters:addInteger(\"${1:id}_width\", \"${2:name} Width\", \"${3:description} Width\", ${5:1}, 1, 5);",
+            "tool.parameters:addInteger(\"${1:id}_style\", \"${2:name} Style\", \"${3:description} Style\", ${6|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT|});",
+            "tool.parameters:setFlag(\"${1:id}_style\", core.FLAG_LINE_STYLE);"
+        ],
+        "description": "Adds new line parameter: color, width, style.",
+        "prefix": "addLineParamsTool",
+        "scope": "source.lua"
+    },
+    "addLineParamsClipboardTool": {
+        "body": 
+        [
+            "tool.parameters:addColor(\"${CLIPBOARD:id}_color\", \"${1:name} Color\", \"${2:description} Color\", ${3:defaultValue});",
+            "tool.parameters:addInteger(\"${CLIPBOARD:id}_width\", \"${1:name} Width\", \"${2:description} Width\", ${4:1}, 1, 5);",
+            "tool.parameters:addInteger(\"${CLIPBOARD:id}_style\", \"${1:name} Style\", \"${2:description} Style\", ${5|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT|});",
+            "tool.parameters:setFlag(\"${CLIPBOARD:id}_style\", core.FLAG_LINE_STYLE);"
+        ],
+        "description": "Adds new line parameter: color, width, style.",
+        "prefix": "addLineParamsClipboardTool",
+        "scope": "source.lua"
+    },
+    "addLineWidthParamTool": {
+        "body": "tool.parameters:addInteger(\"${1:id}\", \"${2:name}\", \"${3:description}\", ${4:1}, 1, 5)",
+        "description": "Adds a new line style parameter.",
+        "prefix": "addLineWidthParam",
+        "scope": "source.lua"
+    },
+    "addLineWidthParamClipboardTool": {
+        "body": "tool.parameters:addInteger(\"${CLIPBOARD:id}\", \"${1:name}\", \"${2:description}\", ${3:1}, 1, 5)",
+        "description": "Adds a new line style parameter.",
+        "prefix": "addLineWidthParamClipboard",
+        "scope": "source.lua"
+    },
+    "addLineStyleParamTool": {
+        "body": 
+        [
+            "tool.parameters:addInteger(\"${1:id}\", \"${2:name}\", \"${3:description}\", ${4|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT|});",
+            "tool.parameters:setFlag(\"${1:id}\", core.FLAG_LINE_STYLE);"
+        ],
+        "description": "Adds a new line style parameter.",
+        "prefix": "addLineStyleParamTool",
+        "scope": "source.lua"
+    },
+    "addLineStyleParamClipboardTool": {
+        "body": 
+        [
+            "tool.parameters:addInteger(\"${CLIPBOARD:id}\", \"${1:name}\", \"${2:description}\", ${3|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT|});",
+            "tool.parameters:setFlag(\"${CLIPBOARD:id}\", core.FLAG_LINE_STYLE);"
+        ],
+        "description": "Adds a new line style parameter.",
+        "prefix": "addLineStyleParamClipboardTool",
+        "scope": "source.lua"
+    },
     "parameters:addInteger": {
         "body": "parameters:addInteger(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}})",
         "description": "Adds a new integer parameter.",
