@@ -5153,7 +5153,7 @@
     "enumTable": {
         "body": 
         [ 
-            "local ${2:enum} = core.host:findTable(\"${1:offers|orders|trades|closed trades}\"):enumerator();",
+            "local ${2:enum} = core.host:findTable(\"${1|offers,orders,trades,closed trades|}\"):enumerator();",
             "local ${3:row} = ${2:enum}:next();",
             "while ${3:row} ~= nil do",
             "    ${3:row} = ${2:enum}:next();",
