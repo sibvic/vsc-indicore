@@ -1163,6 +1163,12 @@
         "prefix": "host:trace",
         "scope": "source.lua"
     },
+    "debugTraceClipboard": {
+        "body": "core.host:trace(tostring(${CLIPBOARD:data}))",
+        "description": "Prints debug string.",
+        "prefix": "debugTraceClipboard",
+        "scope": "source.lua"
+    },
     "tradingOffsets": {
         "body": 
         [
