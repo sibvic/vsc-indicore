@@ -3617,13 +3617,13 @@
         "scope": "source.lua"
     },
     "addStream": {
-        "body": "${1:id} = instance:addStream(${1:id}, ${2|core.Dot,core.Line,core.Bar|}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
+        "body": "${1:id} = instance:addStream(\"${1:id}\", ${2|core.Dot,core.Line,core.Bar|}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
         "description": "The method adds an output stream to the indicator.",
         "prefix": "addStream",
         "scope": "source.lua"
     },
     "addStreamClipboard": {
-        "body": "${CLIPBOARD:id} = instance:addStream(${CLIPBOARD:id}, ${1|core.Dot,core.Line,core.Bar|}, ${2:fullName}, ${3:label}, ${4:color}, ${5:firstPeriod}, ${6:extent})",
+        "body": "${CLIPBOARD:id} = instance:addStream(\"${CLIPBOARD:id}\", ${1|core.Dot,core.Line,core.Bar|}, ${2:fullName}, ${3:label}, ${4:color}, ${5:firstPeriod}, ${6:extent})",
         "description": "The method adds an output stream to the indicator.",
         "prefix": "addStreamClipboard",
         "scope": "source.lua"
@@ -3663,7 +3663,7 @@
     "addStreamStyled": {
         "body": 
         [
-            "${1:stream_name} = instance:addStream(${2:id}, ${3|core.Dot,core.Line,core.Bar|}, ${4:fullName}, ${5:label}, ${6:color}, ${7:firstPeriod}, ${8:extent});",
+            "${1:stream_name} = instance:addStream(\"${2:id}\", ${3|core.Dot,core.Line,core.Bar|}, ${4:fullName}, ${5:label}, ${6:color}, ${7:firstPeriod}, ${8:extent});",
             "${1:stream_name}:setWidth(${9:width});",
             "${1:stream_name}:setStyle(${10:style});"
         ],
