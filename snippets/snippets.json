@@ -1852,8 +1852,8 @@
     "strategyTimeframeParam": {
         "body": 
         [
-            "strategy.parameters:addString(\"{1:timeframe}\", \"{2:name}\", \"\", \"{3:m5}\");",
-            "strategy.parameters:setFlag(\"{1:timeframe}\", {4|core.FLAG_PERIODS,core.FLAG_BARPERIODS|});"
+            "strategy.parameters:addString(\"${1:timeframe}\", \"${2:name}\", \"\", \"${3:m5}\");",
+            "strategy.parameters:setFlag(\"${1:timeframe}\", ${4|core.FLAG_PERIODS,core.FLAG_BARPERIODS|});"
         ],
         "description": "The parameter behavior flag.",
         "prefix": "strategyTimeframeParam",
@@ -1862,8 +1862,8 @@
     "indicatorTimeframeParam": {
         "body": 
         [
-            "indicator.parameters:addString(\"{1:timeframe}\", \"{2:name}\", \"\", \"{3:m5}\");",
-            "indicator.parameters:setFlag(\"{1:timeframe}\", {4|core.FLAG_PERIODS,core.FLAG_BARPERIODS|});"
+            "indicator.parameters:addString(\"${1:timeframe}\", \"${2:name}\", \"\", \"${3:m5}\");",
+            "indicator.parameters:setFlag(\"${1:timeframe}\", ${4|core.FLAG_PERIODS,core.FLAG_BARPERIODS|});"
         ],
         "description": "The parameter behavior flag.",
         "prefix": "indicatorTimeframeParam",
