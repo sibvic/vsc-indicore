@@ -2523,10 +2523,14 @@
         "prefix": "functionDraw",
         "scope": "source.lua"
     },
-    "Update": {
-        "body": "function Update(${1:period}, ${2:mode})",
+    "indicatorUpdate": {
+        "body": 
+        [
+           "function Update(${1:period}, ${2:mode})",
+           "end"
+        ],
         "description": "The indicator calculation.",
-        "prefix": "function Update(",
+        "prefix": "indicatorUpdate",
         "scope": "source.lua"
     },
     "reference_points": {
