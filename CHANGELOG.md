@@ -9,6 +9,7 @@
 * addLineParamsTool, addLineParamsClipboardTool, addLineWidthParamTool, addLineWidthParamClipboardTool, addLineStyleParamTool, addLineStyleParamClipboardTool
 * debugTraceClipboard
 * indicatorInit for function Init() of the indicator
+* indicatorTransparencyParam
 
 ## 1.1.5
 

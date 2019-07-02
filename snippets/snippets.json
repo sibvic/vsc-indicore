@@ -4649,6 +4649,12 @@
         "prefix": "parameters:addFile",
         "scope": "source.lua"
     },
+    "indicatorTransparencyParam": {
+        "body": "indicator.parameters:addInteger(${1:transparency}, ${2:name}, ${3:description}, ${4:50}, 0, 100);",
+        "description": "Adds new transparency parameter.",
+        "prefix": "indicatorTransparencyParam",
+        "scope": "source.lua"
+    },
     "indicatorAddBooleanParam": {
         "body": "indicator.parameters:addBoolean(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a new boolean parameter.",
