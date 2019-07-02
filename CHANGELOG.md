@@ -8,6 +8,7 @@
 * addLineParamsClipboard and addLineParams for adding color, width and style parameters
 * addLineParamsTool, addLineParamsClipboardTool, addLineWidthParamTool, addLineWidthParamClipboardTool, addLineStyleParamTool, addLineStyleParamClipboardTool
 * debugTraceClipboard
+* indicatorInit for function Init() of the indicator
 
 ## 1.1.5
 

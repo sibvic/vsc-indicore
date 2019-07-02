@@ -3063,10 +3063,19 @@
         "prefix": "indicore3_ffi.core_crossesOverOrTouch(",
         "scope": "source.lua"
     },
-    "Init": {
-        "body": "function Init()",
+    "indicatorInit": {
+        "body": 
+        [
+            "function Init()",
+            "    indicator:name(\"${1:Name}\");",
+            "    indicator:description(\"${2:description}\");",
+            "    indicator:requiredSource(${3|core.Bar,core.Tick|});",
+            "    indicator:type(${4|core.Oscillator,core.Indicator|});",
+            "    -- TODO: parameters",
+            "end"
+        ],
         "description": "The indicator profile initialization.",
-        "prefix": "function Init(",
+        "prefix": "indicatorInit",
         "scope": "source.lua"
     },
     "instance.DATA": {
