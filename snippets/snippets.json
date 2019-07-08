@@ -4649,6 +4649,16 @@
         "prefix": "parameters:addFile",
         "scope": "source.lua"
     },
+    "strategyBidAskParam": {
+        "body": 
+        [
+            "strategy.parameters:addBoolean(\"${1:type}\", \"${2:Price type}\", \"${3:description}\", ${4|true,false|});",
+            "strategy.parameters:setFlag(\"${1:type}\", core.FLAG_BIDASK);"
+        ],
+        "description": "The parameter behavior flag.",
+        "prefix": "strategyBidAskParam",
+        "scope": "source.lua"
+    },
     "indicatorTransparencyParam": {
         "body": "indicator.parameters:addInteger(${1:transparency}, ${2:name}, ${3:description}, ${4:50}, 0, 100);",
         "description": "Adds new transparency parameter.",

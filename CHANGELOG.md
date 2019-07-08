@@ -10,6 +10,7 @@
 * debugTraceClipboard
 * indicatorInit for function Init() of the indicator
 * indicatorTransparencyParam
+* strategyBidAskParam
 
 ## 1.1.5
 
