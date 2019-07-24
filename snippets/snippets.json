@@ -1172,8 +1172,8 @@
     "tradingOffsets": {
         "body": 
         [
-            "{$1:tradingWeekOffset} = core.host:execute(\"getTradingWeekOffset\");",
-            "{$2:tradingDayOffset} = core.host:execute(\"getTradingDayOffset\");"
+            "${1:tradingWeekOffset} = core.host:execute(\"getTradingWeekOffset\");",
+            "${2:tradingDayOffset} = core.host:execute(\"getTradingDayOffset\");"
         ],
         "description": "Returns an offset of the trading week start.",
         "prefix": "tradingOffsets",

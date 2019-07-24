@@ -1,5 +1,11 @@
 # Change log
 
+## 1.1.7
+
+### New in 1.1.7
+
+* Bug fixes
+
 ## 1.1.6
 
 ### New in 1.1.6
