@@ -3663,11 +3663,11 @@
     "addStreamStyled": {
         "body": 
         [
-            "${1:stream_name} = instance:addStream(\"${2:id}\", ${3|core.Dot,core.Line,core.Bar|}, ${4:fullName}, ${5:label}, ${6:color}, ${7:firstPeriod}, ${8:extent});",
-            "${1:stream_name}:setWidth(${9:width});",
-            "${1:stream_name}:setStyle(${10:style});"
+            "${1:stream_name} = instance:addStream(\"${2:id}\", ${3|core.Dot,core.Line,core.Bar|}, ${4:fullName}, ${5:label}, ${6:instance.parameters.color}, ${7:firstPeriod}, ${8:extent});",
+            "${1:stream_name}:setWidth(${9:instance.parameters.width});",
+            "${1:stream_name}:setStyle(${10:instance.parameters.style});"
         ],
-        "description": "The method adds an output stream to the indicator.",
+        "description": "Add an output stream with styling to the indicator.",
         "prefix": "addStreamStyled",
         "scope": "source.lua"
     },
@@ -4665,6 +4665,18 @@
         "prefix": "indicatorTransparencyParam",
         "scope": "source.lua"
     },
+    "indicatorAddIntegerParam": {
+        "body": "indicator.parameters:addInteger(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}})",
+        "description": "Adds a new integer parameter.",
+        "prefix": "indicatorAddIntegerParam",
+        "scope": "source.lua"
+    },
+    "indicatorAddIntegerParamClipboard": {
+        "body": "indicator.parameters:addInteger(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue}${4:[, minimalValue${5:[, maximalValue]]}})",
+        "description": "Adds a new integer parameter.",
+        "prefix": "indicatorAddIntegerParamClipboard",
+        "scope": "source.lua"
+    },
     "indicatorAddBooleanParam": {
         "body": "indicator.parameters:addBoolean(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a new boolean parameter.",
@@ -4678,13 +4690,13 @@
         "scope": "source.lua"
     },
     "indicatorAddBooleanParamClipboard": {
-        "body": "indicator.parameters:addBoolean(${CLIPBOARD:id}, ${1:name}, ${2:description}, ${3:defaultValue})",
+        "body": "indicator.parameters:addBoolean(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue})",
         "description": "Adds a new boolean parameter.",
         "prefix": "indicatorAddBooleanParamClipboard",
         "scope": "source.lua"
     },
     "strategyAddBooleanParamClipboard": {
-        "body": "strategy.parameters:addBoolean(${CLIPBOARD:id}, ${1:name}, ${2:description}, ${3:defaultValue})",
+        "body": "strategy.parameters:addBoolean(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue})",
         "description": "Adds a new boolean parameter.",
         "prefix": "strategyAddBooleanParamClipboard",
         "scope": "source.lua"
@@ -4799,12 +4811,6 @@
         ],
         "description": "Adds a new line style parameter.",
         "prefix": "addLineStyleParamClipboardTool",
-        "scope": "source.lua"
-    },
-    "parameters:addInteger": {
-        "body": "parameters:addInteger(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}})",
-        "description": "Adds a new integer parameter.",
-        "prefix": "parameters:addInteger",
         "scope": "source.lua"
     },
     "parameters:addString": {

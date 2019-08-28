@@ -5,6 +5,7 @@
 ### New in 1.1.7
 
 * Bug fixes
+* indicatorAddIntegerParam, indicatorAddIntegerParamClipboard
 
 ## 1.1.6
 
