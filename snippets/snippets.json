@@ -3612,7 +3612,7 @@
         "scope": "source.lua"
     },
     "addInternalStream": {
-        "body": "instance:addInternalStream(${1:firstPeriod}, ${2:extent})",
+        "body": "${1:stream} = instance:addInternalStream(${2:firstPeriod}, ${3:extent});",
         "description": "The method adds an output stream for the indicator internal purposes.",
         "prefix": "addInternalStream",
         "scope": "source.lua"
