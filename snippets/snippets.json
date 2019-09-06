@@ -1428,6 +1428,7 @@
     "indicatorPrepare": {
         "body": 
         [
+            "local source;",
             "function Prepare(${1:nameOnly})",
             "    source = instance.source;",
             "    local name = string.format(\"%s(%s)\", profile:id(), source:name());",
