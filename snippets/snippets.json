@@ -4663,7 +4663,7 @@
     "strategyIntegerParam": {
         "body": 
         [
-            "indicator.parameters:addInteger(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}});"
+            "strategy.parameters:addInteger(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}});"
         ],
         "description": "Strategy integer parameter.",
         "prefix": "strategyIntegerParam",
