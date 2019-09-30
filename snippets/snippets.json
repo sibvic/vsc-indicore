@@ -4660,28 +4660,43 @@
         "prefix": "strategyBidAskParam",
         "scope": "source.lua"
     },
+    "strategyIntegerParam": {
+        "body": 
+        [
+            "indicator.parameters:addInteger(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}});"
+        ],
+        "description": "Strategy integer parameter.",
+        "prefix": "strategyIntegerParam",
+        "scope": "source.lua"
+    },
+    "strategyIntegerParamClipboard": {
+        "body": "strategy.parameters:addInteger(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue}${4:[, minimalValue${5:[, maximalValue]]}})",
+        "description": "Adds a new integer parameter.",
+        "prefix": "strategyIntegerParamClipboard",
+        "scope": "source.lua"
+    },
     "indicatorTransparencyParam": {
         "body": "indicator.parameters:addInteger(${1:transparency}, ${2:name}, ${3:description}, ${4:50}, 0, 100);",
         "description": "Adds new transparency parameter.",
         "prefix": "indicatorTransparencyParam",
         "scope": "source.lua"
     },
-    "indicatorAddIntegerParam": {
+    "indicatorIntegerParam": {
         "body": "indicator.parameters:addInteger(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}})",
         "description": "Adds a new integer parameter.",
-        "prefix": "indicatorAddIntegerParam",
+        "prefix": "indicatorIntegerParam",
         "scope": "source.lua"
     },
-    "indicatorAddIntegerParamClipboard": {
+    "indicatorIntegerParamClipboard": {
         "body": "indicator.parameters:addInteger(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue}${4:[, minimalValue${5:[, maximalValue]]}})",
         "description": "Adds a new integer parameter.",
-        "prefix": "indicatorAddIntegerParamClipboard",
+        "prefix": "indicatorIntegerParamClipboard",
         "scope": "source.lua"
     },
-    "indicatorAddBooleanParam": {
+    "indicatorBooleanParam": {
         "body": "indicator.parameters:addBoolean(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a new boolean parameter.",
-        "prefix": "indicatorAddBooleanParam",
+        "prefix": "indicatorBooleanParam",
         "scope": "source.lua"
     },
     "strategyAddBooleanParam": {
@@ -4690,10 +4705,10 @@
         "prefix": "strategyAddBooleanParam",
         "scope": "source.lua"
     },
-    "indicatorAddBooleanParamClipboard": {
+    "indicatorBooleanParamClipboard": {
         "body": "indicator.parameters:addBoolean(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue})",
         "description": "Adds a new boolean parameter.",
-        "prefix": "indicatorAddBooleanParamClipboard",
+        "prefix": "indicatorBooleanParamClipboard",
         "scope": "source.lua"
     },
     "strategyAddBooleanParamClipboard": {

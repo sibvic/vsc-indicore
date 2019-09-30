@@ -5,7 +5,8 @@
 ### New in 1.1.7
 
 * Bug fixes
-* indicatorAddIntegerParam, indicatorAddIntegerParamClipboard
+* indicatorIntegerParam, indicatorIntegerParamClipboard
+* strategyIntegerParam
 
 ## 1.1.6
 
