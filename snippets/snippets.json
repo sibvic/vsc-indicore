@@ -3816,10 +3816,10 @@
         "prefix": "indicore3_ffi.odpoints_allocate",
         "scope": "source.lua"
     },
-    ":createChannelGroup": {
-        "body": ":createChannelGroup(${1:label}, ${2:id}, ${3:first}, ${4:second}, ${5:color}, ${6:alpha}${7:[, mode?]})",
+    "createChannel": {
+        "body": "instance:createChannelGroup(${1:label}, ${2:id}, ${3:first}, ${4:second}, ${5:color}, ${6:alpha}, ${7|true,false|})",
         "description": "The method groups two output streams into a channel.",
-        "prefix": ":createChannelGroup",
+        "prefix": "createChannel",
         "scope": "source.lua"
     },
     ":createFromToBarGroup": {

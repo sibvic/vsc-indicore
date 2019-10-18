@@ -4,6 +4,8 @@
 
 ### New in 1.2.0
 
+* createChannel
+
 ## 1.1.7
 
 ### New in 1.1.7
