@@ -4726,7 +4726,7 @@
             "indicator.parameters:setFlag(\"${1:id}_style\", core.FLAG_LINE_STYLE);"
         ],
         "description": "Adds new line parameter: color, width, style.",
-        "prefix": "addLineParams",
+        "prefix": "addStreamStylingParams",
         "scope": "source.lua"
     },
     "addStreamStylingParamsClipboard": {
@@ -4738,7 +4738,7 @@
             "indicator.parameters:setFlag(\"${CLIPBOARD:id}_style\", core.FLAG_LINE_STYLE);"
         ],
         "description": "Adds new line parameter: color, width, style.",
-        "prefix": "addLineParamsClipboard",
+        "prefix": "addStreamStylingParamsClipboard",
         "scope": "source.lua"
     },
     "addLineWidthParam": {
