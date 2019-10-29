@@ -3652,7 +3652,7 @@
     "assignParamClipboard": {
         "body": "${CLIPBOARD:param_name} = instance.parameters.${CLIPBOARD:param_name};",
         "description": "Assign a parameter (use clipboard).",
-        "prefix": "assignParam",
+        "prefix": "assignParamClipboard",
         "scope": "source.lua"
     },
     "assignParam": {
@@ -4694,13 +4694,13 @@
         "scope": "source.lua"
     },
     "indicatorColorParam": {
-        "body": "indicator.parameters:addColor(${1:id}, ${2:name}, ${3:description}, core.colors().${4:red})",
+        "body": "indicator.parameters:addColor(${1:id}, ${2:name}, ${3:description}, core.colors().${4:Red})",
         "description": "Adds a new integer parameter.",
         "prefix": "indicatorColorParam",
         "scope": "source.lua"
     },
     "indicatorColorParamClipboard": {
-        "body": "indicator.parameters:addInteger(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, core.colors().${3:red})",
+        "body": "indicator.parameters:addInteger(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, core.colors().${3:Red})",
         "description": "Adds a new integer parameter.",
         "prefix": "indicatorColorParamClipboard",
         "scope": "source.lua"
