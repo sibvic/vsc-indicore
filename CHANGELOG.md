@@ -5,6 +5,7 @@
 ### New in 1.2.0
 
 * createChannel
+* indicatorColorParam/indicatorColorParamClipboard
 
 ## 1.1.7
 
