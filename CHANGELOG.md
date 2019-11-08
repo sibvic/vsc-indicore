@@ -6,6 +6,7 @@
 
 * createChannel
 * indicatorColorParam/indicatorColorParamClipboard
+* indicatorDoubleParam/indicatorDoubleParamClipboard
 
 ## 1.1.7
 

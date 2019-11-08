@@ -4693,6 +4693,18 @@
         "prefix": "indicatorIntegerParamClipboard",
         "scope": "source.lua"
     },
+    "indicatorDoubleParam": {
+        "body": "indicator.parameters:addDouble(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}})",
+        "description": "Adds a new double parameter.",
+        "prefix": "indicatorDoubleParam",
+        "scope": "source.lua"
+    },
+    "indicatorDoubleParamClipboard": {
+        "body": "indicator.parameters:addDouble(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue}${4:[, minimalValue${5:[, maximalValue]]}})",
+        "description": "Adds a new double parameter.",
+        "prefix": "indicatorDoubleParamClipboard",
+        "scope": "source.lua"
+    },
     "indicatorColorParam": {
         "body": "indicator.parameters:addColor(${1:id}, ${2:name}, ${3:description}, core.colors().${4:Red})",
         "description": "Adds a new integer parameter.",
