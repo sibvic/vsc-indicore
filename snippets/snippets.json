@@ -3126,7 +3126,7 @@
             "    strategy:description(\"${2:description}\");",
             "    strategy:type(${3|core.Both,core.Signal,core.Strategy|});",
             "    strategy:setTag(\"NonOptimizableParameters\", \"StartTime,StopTime,ToTime,signaler_ToTime,signaler_show_alert,signaler_play_soundsignaler_sound_file,signaler_recurrent_sound,signaler_send_email,signaler_email,signaler_show_popup,signaler_debug_alert,use_advanced_alert,advanced_alert_key\");",
-            "    strategy.parameters:addBoolean(\"type\", \"Price Type\", \"\", \"Bid\");",
+            "    strategy.parameters:addBoolean(\"type\", \"Price Type\", \"\", true);",
             "    strategy.parameters:setFlag(\"type\", core.FLAG_BIDASK);",
             "    strategy.parameters:addString(\"timeframe\", \"Timeframe\", \"\", \"${4:m1}\");",
             "    strategy.parameters:setFlag(\"timeframe\", core.FLAG_PERIODS);",
