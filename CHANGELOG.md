@@ -7,6 +7,7 @@
 * createChannel
 * indicatorColorParam/indicatorColorParamClipboard
 * indicatorDoubleParam/indicatorDoubleParamClipboard
+* strategyInit
 
 ## 1.1.7
 

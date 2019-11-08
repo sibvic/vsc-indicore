@@ -3083,6 +3083,29 @@
         "prefix": "indicatorInit",
         "scope": "source.lua"
     },
+    "strategyInit": {
+        "body": 
+        [
+            "function Init()",
+            "    strategy:name(\"${1:Name}\");",
+            "    strategy:description(\"${2:description}\");",
+            "    strategy:type(${3|core.Both,core.Signal,core.Strategy|});",
+            "    strategy:setTag(\"NonOptimizableParameters\", \"StartTime,StopTime,ToTime,signaler_ToTime,signaler_show_alert,signaler_play_soundsignaler_sound_file,signaler_recurrent_sound,signaler_send_email,signaler_email,signaler_show_popup,signaler_debug_alert,use_advanced_alert,advanced_alert_key\");",
+            "    strategy.parameters:addBoolean(\"type\", \"Price Type\", \"\", \"Bid\");",
+            "    strategy.parameters:setFlag(\"type\", core.FLAG_BIDASK);",
+            "    strategy.parameters:addString(\"timeframe\", \"Timeframe\", \"\", \"${4:m1}\");",
+            "    strategy.parameters:addBoolean(\"AllowTrade\", \"Allow strategy to trade\", \"\", false);",
+            "    strategy.parameters:setFlag(\"AllowTrade\", core.FLAG_ALLOW_TRADE);",
+            "    strategy.parameters:addString(\"Account\", \"Account to trade on\", \"\", \"\");",
+            "    strategy.parameters:setFlag(\"Account\", core.FLAG_ACCOUNT);",
+            "    strategy.parameters:addInteger(\"Amount\", \"Trade Amount in Lots\", \"\", 1, 1, 1000000);",
+            "    -- TODO: parameters",
+            "end"
+        ],
+        "description": "The strategy profile initialization.",
+        "prefix": "strategyInit",
+        "scope": "source.lua"
+    },
     "instance.DATA": {
         "body": "instance.DATA",
         "description": "The property returns the output stream of the indicator. If the indicator produces more output streams than one, the property returns the first output stream.",
