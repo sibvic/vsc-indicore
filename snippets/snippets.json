@@ -1438,8 +1438,35 @@
             "    end",
             "end"
         ],
-        "description": "The tool initialization.",
+        "description": "The indicator prepare.",
         "prefix": "indicatorPrepare",
+        "scope": "source.lua"
+    },
+    "strategyPrepare": {
+        "body": 
+        [
+            "local MAIN_SOURCE_ID = 1;",
+            "local main_source;",
+            "function Prepare(nameOnly)",
+            "    local name = profile:id() .. \"(\" .. instance.bid:name() .. \")\";",
+            "    instance:name(name);",
+            "    if nameOnly then",
+            "        return;",
+            "    end",
+            "    main_source = ExtSubscribe(MAIN_SOURCE_ID, nil, instance.parameters.timeframe, instance.parameters.type, \"bar\")",
+            "end"
+        ],
+        "description": "The strategy prepare.",
+        "prefix": "strategyPrepare",
+        "scope": "source.lua"
+    },
+    "strategyInclude": {
+        "body": 
+        [
+            "dofile(core.app_path() .. \"\\strategies\\standard\\include\\helper.lua\");"
+        ],
+        "description": "The strategy include.",
+        "prefix": "strategyInclude",
         "scope": "source.lua"
     },
     "ReleaseInstance": {
@@ -2685,9 +2712,13 @@
         "scope": "source.lua"
     },
     "ExtAsyncOperationFinished": {
-        "body": "function ExtAsyncOperationFinished(${1:cookie}, ${2:success}, ${3:message}, ${4:message1}, ${5:message2})",
+        "body": 
+        [
+            "function ExtAsyncOperationFinished(cookie, success, message, message1, message2)",
+            "end"
+        ],
         "description": "The function must be implemented in case helper.lua is used.",
-        "prefix": "function ExtAsyncOperationFinished(",
+        "prefix": "ExtAsyncOperationFinished",
         "scope": "source.lua"
     },
     "ExtSubscribe": {
@@ -2703,9 +2734,13 @@
         "scope": "source.lua"
     },
     "ExtUpdate": {
-        "body": "function ExtUpdate(${1:id}, ${2:source}, ${3:period})",
+        "body": 
+        [
+            "function ExtUpdate(id, source, period)",
+            "end"
+        ],
         "description": "The function must be implemented in case helper.lua is used.",
-        "prefix": "function ExtUpdate(",
+        "prefix": "ExtUpdate",
         "scope": "source.lua"
     },
     "host:execute(\"calculatePositionOfDate\", ...)": {
@@ -3094,6 +3129,7 @@
             "    strategy.parameters:addBoolean(\"type\", \"Price Type\", \"\", \"Bid\");",
             "    strategy.parameters:setFlag(\"type\", core.FLAG_BIDASK);",
             "    strategy.parameters:addString(\"timeframe\", \"Timeframe\", \"\", \"${4:m1}\");",
+            "    strategy.parameters:setFlag(\"timeframe\", core.FLAG_PERIODS);",
             "    strategy.parameters:addBoolean(\"AllowTrade\", \"Allow strategy to trade\", \"\", false);",
             "    strategy.parameters:setFlag(\"AllowTrade\", core.FLAG_ALLOW_TRADE);",
             "    strategy.parameters:addString(\"Account\", \"Account to trade on\", \"\", \"\");",
@@ -4661,12 +4697,6 @@
         "prefix": "parameters:addDate",
         "scope": "source.lua"
     },
-    "parameters:addDouble": {
-        "body": "parameters:addDouble(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}})",
-        "description": "Adds a new double parameter.",
-        "prefix": "parameters:addDouble",
-        "scope": "source.lua"
-    },
     "parameters:addFile": {
         "body": "parameters:addFile(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a file parameter.",
@@ -4716,18 +4746,6 @@
         "prefix": "indicatorIntegerParamClipboard",
         "scope": "source.lua"
     },
-    "indicatorDoubleParam": {
-        "body": "indicator.parameters:addDouble(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}})",
-        "description": "Adds a new double parameter.",
-        "prefix": "indicatorDoubleParam",
-        "scope": "source.lua"
-    },
-    "indicatorDoubleParamClipboard": {
-        "body": "indicator.parameters:addDouble(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue}${4:[, minimalValue${5:[, maximalValue]]}})",
-        "description": "Adds a new double parameter.",
-        "prefix": "indicatorDoubleParamClipboard",
-        "scope": "source.lua"
-    },
     "indicatorColorParam": {
         "body": "indicator.parameters:addColor(${1:id}, ${2:name}, ${3:description}, core.colors().${4:Red})",
         "description": "Adds a new integer parameter.",
@@ -4746,10 +4764,10 @@
         "prefix": "indicatorBooleanParam",
         "scope": "source.lua"
     },
-    "strategyAddBooleanParam": {
+    "strategyBooleanParam": {
         "body": "strategy.parameters:addBoolean(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a new boolean parameter.",
-        "prefix": "strategyAddBooleanParam",
+        "prefix": "strategyBooleanParam",
         "scope": "source.lua"
     },
     "indicatorBooleanParamClipboard": {
@@ -4758,10 +4776,22 @@
         "prefix": "indicatorBooleanParamClipboard",
         "scope": "source.lua"
     },
-    "strategyAddBooleanParamClipboard": {
+    "strategyBooleanParamClipboard": {
         "body": "strategy.parameters:addBoolean(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue})",
         "description": "Adds a new boolean parameter.",
-        "prefix": "strategyAddBooleanParamClipboard",
+        "prefix": "strategyBooleanParamClipboard",
+        "scope": "source.lua"
+    },
+    "doubleParam": {
+        "body": "${1|indicator,strategy,tool|}.parameters:addDouble(${2:id}, ${3:name}, ${4:description}, ${5:defaultValue}, ${6:minimalValue}, ${7:maximalValue})",
+        "description": "Adds a new double parameter.",
+        "prefix": "doubleParam",
+        "scope": "source.lua"
+    },
+    "doubleParamClipboard": {
+        "body": "${1|indicator,strategy,tool|}.parameters:addDouble(\"${CLIPBOARD:id}\", ${2:name}, ${3:description}, ${4:defaultValue}, ${5:minimalValue}, ${6:maximalValue})",
+        "description": "Adds a new double parameter.",
+        "prefix": "doubleParamClipboard",
         "scope": "source.lua"
     },
     "addStreamStylingParams": {
