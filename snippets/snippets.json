@@ -4746,40 +4746,28 @@
         "prefix": "indicatorIntegerParamClipboard",
         "scope": "source.lua"
     },
-    "indicatorColorParam": {
-        "body": "indicator.parameters:addColor(${1:id}, ${2:name}, ${3:description}, core.colors().${4:Red})",
+    "colorParam": {
+        "body": "${1|indicator,strategy,tool|}.parameters:addColor(${2:id}, ${3:name}, ${4:description}, core.colors().${5:Red})",
         "description": "Adds a new integer parameter.",
-        "prefix": "indicatorColorParam",
+        "prefix": "colorParam",
         "scope": "source.lua"
     },
-    "indicatorColorParamClipboard": {
-        "body": "indicator.parameters:addInteger(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, core.colors().${3:Red})",
+    "colorParamClipboard": {
+        "body": "${1|indicator,strategy,tool|}.parameters:addInteger(\"${CLIPBOARD:id}\", ${2:name}, ${3:description}, core.colors().${4:Red})",
         "description": "Adds a new integer parameter.",
-        "prefix": "indicatorColorParamClipboard",
+        "prefix": "colorParamClipboard",
         "scope": "source.lua"
     },
-    "indicatorBooleanParam": {
-        "body": "indicator.parameters:addBoolean(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
+    "booleanParam": {
+        "body": "${1|indicator,strategy,tool|}.parameters:addBoolean(${2:id}, ${3:name}, ${4:description}, ${5:defaultValue})",
         "description": "Adds a new boolean parameter.",
-        "prefix": "indicatorBooleanParam",
+        "prefix": "booleanParam",
         "scope": "source.lua"
     },
-    "strategyBooleanParam": {
-        "body": "strategy.parameters:addBoolean(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
-        "description": "Adds a new boolean parameter.",
-        "prefix": "strategyBooleanParam",
-        "scope": "source.lua"
-    },
-    "indicatorBooleanParamClipboard": {
-        "body": "indicator.parameters:addBoolean(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue})",
+    "booleanParamClipboard": {
+        "body": "${1|indicator,strategy,tool|}.parameters:addBoolean(\"${CLIPBOARD:id}\", ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a new boolean parameter.",
         "prefix": "indicatorBooleanParamClipboard",
-        "scope": "source.lua"
-    },
-    "strategyBooleanParamClipboard": {
-        "body": "strategy.parameters:addBoolean(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue})",
-        "description": "Adds a new boolean parameter.",
-        "prefix": "strategyBooleanParamClipboard",
         "scope": "source.lua"
     },
     "doubleParam": {
