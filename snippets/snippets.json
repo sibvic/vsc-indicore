@@ -2551,6 +2551,19 @@
         "prefix": "functionDraw",
         "scope": "source.lua"
     },
+    "enumVisibleBars": {
+        "body": 
+        [
+            "local from_bar = math.max(source:first(), context:firstBar());",
+            "local to_bar = math.min(context:lastBar(), source:size() - 1);",
+            "for i = from_bar, to_bar, 1 do",
+            "    local x_center, x_left, x_right = context:positionOfBar(i);",
+            "end"
+        ],
+        "description": "Enumerates visible bars in the Draw function.",
+        "prefix": "enumVisibleBars",
+        "scope": "source.lua"
+    },
     "indicatorUpdate": {
         "body": 
         [
@@ -4713,37 +4726,22 @@
         "prefix": "strategyBidAskParam",
         "scope": "source.lua"
     },
-    "strategyIntegerParam": {
-        "body": 
-        [
-            "strategy.parameters:addInteger(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}});"
-        ],
-        "description": "Strategy integer parameter.",
-        "prefix": "strategyIntegerParam",
-        "scope": "source.lua"
-    },
-    "strategyIntegerParamClipboard": {
-        "body": "strategy.parameters:addInteger(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue}${4:[, minimalValue${5:[, maximalValue]]}})",
-        "description": "Adds a new integer parameter.",
-        "prefix": "strategyIntegerParamClipboard",
-        "scope": "source.lua"
-    },
     "indicatorTransparencyParam": {
         "body": "indicator.parameters:addInteger(${1:transparency}, ${2:name}, ${3:description}, ${4:50}, 0, 100);",
         "description": "Adds new transparency parameter.",
         "prefix": "indicatorTransparencyParam",
         "scope": "source.lua"
     },
-    "indicatorIntegerParam": {
-        "body": "indicator.parameters:addInteger(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue}${5:[, minimalValue${6:[, maximalValue]]}})",
+    "integerParam": {
+        "body": "${1|indicator,strategy,tool|}.parameters:addInteger(${2:id}, ${3:name}, ${4:description}, ${5:defaultValue}, ${6:minimalValue}, ${7:maximalValue})",
         "description": "Adds a new integer parameter.",
-        "prefix": "indicatorIntegerParam",
+        "prefix": "integerParam",
         "scope": "source.lua"
     },
-    "indicatorIntegerParamClipboard": {
-        "body": "indicator.parameters:addInteger(\"${CLIPBOARD:id}\", ${1:name}, ${2:description}, ${3:defaultValue}${4:[, minimalValue${5:[, maximalValue]]}})",
+    "integerParamClipboard": {
+        "body": "${1|indicator,strategy,tool|}.parameters:addInteger(\"${CLIPBOARD:id}\", ${2:name}, ${3:description}, ${4:defaultValue}, ${5:minimalValue}, ${6:maximalValue})",
         "description": "Adds a new integer parameter.",
-        "prefix": "indicatorIntegerParamClipboard",
+        "prefix": "integerParamClipboard",
         "scope": "source.lua"
     },
     "colorParam": {

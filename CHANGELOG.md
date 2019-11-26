@@ -8,6 +8,7 @@
 * indicatorColorParam/indicatorColorParamClipboard
 * doubleParam/doubleParamClipboard
 * strategyInit, strategyPrepare, strategyInclude
+* enumVisibleBars
 
 ## 1.1.7
 
