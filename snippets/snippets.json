@@ -4892,16 +4892,16 @@
         "prefix": "addLineStyleParamClipboardTool",
         "scope": "source.lua"
     },
-    "parameters:addString": {
-        "body": "parameters:addString(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
+    "stringParam": {
+        "body": "${1|indicator,strategy,tool|}.parameters:addString(${2:id}, ${3:name}, ${4:description}, ${5:defaultValue}, ${6:minimalValue}, ${7:maximalValue})",
         "description": "Adds a new string parameter.",
-        "prefix": "parameters:addString",
+        "prefix": "stringParam",
         "scope": "source.lua"
     },
-    "parameters:getBoolean": {
-        "body": "parameters:getBoolean(${1:id})",
-        "description": "Gets a boolean value of the indicator parameter.",
-        "prefix": "parameters:getBoolean",
+    "stringParamClipboard": {
+        "body": "${1|indicator,strategy,tool|}.parameters:addString(\"${CLIPBOARD:id}\", ${2:name}, ${3:description}, ${4:defaultValue}, ${5:minimalValue}, ${6:maximalValue})",
+        "description": "Adds a new double parameter.",
+        "prefix": "stringParamClipboard",
         "scope": "source.lua"
     },
     "parameters:addGroup": {

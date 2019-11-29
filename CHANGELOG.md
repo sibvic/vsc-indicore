@@ -7,7 +7,8 @@
 * createChannel
 * indicatorColorParam/indicatorColorParamClipboard
 * doubleParam/doubleParamClipboard
-* strategyInit, strategyPrepare, strategyInclude
+* stringParam/stringParamClipboard
+* strategyInit, strategyPrepare, strategyInclude,
 * enumVisibleBars
 
 ## 1.1.7
