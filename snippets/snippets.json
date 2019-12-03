@@ -1877,24 +1877,14 @@
         "prefix": "core.FLAG_ALLOW_TRADE",
         "scope": "source.lua"
     },
-    "strategyTimeframeParam": {
+    "timeframeParam": {
         "body": 
         [
-            "strategy.parameters:addString(\"${1:timeframe}\", \"${2:name}\", \"\", \"${3:m5}\");",
-            "strategy.parameters:setFlag(\"${1:timeframe}\", ${4|core.FLAG_PERIODS,core.FLAG_BARPERIODS|});"
+            "${1|indicator,strategy,tool|}.parameters:addString(\"${2:timeframe}\", \"${3:name}\", \"\", \"${4:m5}\");",
+            "${1|indicator,strategy,tool|}.parameters:setFlag(\"${2:timeframe}\", ${5|core.FLAG_PERIODS,core.FLAG_BARPERIODS|});"
         ],
-        "description": "The parameter behavior flag.",
-        "prefix": "strategyTimeframeParam",
-        "scope": "source.lua"
-    },
-    "indicatorTimeframeParam": {
-        "body": 
-        [
-            "indicator.parameters:addString(\"${1:timeframe}\", \"${2:name}\", \"\", \"${3:m5}\");",
-            "indicator.parameters:setFlag(\"${1:timeframe}\", ${4|core.FLAG_PERIODS,core.FLAG_BARPERIODS|});"
-        ],
-        "description": "The parameter behavior flag.",
-        "prefix": "indicatorTimeframeParam",
+        "description": "Timeframe parameter.",
+        "prefix": "timeframeParam",
         "scope": "source.lua"
     },
     "core.FLAG_BARPERIODS": {

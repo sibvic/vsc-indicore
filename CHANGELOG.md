@@ -8,6 +8,7 @@
 * indicatorColorParam/indicatorColorParamClipboard
 * doubleParam/doubleParamClipboard
 * stringParam/stringParamClipboard
+* timeframeParam
 * strategyInit, strategyPrepare, strategyInclude,
 * enumVisibleBars
 
