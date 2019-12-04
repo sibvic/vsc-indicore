@@ -1918,7 +1918,7 @@
             "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"HPF\", \"\", \"HPF\");",
             "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"VAMA\", \"\", \"VAMA\");",
             "end",
-            "function CreateAverages(method, source, period)",
+            "function CreateAverages(period, method, source)",
             "    if method == \"MVA\" or method == \"EMA\" or method == \"ARSI\"",
             "       or method == \"KAMA\" or method == \"LWMA\" or method == \"SMMA\"",
             "        or method == \"VIDYA\"",
