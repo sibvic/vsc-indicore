@@ -1922,7 +1922,7 @@
             "    if method == \"MVA\" or method == \"EMA\" or method == \"ARSI\"",
             "       or method == \"KAMA\" or method == \"LWMA\" or method == \"SMMA\"",
             "        or method == \"VIDYA\"",
-            "    if nameOnly then",
+            "    then",
             "        --assert(core.indicators:findIndicator(method) ~= nil, method .. \" indicator must be installed\");",
             "        return core.indicators:create(method, source, period);",
             "    end",
