@@ -1887,6 +1887,63 @@
         "prefix": "timeframeParam",
         "scope": "source.lua"
     },
+    "averageFunctions": {
+        "body": 
+        [
+            "function AddAverages(id, name, default)",
+            "    ${1|indicator,strategy,tool|}.parameters:addString(id, name, \"\", default);",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"MVA\", \"\", \"MVA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"EMA\", \"\", \"EMA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"Wilder\", \"\", \"Wilder\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"LWMA\", \"\", \"LWMA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"SineWMA\", \"\", \"SineWMA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"TriMA\", \"\", \"TriMA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"LSMA\", \"\", \"LSMA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"SMMA\", \"\", \"SMMA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"HMA\", \"\", \"HMA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"ZeroLagEMA\", \"\", \"ZeroLagEMA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"DEMA\", \"\", \"DEMA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"T3\", \"\", \"T3\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"ITrend\", \"\", \"ITrend\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"Median\", \"\", \"Median\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"GeoMean\", \"\", \"GeoMean\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"REMA\", \"\", \"REMA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"ILRS\", \"\", \"ILRS\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"IE/2\", \"\", \"IE/2\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"TriMAgen\", \"\", \"TriMAgen\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"JSmooth\", \"\", \"JSmooth\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"KAMA\", \"\", \"KAMA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"ARSI\", \"\", \"ARSI\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"VIDYA\", \"\", \"VIDYA\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"HPF\", \"\", \"HPF\");",
+            "    ${1|indicator,strategy,tool|}.parameters:addStringAlternative(id, \"VAMA\", \"\", \"VAMA\");",
+            "end",
+            "function CreateAverages(method, source, period)",
+            "    if method == \"MVA\" or method == \"EMA\" or method == \"ARSI\"",
+            "       or method == \"KAMA\" or method == \"LWMA\" or method == \"SMMA\"",
+            "        or method == \"VIDYA\"",
+            "    if nameOnly then",
+            "        --assert(core.indicators:findIndicator(method) ~= nil, method .. \" indicator must be installed\");",
+            "        return core.indicators:create(method, source, period);",
+            "    end",
+            "    assert(core.indicators:findIndicator(\"AVERAGES\") ~= nil, \"Please, download and install AVERAGES indicator\");",
+            "    return core.indicators:create(\"AVERAGES\", source, method, period);",
+            "end"
+        ],
+        "description": "Insert average functions.",
+        "prefix": "averageFunctions",
+        "scope": "source.lua"
+    },
+    "averageParams": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:id}_period\", \"${3:name} Period\", \"\", ${4:period});",
+            "AddAverages(\"{2:id}_method\", \"${3:name} Method\", \"${5|MVA,EMA,Wilder,LWMA,SineWMA,TriMA,LSMA,SMMA,HMA,ZeroLagEMA,DEMA,T3,ITrend,Median,GeoMean,REMA,ILRS,IE/2,TriMAgen,JSmooth,KAMA,ARSI,VIDYA,HPF,VAMA|}\");"
+        ],
+        "description": "Average parameters.",
+        "prefix": "averageParams",
+        "scope": "source.lua"
+    },
     "core.FLAG_BARPERIODS": {
         "body": "core.FLAG_BARPERIODS",
         "description": "The parameter behavior flag.",

@@ -11,6 +11,7 @@
 * timeframeParam
 * strategyInit, strategyPrepare, strategyInclude,
 * enumVisibleBars
+* averageFunctions, averageParams
 
 ## 1.1.7
 
