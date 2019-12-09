@@ -4790,7 +4790,7 @@
             "${1|indicator,tool|}.parameters:addDate(\"date${2:_main}\", \"Date${2: 1}\", \"\", 0);",
             "${1|indicator,tool|}.parameters:setFlag(\"date${2:_main}\", core.FLAG_DATETIME);"
         ],
-        "description": "The parameter behavior flag.",
+        "description": "Parameters for a point.",
         "prefix": "pointParams",
         "scope": "source.lua"
     },
