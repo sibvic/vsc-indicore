@@ -3178,6 +3178,26 @@
         "prefix": "indicatorInit",
         "scope": "source.lua"
     },
+    "toolInit": {
+        "body": 
+        [
+            "function Init()",
+            "    tool:name(\"${1:Tool name}\");",
+            "    tool:description(\"${2:Tool description\");",
+            "    tool:icon(\"\");",
+            "    tool.creationStrategy:setPattern(core.${3|Click,DoubleClick,DragClickDragClick|});",
+            "    tool.creationStrategy:setMaxClickCount(${4:0});",
+            "    tool.creationStrategy:setNeedParamsAfterPattern(${5|true,false|);",
+            "    tool:setTag(\"group\", \"${6:Shapes}\");",
+            "    tool:setTag(\"orderInGroup\", \"${7:1}\");",
+            "    tool:setTag(\"NonResetableParameters\", \"param1,param2\");",
+            "    tool:setTag(\"requiredPaneType\", \"hasStreams\");",
+            "end"
+        ],
+        "description": "The tool profile initialization.",
+        "prefix": "toolInit",
+        "scope": "source.lua"
+    },
     "strategyInit": {
         "body": 
         [
