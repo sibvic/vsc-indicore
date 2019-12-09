@@ -2603,6 +2603,31 @@
         "prefix": "clickFunctions",
         "scope": "source.lua"
     },
+    "toolMovePointFunctions": {
+        "body": 
+        [
+            "local movingPointID;",
+            "function MoveReferencePointStart(id)",
+            "    movingPointID = id;",
+            "end",            
+            "function MoveReferencePoint(x, y, price, date)",
+            "    if movingPointID == 1 then",
+            "        instance.parameters.date${1:_1} = date;",
+            "        instance.parameters.rate${2:_1} = price;",
+            "        local referencePoints = core.host.ReferencePoints;",
+            "        referencePoints:setReferencePoint(movingPointID,",
+            "            instance.parameters.date${1:_1}, instance.parameters.rate${2:_1},",
+            "            referencePoints.DATE + referencePoints.PRICE,",
+            "            instance.parameters.${2:color}, instance.parameters.${2:width} + 1);",
+            "    end",
+            "end",
+            "function MoveReferencePointFinished()",
+            "end"
+        ],
+        "description": "Tool factions related to moving of reference points.",
+        "prefix": "toolMovePointFunctions",
+        "scope": "source.lua"
+    },
     "functionDraw": {
         "body": 
         [
