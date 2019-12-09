@@ -4786,8 +4786,8 @@
     "pointParams": {
         "body": 
         [
-            "${1|indicator,tool|}.parameters:addDouble(\"rate${2:_main}\", \"Rate${2: 1}\", \"\", 0);",
-            "${1|indicator,tool|}.parameters:addDate(\"date${2:_main}\", \"Date${2: 1}\", \"\", 0);",
+            "${1|indicator,tool|}.parameters:addDouble(\"rate${2:_main}\", \"Rate${3: 1}\", \"\", 0);",
+            "${1|indicator,tool|}.parameters:addDate(\"date${2:_main}\", \"Date${3: 1}\", \"\", 0);",
             "${1|indicator,tool|}.parameters:setFlag(\"date${2:_main}\", core.FLAG_DATETIME);"
         ],
         "description": "Parameters for a point.",
