@@ -2581,6 +2581,28 @@
         "prefix": "core.ILanguageServiceUnknownType",
         "scope": "source.lua"
     },
+    "toolCreateFunctions": {
+        "body": 
+        [
+            "function CreationStarted()",
+            "end",
+            "function CreationFinished()",
+            "end",
+            "local click = 1;",
+            "function Click(x, y, price, date)",
+            "    if click == 1 then",
+            "        instance.parameters.start_rate = price;",
+            "        instance.parameters.start_date = date;",
+            "    end",
+            "    click = click + 1;",
+            "end",
+            "function DoubleClick(x, y, price, date)",
+            "end"
+        ],
+        "description": "Tool factions related to creation.",
+        "prefix": "clickFunctions",
+        "scope": "source.lua"
+    },
     "functionDraw": {
         "body": 
         [
