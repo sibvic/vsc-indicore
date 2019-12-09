@@ -12,7 +12,7 @@
 * strategyInit, strategyPrepare, strategyInclude,
 * enumVisibleBars
 * averageFunctions, averageParams
-* toolInit
+* toolInit, pointParams
 
 ## 1.1.7
 
