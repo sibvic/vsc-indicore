@@ -1365,12 +1365,6 @@
         "prefix": "function CreationStarted(",
         "scope": "source.lua"
     },
-    "CreationFinished": {
-        "body": "function CreationFinished()",
-        "description": "The finish of tool initialization.",
-        "prefix": "function CreationFinished(",
-        "scope": "source.lua"
-    },
     "Drag": {
         "body": "function Drag(${1:x}, ${2:y}, ${3:price}, ${4:date})",
         "description": "Mouse Drag Event.",
