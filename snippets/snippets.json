@@ -1881,6 +1881,16 @@
         "prefix": "timeframeParam",
         "scope": "source.lua"
     },
+    "instrumentParam": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addString(\"${2:timeframe}\", \"${3:name}\", \"\", \"${4:m5}\");",
+            "${1|indicator,strategy,tool|}.parameters:setFlag(\"${2:timeframe}\", core.FLAG_INSTRUMENTS);"
+        ],
+        "description": "Instrument parameter.",
+        "prefix": "instrumentParam",
+        "scope": "source.lua"
+    },
     "averageFunctions": {
         "body": 
         [

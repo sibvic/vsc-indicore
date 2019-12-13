@@ -13,6 +13,7 @@
 * enumVisibleBars
 * averageFunctions, averageParams
 * toolInit, pointParams, toolCreateFunctions, toolMovePointFunctions
+* instrumentParam for instruments parameter
 
 ## 1.1.7
 
