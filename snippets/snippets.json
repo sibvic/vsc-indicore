@@ -1276,7 +1276,11 @@
         "scope": "source.lua"
     },
     "AsyncOperationFinished": {
-        "body": "function AsyncOperationFinished(${1:cookie}, ${2:successful}, ${3:message}, ${4:message1}, ${5:message2})",
+        "body": 
+        [
+            "function AsyncOperationFinished(${1:cookie}, ${2:successful}, ${3:message}, ${4:message1}, ${5:message2})",
+            "end"
+        ],
         "description": "The notification that an asynchronous operation is finished.",
         "prefix": "function AsyncOperationFinished",
         "scope": "source.lua"
@@ -3273,10 +3277,10 @@
         "prefix": "strategyInit",
         "scope": "source.lua"
     },
-    "instance.DATA": {
-        "body": "instance.DATA",
+    ".DATA": {
+        "body": ".DATA",
         "description": "The property returns the output stream of the indicator. If the indicator produces more output streams than one, the property returns the first output stream.",
-        "prefix": "instance.DATA",
+        "prefix": ".DATA",
         "scope": "source.lua"
     },
     "instance.parameters": {
