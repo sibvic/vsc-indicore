@@ -1522,9 +1522,9 @@
         "scope": "source.lua"
     },
     "context:createPen": {
-        "body": "context:createPen(${1:objid}, ${2:style}, ${3:width}, ${4:color})",
+        "body": "context:createPen(${1:objid}, ${2|context.SOLID,context.DOT,context.DASH,context.DASHDOT,context.DASHDOTDOT,context:convertPenStyle(penStyle)|}, ${3:width}, ${4:color})",
         "description": "Creates a GDI pen.",
-        "prefix": "context:createPen(",
+        "prefix": "context:createPen",
         "scope": "source.lua"
     },
     "context:createPoints": {
