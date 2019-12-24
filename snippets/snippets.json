@@ -4820,12 +4820,6 @@
         "prefix": "parameters.new",
         "scope": "source.lua"
     },
-    "parameters:addColor": {
-        "body": "parameters:addColor(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
-        "description": "Adds a new color parameter.",
-        "prefix": "parameters:addColor",
-        "scope": "source.lua"
-    },
     "parameters:addDate": {
         "body": "parameters:addDate(${1:id}, ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a date or date/time parameter.",
