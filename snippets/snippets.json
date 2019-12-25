@@ -4853,8 +4853,8 @@
         "prefix": "strategyBidAskParam",
         "scope": "source.lua"
     },
-    "indicatorTransparencyParam": {
-        "body": "indicator.parameters:addInteger(${1:transparency}, ${2:name}, ${3:description}, ${4:50}, 0, 100);",
+    "transparencyParam": {
+        "body": "${1|indicator,tool|}.parameters:addInteger(\"${2:transparency}\", ${3:name}, ${4:description}, ${5:50}, 0, 100);",
         "description": "Adds new transparency parameter.",
         "prefix": "indicatorTransparencyParam",
         "scope": "source.lua"
