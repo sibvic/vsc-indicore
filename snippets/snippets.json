@@ -4884,13 +4884,13 @@
         "scope": "source.lua"
     },
     "booleanParam": {
-        "body": "${1|indicator,strategy,tool|}.parameters:addBoolean(${2:id}, ${3:name}, ${4:description}, ${5:defaultValue})",
+        "body": "${1|indicator,strategy,tool|}.parameters:addBoolean(${2:id}, ${3:name}, ${4:description}, ${5|true,false|})",
         "description": "Adds a new boolean parameter.",
         "prefix": "booleanParam",
         "scope": "source.lua"
     },
     "booleanParamClipboard": {
-        "body": "${1|indicator,strategy,tool|}.parameters:addBoolean(\"${CLIPBOARD:id}\", ${2:name}, ${3:description}, ${4:defaultValue})",
+        "body": "${1|indicator,strategy,tool|}.parameters:addBoolean(\"${CLIPBOARD:id}\", ${2:name}, ${3:description}, ${4|true,false|})",
         "description": "Adds a new boolean parameter.",
         "prefix": "indicatorBooleanParamClipboard",
         "scope": "source.lua"
