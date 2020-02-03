@@ -5020,13 +5020,13 @@
         "scope": "source.lua"
     },
     "stringParam": {
-        "body": "${1|indicator,strategy,tool|}.parameters:addString(${2:id}, ${3:name}, ${4:description}, ${5:defaultValue}, ${6:minimalValue}, ${7:maximalValue})",
+        "body": "${1|indicator,strategy,tool|}.parameters:addString(${2:id}, ${3:name}, ${4:description}, ${5:defaultValue})",
         "description": "Adds a new string parameter.",
         "prefix": "stringParam",
         "scope": "source.lua"
     },
     "stringParamClipboard": {
-        "body": "${1|indicator,strategy,tool|}.parameters:addString(\"${CLIPBOARD:id}\", ${2:name}, ${3:description}, ${4:defaultValue}, ${5:minimalValue}, ${6:maximalValue})",
+        "body": "${1|indicator,strategy,tool|}.parameters:addString(\"${CLIPBOARD:id}\", ${2:name}, ${3:description}, ${4:defaultValue})",
         "description": "Adds a new double parameter.",
         "prefix": "stringParamClipboard",
         "scope": "source.lua"
