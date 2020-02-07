@@ -4910,10 +4910,10 @@
     "addStreamStylingParams": {
         "body": 
         [
-            "indicator.parameters:addColor(\"${1:id}_color\", \"${2:name} Color\", \"${3:description} Color\", core.colors().${4:Red});",
-            "indicator.parameters:addInteger(\"${1:id}_width\", \"${2:name} Width\", \"${3:description} Width\", ${5:1}, 1, 5);",
-            "indicator.parameters:addInteger(\"${1:id}_style\", \"${2:name} Style\", \"${3:description} Style\", ${6|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT|});",
-            "indicator.parameters:setFlag(\"${1:id}_style\", core.FLAG_LINE_STYLE);"
+            "${1|indicator,tool|}.parameters:addColor(\"${2:id}_color\", \"${3:name} Color\", \"${4:description} Color\", core.colors().${5:Red});",
+            "${1|indicator,tool|}.parameters:addInteger(\"${2:id}_width\", \"${3:name} Width\", \"${4:description} Width\", ${6:1}, 1, 5);",
+            "${1|indicator,tool|}.parameters:addInteger(\"${2:id}_style\", \"${3:name} Style\", \"${4:description} Style\", ${7|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT|});",
+            "${1|indicator,tool|}.parameters:setFlag(\"${2:id}_style\", core.FLAG_LINE_STYLE);"
         ],
         "description": "Adds new line parameter: color, width, style.",
         "prefix": "addStreamStylingParams",
@@ -4922,10 +4922,10 @@
     "addStreamStylingParamsClipboard": {
         "body": 
         [
-            "indicator.parameters:addColor(\"${CLIPBOARD:id}_color\", \"${1:name} Color\", \"${2:description} Color\", core.colors().${3:Red});",
-            "indicator.parameters:addInteger(\"${CLIPBOARD:id}_width\", \"${1:name} Width\", \"${2:description} Width\", ${4:1}, 1, 5);",
-            "indicator.parameters:addInteger(\"${CLIPBOARD:id}_style\", \"${1:name} Style\", \"${2:description} Style\", ${5|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT|});",
-            "indicator.parameters:setFlag(\"${CLIPBOARD:id}_style\", core.FLAG_LINE_STYLE);"
+            "${1|indicator,tool|}.parameters:addColor(\"${CLIPBOARD:id}_color\", \"${2:name} Color\", \"${3:description} Color\", core.colors().${4:Red});",
+            "${1|indicator,tool|}.parameters:addInteger(\"${CLIPBOARD:id}_width\", \"${2:name} Width\", \"${3:description} Width\", ${5:1}, 1, 5);",
+            "${1|indicator,tool|}.parameters:addInteger(\"${CLIPBOARD:id}_style\", \"${2:name} Style\", \"${3:description} Style\", ${6|core.LINE_SOLID,core.LINE_NONE,core.LINE_DASH,core.LINE_DOT,core.LINE_DASHDOT|});",
+            "${1|indicator,tool|}.parameters:setFlag(\"${CLIPBOARD:id}_style\", core.FLAG_LINE_STYLE);"
         ],
         "description": "Adds new line parameter: color, width, style.",
         "prefix": "addStreamStylingParamsClipboard",
