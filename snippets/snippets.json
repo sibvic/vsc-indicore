@@ -1461,7 +1461,7 @@
     "strategyInclude": {
         "body": 
         [
-            "dofile(core.app_path() .. \"\\strategies\\standard\\include\\helper.lua\");"
+            "dofile(core.app_path() .. \"\\\\strategies\\\\standard\\\\include\\\\helper.lua\");"
         ],
         "description": "The strategy include.",
         "prefix": "strategyInclude",
