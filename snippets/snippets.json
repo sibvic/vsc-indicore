@@ -5230,12 +5230,6 @@
         "prefix": ":halign",
         "scope": "source.lua"
     },
-    "hasData (text output)": {
-        "body": ":hasData()",
-        "description": "The method checks whether the specified period of the stream has a text label.",
-        "prefix": ":hasData",
-        "scope": "source.lua"
-    },
     "id (text output)": {
         "body": ":id()",
         "description": "The method returns the identifier of the text output stream.",
@@ -5302,8 +5296,8 @@
         "prefix": ":getPrecision",
         "scope": "source.lua"
     },
-    "hasData (tick stream)": {
-        "body": ":hasData()",
+    "hasData": {
+        "body": ":hasData(${1:period})",
         "description": "The method checks whether the specified period of the stream has data.",
         "prefix": ":hasData",
         "scope": "source.lua"
