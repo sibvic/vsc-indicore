@@ -4908,6 +4908,26 @@
         "prefix": "doubleParamClipboard",
         "scope": "source.lua"
     },
+    "priceParam": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addDouble(${2:id}, ${3:name}, ${4:description}, ${5:defaultValue}, ${6:minimalValue}, ${7:maximalValue})",
+            "${1|indicator,strategy,tool|}.parameters:setFlag(${2:id}, core.FLAG_PRICE)"
+        ],
+        "description": "Adds a new double parameter.",
+        "prefix": "priceParam",
+        "scope": "source.lua"
+    },
+    "priceParamClipboard": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addDouble(\"${CLIPBOARD:id}\", ${2:name}, ${3:description}, ${4:defaultValue}, ${5:minimalValue}, ${6:maximalValue})",
+            "${1|indicator,strategy,tool|}.parameters:setFlag(\"${CLIPBOARD:id}\", core.FLAG_PRICE)"
+        ],
+        "description": "Adds a new double parameter.",
+        "prefix": "priceParamClipboard",
+        "scope": "source.lua"
+    },
     "addStreamStylingParams": {
         "body": 
         [
