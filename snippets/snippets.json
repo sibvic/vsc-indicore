@@ -5061,6 +5061,26 @@
         "prefix": "stringParamClipboard",
         "scope": "source.lua"
     },
+    "addStringAlternativeParam": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addString(\"${2:id}\", \"${3:name}\", \"${4:description}\", \"${5:value}\");",
+            "${1|indicator,strategy,tool|}.parameters:addStringAlternative(\"${2:id}\", \"${6:name}\", \"${7:description}\", \"${5:value}\");"
+        ],
+        "description": "Adds an alternative for the string parameter.",
+        "prefix": "addStringAlternativeParam",
+        "scope": "source.lua"
+    },
+    "addStringAlternativeParamClipboard": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addString(\"${CLIPBOARD:id}\", \"${2:name}\", \"${3:description}\", \"${4:value}\");",
+            "${1|indicator,strategy,tool|}.parameters:addStringAlternative(\"${CLIPBOARD:id}\", \"${5:name}\", \"${6:description}\", \"${4:value}\");"
+        ],
+        "description": "Adds an alternative for the string parameter.",
+        "prefix": "addStringAlternativeParamClipboard",
+        "scope": "source.lua"
+    },
     "parameters:addGroup": {
         "body": "parameters:addGroup(${1:name})",
         "description": "Starts the group of the parameters.",
@@ -5071,12 +5091,6 @@
         "body": "parameters:addIntegerAlternative(${1:id}, ${2:name}, ${3:description}, ${4:value})",
         "description": "Adds an alternative for the integer parameter.",
         "prefix": "parameters:addIntegerAlternative",
-        "scope": "source.lua"
-    },
-    "parameters:addStringAlternative": {
-        "body": "parameters:addStringAlternative(${1:id}, ${2:name}, ${3:description}, ${4:value})",
-        "description": "Adds an alternative for the string parameter.",
-        "prefix": "parameters:addStringAlternative",
         "scope": "source.lua"
     },
     "parameters:getColor": {
