@@ -1953,6 +1953,15 @@
         "prefix": "averageParams",
         "scope": "source.lua"
     },
+    "createAverage": {
+        "body": 
+        [
+            "${1:id} = CreateAverages(instance.parameters.${1:id}_period, instance.parameters.${1:id}_method, ${2:source});"
+        ],
+        "description": "Create averages indicator.",
+        "prefix": "createAverage",
+        "scope": "source.lua"
+    },
     "core.FLAG_BARPERIODS": {
         "body": "core.FLAG_BARPERIODS",
         "description": "The parameter behavior flag.",

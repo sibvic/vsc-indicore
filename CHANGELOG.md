@@ -5,6 +5,7 @@
 ### New in 1.2.1
 
 * priceParam/priceParamClipboard
+* createAverage
 
 ## 1.2.0
 
