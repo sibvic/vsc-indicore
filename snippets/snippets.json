@@ -1947,7 +1947,7 @@
         "body": 
         [
             "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:id}_period\", \"${3:name} Period\", \"\", ${4:period});",
-            "AddAverages(\"${2:id}_method\", \"${3:name} Method\", \"${5|MVA,EMA,Wilder,LWMA,SineWMA,TriMA,LSMA,SMMA,HMA,ZeroLagEMA,DEMA,T3,ITrend,Median,GeoMean,REMA,ILRS,IE/2,TriMAgen,JSmooth,KAMA,ARSI,VIDYA,HPF,VAMA|}\");"
+            "AddAverages(\"${2:id}_method\", \"${3:name} Method\", \"${5|MVA,EMA,Wilder,LWMA,SineWMA,TriMA,LSMA,SMMA,HMA,ZeroLagEMA,DEMA,T3,ITrend,Median,GeoMean,REMA,ILRS,IE/2,TriMAgen,JSmooth,KAMA,ARSI,VIDYA,HPF,VAMA,REGRESSION|}\");"
         ],
         "description": "Average parameters.",
         "prefix": "averageParams",
