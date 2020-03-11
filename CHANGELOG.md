@@ -8,6 +8,7 @@
 * addStringAlternativeParam/addStringAlternativeParamClipboard
 * createAverage
 * getIndicatorCandle
+* enumPanes, enumPaneStreams
 
 ## 1.2.0
 

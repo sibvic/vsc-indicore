@@ -5448,6 +5448,28 @@
         "prefix": "enumTable",
         "scope": "source.lua"
     },
+    "enumPanes": {
+        "body": 
+        [ 
+            "for i = 0, core.host.Window.Panes:getCount() - 1 do",
+            "    local pane = core.host.Window.Panes:get(i);",
+            "end" 
+        ],
+        "description": "Enumerates a chart panes",
+        "prefix": "enumPanes",
+        "scope": "source.lua"
+    },
+    "enumPaneStreams": {
+        "body": 
+        [ 
+            "for ii = 0, pane.Data:getStreamCount() - 1 do",
+            "    local stream = pane.Data:getStream(ii);",
+            "end" 
+        ],
+        "description": "Enumerates a chart pane streams",
+        "prefix": "enumPaneStreams",
+        "scope": "source.lua"
+    },
     "enumerator (tradingtable)": {
         "body": ":enumerator()",
         "description": "Creates a new enumerator for the table.",
