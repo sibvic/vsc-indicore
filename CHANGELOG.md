@@ -7,6 +7,7 @@
 * priceParam/priceParamClipboard
 * addStringAlternativeParam/addStringAlternativeParamClipboard
 * createAverage
+* getIndicatorCandle
 
 ## 1.2.0
 

@@ -3299,10 +3299,10 @@
         "prefix": "instance.parameters",
         "scope": "source.lua"
     },
-    "instance:getCandleOutput": {
-        "body": "instance:getCandleOutput(${1:index})",
+    "getIndicatorCandle": {
+        "body": "${1:indi}:getCandleOutput(${2:index})",
         "description": "The method returns the output candle group of the indicator as a bar stream by the group identifier.",
-        "prefix": "instance:getCandleOutput(",
+        "prefix": "getIndicatorCandle",
         "scope": "source.lua"
     },
     "instance:getCandleOutputsCount": {
