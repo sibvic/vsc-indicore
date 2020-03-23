@@ -3287,6 +3287,12 @@
         "prefix": "strategyInit",
         "scope": "source.lua"
     },
+    "getIndiStreamColor": {
+        "body": "${1:indi.DATA}:colorI(${2:period})",
+        "description": "Get indicator stream color.",
+        "prefix": "getIndiStreamColor",
+        "scope": "source.lua"
+    },
     ".DATA": {
         "body": ".DATA",
         "description": "The property returns the output stream of the indicator. If the indicator produces more output streams than one, the property returns the first output stream.",

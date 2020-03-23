@@ -9,6 +9,7 @@
 * createAverage
 * getIndicatorCandle
 * enumPanes, enumPaneStreams
+* getIndiStreamColor
 
 ## 1.2.0
 
