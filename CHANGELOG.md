@@ -10,6 +10,7 @@
 * getIndicatorCandle
 * enumPanes, enumPaneStreams
 * getIndiStreamColor
+* macdParameters
 
 ## 1.2.0
 
