@@ -3290,8 +3290,8 @@
     "macdParameters": {
         "body": 
         [
-            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:macd_}SN\", \"{3:MACD }Short EMA\", \"\", 12, 2, 1000);",
-            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:macd_}LN\", \"{3:MACD }Long EMA\", \"\", 26, 2, 1000)"
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:macd_}SN\", \"${3:MACD }Short EMA\", \"\", 12, 2, 1000);",
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:macd_}LN\", \"${3:MACD }Long EMA\", \"\", 26, 2, 1000)"
         ],
         "description": "Get indicator stream color.",
         "prefix": "macdParameters",
