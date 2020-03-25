@@ -4892,7 +4892,7 @@
         "scope": "source.lua"
     },
     "getParam": {
-        "body": "instance.parameters:get${1|Integer,Double|Boolean|String|Date|File|Color|}(${2:id})",
+        "body": "instance.parameters:get${1|Integer,Double,Boolean,String,Date,File,Color|}(${2:id})",
         "description": "Gets a parameter value.",
         "prefix": "getParam",
         "scope": "source.lua"
