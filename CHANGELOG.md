@@ -11,6 +11,7 @@
 * enumPanes, enumPaneStreams
 * getIndiStreamColor
 * macdParameters
+* getParam
 
 ## 1.2.0
 

@@ -4891,6 +4891,12 @@
         "prefix": "integerParam",
         "scope": "source.lua"
     },
+    "getParam": {
+        "body": "instance.parameters:get${1|Integer,Double|Boolean|String|Date|File|Color|}(${1:id})",
+        "description": "Gets a parameter value.",
+        "prefix": "getParam",
+        "scope": "source.lua"
+    },
     "integerParamClipboard": {
         "body": "${1|indicator,strategy,tool|}.parameters:addInteger(\"${CLIPBOARD:id}\", ${2:name}, ${3:description}, ${4:defaultValue}, ${5:minimalValue}, ${6:maximalValue})",
         "description": "Adds a new integer parameter.",
