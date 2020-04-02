@@ -2394,10 +2394,10 @@
         "prefix": "core.dateToTable(",
         "scope": "source.lua"
     },
-    "core.drawLine": {
-        "body": "core.drawLine(${1:pen}, ${2:x1}, ${3:y1}, ${4:x2}, ${5:y2}${6:[, transparency?]})",
+    "drawLineStream": {
+        "body": "core.drawLine(${1:output}, core.rangeTo(${2:to}, ${3:length}), ${4:value1}, ${5:position1}, ${6:value2}, ${7:position2}, ${8:color})",
         "description": "Draws a line.",
-        "prefix": "core.drawLine(",
+        "prefix": "drawLineStream",
         "scope": "source.lua"
     },
     "core.eraseStream": {
@@ -2480,7 +2480,7 @@
         "scope": "source.lua"
     },
     "core.rangeTo": {
-        "body": "core.rangeTo(${1:from}, ${2:length})",
+        "body": "core.rangeTo(${1:to}, ${2:length})",
         "description": "Creates the range table for the statistics methods using the 'to' index and the size of the range.",
         "prefix": "core.rangeTo(",
         "scope": "source.lua"
