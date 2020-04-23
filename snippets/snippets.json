@@ -1509,10 +1509,10 @@
         "prefix": "context:convertTransparency(",
         "scope": "source.lua"
     },
-    "context:createFont": {
-        "body": "context:createFont(${1:objid}, ${2:faceName}, ${3:width}, ${4:height}, ${5:style})",
+    "createFont": {
+        "body": "context:createFont(${1:objid}, ${2:faceName}, ${3:0}, context:pointsToPixels(${4:height}), ${5:style});",
         "description": "Creates a GDI font.",
-        "prefix": "context:createFont(",
+        "prefix": "createFont",
         "scope": "source.lua"
     },
     "context:createHatchBrush": {
