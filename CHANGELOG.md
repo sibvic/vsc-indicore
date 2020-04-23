@@ -13,6 +13,7 @@
 * macdParameters
 * getParam
 * drawLineStream
+* createStyledPen
 
 ## 1.2.0
 

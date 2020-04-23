@@ -1521,6 +1521,12 @@
         "prefix": "context:createHatchBrush(",
         "scope": "source.lua"
     },
+    "createStyledPen": {
+        "body": "context:createPen(${1:objid}_pen, context:convertPenStyle(instance.parameters.${1:objid}_style), instance.parameters.${1:objid}_width, instance.parameters.${1:objid}_color);",
+        "description": "Creates a GDI pen.",
+        "prefix": "createStyledPen",
+        "scope": "source.lua"
+    },
     "context:createPen": {
         "body": "context:createPen(${1:objid}, ${2|context.SOLID,context.DOT,context.DASH,context.DASHDOT,context.DASHDOTDOT,context:convertPenStyle(penStyle)|}, ${3:width}, ${4:color})",
         "description": "Creates a GDI pen.",
