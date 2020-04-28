@@ -1510,7 +1510,7 @@
         "scope": "source.lua"
     },
     "createFont": {
-        "body": "context:createFont(${1:objid}, ${2:faceName}, ${3:0}, context:pointsToPixels(${4:height}), ${5:style});",
+        "body": "context:createFont(${1:objid}, ${2:faceName}, ${3:0}, context:pointsToPixels(${4:height}), ${5|context.LEFT,context.RIGHT,context.CENTER,context.TOP,context.BOTTOM,context.VCENTER,context.NOPREFIX,context.SINGLELINE,context.RTLREADING,context.EXPANDTABS,context.END_ELLIPSIS,context.PATH_ELLIPSIS,context.WORDBREAK|});",
         "description": "Creates a GDI font.",
         "prefix": "createFont",
         "scope": "source.lua"
@@ -1665,10 +1665,10 @@
         "prefix": "context:maxPrice(",
         "scope": "source.lua"
     },
-    "context:measureText": {
-        "body": "context:measureText(${1:font}, ${2:text}, ${3:style})",
+    "measureText": {
+        "body": "context:measureText(${1:font}, ${2:text}, ${3|context.LEFT,context.RIGHT,context.CENTER,context.TOP,context.BOTTOM,context.VCENTER,context.NOPREFIX,context.SINGLELINE,context.RTLREADING,context.EXPANDTABS,context.END_ELLIPSIS,context.PATH_ELLIPSIS,context.WORDBREAK|})",
         "description": "Calculates width and height of the text.",
-        "prefix": "context:measureText(",
+        "prefix": "measureText(",
         "scope": "source.lua"
     },
     "context:minPrice": {
