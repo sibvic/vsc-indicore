@@ -2430,7 +2430,10 @@
             "local profile = core.indicators:findIndicator(${1:id});",
             "assert(profile ~= nil, \"Please, download and install \" .. ${1:id} .. \".LUA indicator\");",
             "local indicatorParams = profile:parameters();",
-            "--set parameters here indicatorParams:setBoolean(\"name\", val);",
+            "indicatorParams:setBoolean(\"bool\", instance.parameters.bool);",
+            "indicatorParams:setInteger(\"int\", instance.parameters.int);",
+            "indicatorParams:setString(\"str\", instance.parameters.str);",
+            "indicatorParams:setDouble(\"double\", instance.parameters.double);",
             "${4:indi} = core.indicators:create(${1:id}, ${2:source}, ${3:indicatorParams})"
         ],
         "description": "Creates an instance of the custom indicator.",
