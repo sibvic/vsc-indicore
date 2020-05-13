@@ -4888,6 +4888,16 @@
         "prefix": "strategyBidAskParam",
         "scope": "source.lua"
     },
+    "tradeParam": {
+        "body": 
+        [
+            "strategy.parameters:addString(\"${1:trade}\", \"${2:Trade}\", \"${3:description}\", \"\");",
+            "strategy.parameters:setFlag(\"${1:trade}\", core.FLAG_TRADE);"
+        ],
+        "description": "The trade parameter.",
+        "prefix": "tradeParam",
+        "scope": "source.lua"
+    },
     "transparencyParam": {
         "body": "${1|indicator,tool|}.parameters:addInteger(\"${2:transparency}\", ${3:name}, ${4:description}, ${5:50}, 0, 100);",
         "description": "Adds new transparency parameter.",

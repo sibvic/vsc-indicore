@@ -14,6 +14,7 @@
 * getParam
 * drawLineStream
 * createStyledPen
+* tradeParam
 
 ## 1.2.0
 
