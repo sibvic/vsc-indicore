@@ -15,6 +15,7 @@
 * drawLineStream
 * createStyledPen
 * tradeParam
+* atrParameters
 
 ## 1.2.0
 

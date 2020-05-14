@@ -3300,10 +3300,20 @@
         "body": 
         [
             "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:macd_}SN\", \"${3:MACD }Short EMA\", \"\", 12, 2, 1000);",
-            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:macd_}LN\", \"${3:MACD }Long EMA\", \"\", 26, 2, 1000)"
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:macd_}LN\", \"${3:MACD }Long EMA\", \"\", 26, 2, 1000);"
         ],
-        "description": "Get indicator stream color.",
+        "description": "MACD parameters.",
         "prefix": "macdParameters",
+        "scope": "source.lua"
+    },
+    "atrParameters": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:atr_}period\", \"${3:ATR }Period\", \"\", 14);",
+            "${1|indicator,strategy,tool|}.parameters:addDouble(\"${2:atr_}mult\", \"${3:ATR }Multiplicator\", \"\", 1.0);"
+        ],
+        "description": "ATR parameters.",
+        "prefix": "atrParameters",
         "scope": "source.lua"
     },
     "getIndiStreamColor": {
