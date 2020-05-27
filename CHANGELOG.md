@@ -16,6 +16,8 @@
 * createStyledPen
 * tradeParam
 * atrParameters
+* enumStreams
+* bbParameters
 
 ## 1.2.0
 

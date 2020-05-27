@@ -3306,6 +3306,16 @@
         "prefix": "macdParameters",
         "scope": "source.lua"
     },
+    "bbParameters": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:bb_}period\", \"${3:BB }Period\", \"\", 14, 2, 1000);",
+            "${1|indicator,strategy,tool|}.parameters:addDouble(\"${2:bb_}deviations\", \"${3:BB }Deviations\", \"\", 2.0, 0.1, 1000);"
+        ],
+        "description": "BB parameters.",
+        "prefix": "bbParameters",
+        "scope": "source.lua"
+    },
     "atrParameters": {
         "body": 
         [
@@ -4661,16 +4671,16 @@
         "prefix": "pane.Data",
         "scope": "source.lua"
     },
-    ":getStream": {
-        "body": ":getStream()",
-        "description": "The method returns stream of the specified index for pane.",
-        "prefix": ":getStream",
-        "scope": "source.lua"
-    },
-    ":getStreamCount": {
-        "body": ":getStreamCount()",
-        "description": "The method returns the number of stream in the pane.",
-        "prefix": ":getStreamCount",
+    "enumStreams": {
+        "body": 
+        [
+            "local streamsCount = ${1:indi}:getStreamCount();",
+            "for i = 0, streamsCount - 1 do",
+            "    local stream = ${1:indi}:getStream(i);",
+            "end"
+        ],
+        "description": "Enumerate indicator streams.",
+        "prefix": "enumStreams",
         "scope": "source.lua"
     },
     "mathex.covar": {
