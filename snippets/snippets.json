@@ -3316,6 +3316,16 @@
         "prefix": "bbParameters",
         "scope": "source.lua"
     },
+    "sarParameters": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addDouble(\"${2:sar_}step\", \"${3:SAR }Step\", \"\", 0.02, 0.001, 1);",
+            "${1|indicator,strategy,tool|}.parameters:addDouble(\"${2:sar_}max\", \"${3:SAR }Max\", \"\", 0.2, 0.001, 10);"
+        ],
+        "description": "SAR parameters.",
+        "prefix": "sarParameters",
+        "scope": "source.lua"
+    },
     "atrParameters": {
         "body": 
         [

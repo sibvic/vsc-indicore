@@ -18,6 +18,7 @@
 * atrParameters
 * enumStreams
 * bbParameters
+* sarPatameters
 
 ## 1.2.0
 
