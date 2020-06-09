@@ -2877,6 +2877,16 @@
         "prefix": "ExtUpdate",
         "scope": "source.lua"
     },
+    "strategyUpdate": {
+        "body": 
+        [
+            "function ExtUpdate(id, source, period)",
+            "end"
+        ],
+        "description": "The function must be implemented in case helper.lua is used.",
+        "prefix": "strategyUpdate",
+        "scope": "source.lua"
+    },
     "host:execute(\"calculatePositionOfDate\", ...)": {
         "body": "host:execute(\"calculatePositionOfDate\", ${1:stream}, ${2:date})",
         "description": "Searches for the specified date in the price stream.",
@@ -3378,16 +3388,16 @@
         "prefix": "instance:getStreamCount(",
         "scope": "source.lua"
     },
-    "instance:getTextOutput": {
-        "body": "instance:getTextOutput(${1:index})",
+    "getTextOutput": {
+        "body": "${2:indi}:getTextOutput(${1:index})",
         "description": "The method returns the text output stream of the indicator by the stream index.",
-        "prefix": "instance:getTextOutput(",
+        "prefix": "getTextOutput",
         "scope": "source.lua"
     },
-    "instance:getTextOutputCount": {
-        "body": "instance:getTextOutputCount()",
+    "getTextOutputCount": {
+        "body": "${1:indi}:getTextOutputCount()",
         "description": "The method returns the number of text output streams of the indicator.",
-        "prefix": "instance:getTextOutputCount(",
+        "prefix": "getTextOutputCount",
         "scope": "source.lua"
     },
     "instance:name": {

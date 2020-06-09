@@ -19,6 +19,9 @@
 * enumStreams
 * bbParameters
 * sarPatameters
+* getTextOutput
+* getTextOutputCount
+* strategyUpdate
 
 ## 1.2.0
 
