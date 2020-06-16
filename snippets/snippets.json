@@ -4421,18 +4421,6 @@
         "prefix": "indicore3_ffi.textoutputimpl_setNoData",
         "scope": "source.lua"
     },
-    "indicore3_ffi.thisindicatorinstance_updateFrom": {
-        "body": "indicore3_ffi.thisindicatorinstance_updateFrom(${1:instance}, ${2:period})",
-        "description": "The function forces the calculation of the indicator output streams starting at the specified period.",
-        "prefix": "indicore3_ffi.thisindicatorinstance_updateFrom",
-        "scope": "source.lua"
-    },
-    "indicore3_ffi.thisindicatorinstance_view_addBar": {
-        "body": "indicore3_ffi.thisindicatorinstance_view_addBar(${1:instance}, ${2:date})",
-        "description": "The function adds a bar into the output streams of the the view indicator.",
-        "prefix": "indicore3_ffi.thisindicatorinstance_view_addBar",
-        "scope": "source.lua"
-    },
     "indicore3_ffi.tradingtable_enumerator": {
         "body": "indicore3_ffi.tradingtable_enumerator(${1:table})",
         "description": "The function creates an enumerator for the specified trading table.",
