@@ -22,6 +22,7 @@
 * getTextOutput
 * getTextOutputCount
 * strategyUpdate
+* ssdParameters
 
 ## 1.2.0
 

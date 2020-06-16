@@ -3310,10 +3310,22 @@
         "body": 
         [
             "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:macd_}SN\", \"${3:MACD }Short EMA\", \"\", 12, 2, 1000);",
-            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:macd_}LN\", \"${3:MACD }Long EMA\", \"\", 26, 2, 1000);"
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:macd_}LN\", \"${3:MACD }Long EMA\", \"\", 26, 2, 1000);",
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:macd_}IN\", \"${3:MACD }Signal\", \"\", 9, 2, 1000);"
         ],
         "description": "MACD parameters.",
         "prefix": "macdParameters",
+        "scope": "source.lua"
+    },
+    "ssdParameters": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:ssd}_K\", \"Number of periods for %K\", \"The number of periods for %K.\", 10, 2, 1000);",
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:ssd}_SD\", \"%D slowing periods\", \"The number of periods for slow %D.\", 5, 2, 1000);",
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:ssd}_D\", \"Number of periods for %D\", \"The number of periods for %D.\", 5, 2, 1000);"
+        ],
+        "description": "SSD parameters.",
+        "prefix": "ssdParameters",
         "scope": "source.lua"
     },
     "bbParameters": {
