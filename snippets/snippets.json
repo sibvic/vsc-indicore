@@ -5142,6 +5142,16 @@
         "prefix": "stringParamClipboard",
         "scope": "source.lua"
     },
+    "addIntegerAlternativeParam": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:id}\", \"${3:name}\", \"${4:description}\", ${5:value});",
+            "${1|indicator,strategy,tool|}.parameters:addIntegerAlternative(\"${2:id}\", \"${6:name}\", \"${7:description}\", ${5:value});"
+        ],
+        "description": "Adds an alternative for the integer parameter.",
+        "prefix": "addIntegerAlternativeParam",
+        "scope": "source.lua"
+    },
     "addStringAlternativeParam": {
         "body": 
         [

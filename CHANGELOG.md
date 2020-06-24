@@ -23,6 +23,7 @@
 * getTextOutputCount
 * strategyUpdate
 * ssdParameters
+* addIntegerAlternativeParam
 
 ## 1.2.0
 
