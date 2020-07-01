@@ -1,8 +1,8 @@
 # Change log
 
-## 1.2.1
+## 1.3
 
-### New in 1.2.1
+### New in 1.3
 
 * priceParam/priceParamClipboard
 * addStringAlternativeParam/addStringAlternativeParamClipboard
