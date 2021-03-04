@@ -3898,6 +3898,12 @@
         "prefix": "addInternalStream",
         "scope": "source.lua"
     },
+    "addTextOutput": {
+        "body": "${1:id} = instance:createTextOutput(\"${1:id}\", \"${2:name}\", \"${3:font}\", ${4:font_size}, core.${5|H_Center,H_Left,H_Right|}, core.${6|V_Bottom,V_Center,V_Top|}, ${7:color})",
+        "description": "Adds a text output stream to the indicator.",
+        "prefix": "addTextOutput",
+        "scope": "source.lua"
+    },
     "addStream": {
         "body": "${1:id} = instance:addStream(\"${1:id}\", ${2|core.Dot,core.Line,core.Bar|}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
         "description": "The method adds an output stream to the indicator.",
@@ -4107,12 +4113,6 @@
         "body": ":createFromToBarGroup(${1:label}, ${2:id}, ${3:first}, ${4:second}, ${5:color})",
         "description": "The method groups two output streams into a from/to bar.",
         "prefix": ":createFromToBarGroup",
-        "scope": "source.lua"
-    },
-    ":createTextOutput": {
-        "body": ":createTextOutput(${1:label}, ${2:id}, ${3:font}, ${4:size}, ${5:halign}, ${6:valign}, ${7:color}, ${8:extent})",
-        "description": "The method adds an text output stream to the indicator.",
-        "prefix": ":createTextOutput",
         "scope": "source.lua"
     },
     ":drawOnMainChart": {
