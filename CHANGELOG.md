@@ -5,6 +5,7 @@
 ### New in 1.4
 
 * addTextOutput
+* addPriceTypeParam
 
 ## 1.3
 

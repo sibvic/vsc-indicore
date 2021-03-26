@@ -5152,6 +5152,22 @@
         "prefix": "addIntegerAlternativeParam",
         "scope": "source.lua"
     },
+    "addPriceTypeParam": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addString(\"${2:id}\", \"${3:name}\", \"${4:description}\", \"${5|Open,High,Low,Close,Median,Typical,Weighted|}\");",
+            "${1|indicator,strategy,tool|}.parameters:addStringAlternative(\"${2:id}\", \"Open\", \"\", \"Open\");",
+            "${1|indicator,strategy,tool|}.parameters:addStringAlternative(\"${2:id}\", \"High\", \"\", \"High\");",
+            "${1|indicator,strategy,tool|}.parameters:addStringAlternative(\"${2:id}\", \"Low\", \"\", \"Low\");",
+            "${1|indicator,strategy,tool|}.parameters:addStringAlternative(\"${2:id}\", \"Close\", \"\", \"Close\");",
+            "${1|indicator,strategy,tool|}.parameters:addStringAlternative(\"${2:id}\", \"Median\", \"\", \"Median\");",
+            "${1|indicator,strategy,tool|}.parameters:addStringAlternative(\"${2:id}\", \"Typical\", \"\", \"Typical\");",
+            "${1|indicator,strategy,tool|}.parameters:addStringAlternative(\"${2:id}\", \"Weighted\", \"\", \"Weighted\");"
+        ],
+        "description": "Adds a price type parameter.",
+        "prefix": "addPriceTypeParam",
+        "scope": "source.lua"
+    },
     "addStringAlternativeParam": {
         "body": 
         [
