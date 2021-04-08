@@ -5792,5 +5792,270 @@
         "description": "Creates a new tooltip to be shown when the mouse cursor stops over the area specified.",
         "prefix": "context.tooltip",
         "scope": "source.lua"
+    },
+    "Get ReportURL": {
+        "body": 
+        [
+            "local ${1:url} = core.host:execute(\"getTradingProperty\", \"ReportURL\", nil, ${2:account})",
+            "    .. \"&outFormat=${3|html-web,pdf-web,xls-web,csv-web,xml|}\"",
+            "    .. \"&lc=${4|enu,rus,cht,chs,jpn,fra,esp,deu,ara,ctt,kor|}\"",
+            "    .. string.format(\"&from=%02i/%02i/%04i\", ${5:fromMonth}, ${6:fromDay}, ${7:fromYear})",
+            "    .. string.format(\"&till=%02i/%02i/%04i\", ${8:tillMonth}, ${9:tillDay}, ${10:tillYear})"
+        ],
+        "description": "The basic URL which can be used to get the report. Add the following parameters to the URL to get the report.",
+        "prefix": "ReportURL_TP",
+        "scope": "source.lua"
+    },
+    "Check Create Entry": {
+        "body": 
+        [
+            "local ${1:canCreateEntry} = core.host:execute(\"getTradingProperty\", \"canCreateEntry\", ${2:instrument}, ${3:account})"
+        ],
+        "description": "Checks whether the entry order can be created for the specified account and instrument.",
+        "prefix": "canCreateEntry_TP",
+        "scope": "source.lua"
+    },
+    "Check Create Market Open": {
+        "body": 
+        [
+            "local ${1:canCreateMarketOpen} = core.host:execute(\"getTradingProperty\", \"canCreateMarketOpen\", ${2:instrument}, ${3:account})"
+        ],
+        "description": "Checks whether the market open order can be created for the specified account and instrument.",
+        "prefix": "canCreateMarketOpen_TP",
+        "scope": "source.lua"
+    },
+    "Check Create Market Close": {
+        "body": 
+        [
+            "local ${1:canCreateMarketClose} = core.host:execute(\"getTradingProperty\", \"canCreateMarketClose\", ${2:instrument}, ${3:account})"
+        ],
+        "description": "Checks whether the market close order can be created for the specified account and instrument.",
+        "prefix": "canCreateMarketClose_TP",
+        "scope": "source.lua"
+    },
+    "Check Create Stop Limit": {
+        "body": 
+        [
+            "local ${1:canCreateStopLimit} = core.host:execute(\"getTradingProperty\", \"canCreateStopLimit\", ${2:instrument}, ${3:account})"
+        ],
+        "description": "Checks whether the conditional (stop, limit) close order can be created for the specified account and instrument.",
+        "prefix": "canCreateStopLimit_TP",
+        "scope": "source.lua"
+    },
+    "Check Create Net Stop Limit": {
+        "body": 
+        [
+            "local ${1:canCreateNetStopLimit} = core.host:execute(\"getTradingProperty\", \"canCreateNetStopLimit\", nil, ${2:account})"
+        ],
+        "description": "Checks whether netting conditional (stop, limit) close order can be created for the specified account.",
+        "prefix": "canCreateNetStopLimit_TP",
+        "scope": "source.lua"
+    },
+    "Check Use Dynamic Trailing For Entry Limit": {
+        "body": 
+        [
+            "local ${1:canUseDynamicTrailingForEntryLimit} = core.host:execute(\"getTradingProperty\", \"canUseDynamicTrailingForEntryLimit\", nil, nil)"
+        ],
+        "description": "Checks whether dynamic trailing order can be used for the entry limit orders.",
+        "prefix": "canUseDynamicTrailingForEntryLimit_TP",
+        "scope": "source.lua"
+    },
+    "Check Use Dynamic Trailing For Entry Stop": {
+        "body": 
+        [
+            "local ${1:canUseDynamicTrailingForEntryStop} = core.host:execute(\"getTradingProperty\", \"canUseDynamicTrailingForEntryStop\", nil, nil)"
+        ],
+        "description": "Checks whether dynamic trailing order can be used for the entry stop orders.",
+        "prefix": "canUseDynamicTrailingForEntryStop_TP",
+        "scope": "source.lua"
+    },
+    "Check Use Dynamic Trailing For Limit": {
+        "body": 
+        [
+            "local ${1:canUseDynamicTrailingForLimit} = core.host:execute(\"getTradingProperty\", \"canUseDynamicTrailingForLimit\", nil, nil)"
+        ],
+        "description": "Checks whether dynamic trailing order can be used for the limit orders.",
+        "prefix": "canUseDynamicTrailingForLimit_TP",
+        "scope": "source.lua"
+    },
+    "Check Use Dynamic Trailing For Stop": {
+        "body": 
+        [
+            "local ${1:canUseDynamicTrailingForStop} = core.host:execute(\"getTradingProperty\", \"canUseDynamicTrailingForStop\", nil, nil)"
+        ],
+        "description": "Checks whether dynamic trailing order can be used for the stop orders.",
+        "prefix": "canUseDynamicTrailingForStop_TP",
+        "scope": "source.lua"
+    },
+    "Check Use Fluctuate Trailing For Entry Limit": {
+        "body": 
+        [
+            "local ${1:canUseFluctuateTrailingForEntryLimit} = core.host:execute(\"getTradingProperty\", \"canUseFluctuateTrailingForEntryLimit\", nil, nil)"
+        ],
+        "description": "Checks whether fluctuating trailing order can be used for the entry limit orders.",
+        "prefix": "canUseFluctuateTrailingForEntryLimit_TP",
+        "scope": "source.lua"
+    },
+    "Check Use Fluctuate Trailing For Entry Stop": {
+        "body": 
+        [
+            "local ${1:canUseFluctuateTrailingForEntryStop} = core.host:execute(\"getTradingProperty\", \"canUseFluctuateTrailingForEntryStop\", nil, nil)"
+        ],
+        "description": "Checks whether fluctuating trailing order can be used for the entry stop orders.",
+        "prefix": "canUseFluctuateTrailingForEntryStop_TP",
+        "scope": "source.lua"
+    },
+    "Check Use Fluctuate Trailing For Limit": {
+        "body": 
+        [
+            "local ${1:canUseFluctuateTrailingForLimit} = core.host:execute(\"getTradingProperty\", \"canUseFluctuateTrailingForLimit\", nil, nil)"
+        ],
+        "description": "Checks whether fluctuating trailing order can be used for the limit orders.",
+        "prefix": "canUseFluctuateTrailingForLimit_TP",
+        "scope": "source.lua"
+    },
+    "Check Use Fluctuate Trailing For Stop": {
+        "body": 
+        [
+            "local ${1:canUseFluctuateTrailingForStop} = core.host:execute(\"getTradingProperty\", \"canUseFluctuateTrailingForStop\", nil, nil)"
+        ],
+        "description": "Checks whether fluctuating trailing order can be used for the stop orders.",
+        "prefix": "canUseFluctuateTrailingForStop_TP",
+        "scope": "source.lua"
+    },
+    "Get Base Unit Size": {
+        "body": 
+        [
+            "local ${1:baseUnitSize} = core.host:execute(\"getTradingProperty\", \"baseUnitSize\", ${2:instrument}, ${3:account})"
+        ],
+        "description": "The size of one lot, i.e. the minimum amount per trade that is allowed on the instrument on the account. The value is expressed in contracts.",
+        "prefix": "baseUnitSize_TP",
+        "scope": "source.lua"
+    },
+    "Get MMR": {
+        "body": 
+        [
+            "local ${1:MMR} = core.host:execute(\"getTradingProperty\", \"MMR\", ${2:instrument}, ${3:account})"
+        ],
+        "description": "Maintenance Margin Requirement.",
+        "prefix": "MMR_TP",
+        "scope": "source.lua"
+    },
+    "Get EMR": {
+        "body": 
+        [
+            "local ${1:EMR} = core.host:execute(\"getTradingProperty\", \"EMR\", ${2:instrument}, ${3:account})"
+        ],
+        "description": "Entry Margin Requirement for 3-level margin accounts.",
+        "prefix": "EMR_TP",
+        "scope": "source.lua"
+    },
+    "Get LMR": {
+        "body": 
+        [
+            "local ${1:LMR} = core.host:execute(\"getTradingProperty\", \"LMR\", ${2:instrument}, ${3:account})"
+        ],
+        "description": "Liquidation Margin Requirement for 3-level margin accounts.",
+        "prefix": "LMR_TP",
+        "scope": "source.lua"
+    },
+    "Get conditional Distance Entry Limit": {
+        "body": 
+        [
+            "local ${1:conditionalDistanceEntryLimit} = core.host:execute(\"getTradingProperty\", \"conditionalDistanceEntryLimit\", ${2:instrument}, nil)"
+        ],
+        "description": "The minimal distance between the rates of the entry limit order and the current market rate. The distance is expressed in pips.",
+        "prefix": "conditionalDistanceEntryLimit_TP",
+        "scope": "source.lua"
+    },
+    "Get conditional Distance Entry Stop": {
+        "body": 
+        [
+            "local ${1:conditionalDistanceEntryStop} = core.host:execute(\"getTradingProperty\", \"conditionalDistanceEntryStop\", ${2:instrument}, nil)"
+        ],
+        "description": "The minimal distance between the rates of the entry stop order and the current market rate. The distance is expressed in pips.",
+        "prefix": "conditionalDistanceEntryStop_TP",
+        "scope": "source.lua"
+    },
+    "Get conditional Distance Limit For Entry": {
+        "body": 
+        [
+            "local ${1:conditionalDistanceLimitForEntry} = core.host:execute(\"getTradingProperty\", \"conditionalDistanceLimitForEntry\", ${2:instrument}, nil)"
+        ],
+        "description": "The minimal distance between the rates of a limit order attached to an entry order and the current market rate. The distance is expressed in pips.",
+        "prefix": "conditionalDistanceLimitForEntry_TP",
+        "scope": "source.lua"
+    },
+    "Get conditional Distance Stop For Entry": {
+        "body": 
+        [
+            "local ${1:conditionalDistanceStopForEntry} = core.host:execute(\"getTradingProperty\", \"conditionalDistanceStopForEntry\", ${2:instrument}, nil)"
+        ],
+        "description": "The minimal distance between the rates of a stop order attached to an entry order and the current market rate. The distance is expressed in pips.",
+        "prefix": "conditionalDistanceStopForEntry_TP",
+        "scope": "source.lua"
+    },
+    "Get conditional Distance Limit For Trade": {
+        "body": 
+        [
+            "local ${1:conditionalDistanceLimitForTrade} = core.host:execute(\"getTradingProperty\", \"conditionalDistanceLimitForTrade\", ${2:instrument}, nil)"
+        ],
+        "description": "The minimal distance between the rates of a limit order attached to a trade and the current market rate. The distance is expressed in pips.",
+        "prefix": "conditionalDistanceLimitForTrade_TP",
+        "scope": "source.lua"
+    },
+    "Get conditional Distance Stop For Trade": {
+        "body": 
+        [
+            "local ${1:conditionalDistanceStopForTrade} = core.host:execute(\"getTradingProperty\", \"conditionalDistanceStopForTrade\", ${2:instrument}, nil)"
+        ],
+        "description": "The minimal distance between the rates of a stop order attached to a trade order and the current market rate. The distance is expressed in pips.",
+        "prefix": "conditionalDistanceStopForTrade_TP",
+        "scope": "source.lua"
+    },
+    "Get market Status": {
+        "body": 
+        [
+            "local ${1:marketStatus} = core.host:execute(\"getTradingProperty\", \"marketStatus\", ${2:instrument}, nil)"
+        ],
+        "description": "Checks whether the instrument is tradeable.",
+        "prefix": "marketStatus_TP",
+        "scope": "source.lua"
+    },
+    "Get max Quantity": {
+        "body": 
+        [
+            "local ${1:maxQuantity} = core.host:execute(\"getTradingProperty\", \"maxQuantity\", ${2:instrument}, ${3:account})"
+        ],
+        "description": "The maximum size of a trade or of a market order. The value is expressed in lots.",
+        "prefix": "maxQuantity_TP",
+        "scope": "source.lua"
+    },
+    "Get min Quantity": {
+        "body": 
+        [
+            "local ${1:minQuantity} = core.host:execute(\"getTradingProperty\", \"minQuantity\", ${2:instrument}, ${3:account})"
+        ],
+        "description": "The minimum size of a trade or of a market order. The value is expressed in lots.",
+        "prefix": "minQuantity_TP",
+        "scope": "source.lua"
+    },
+    "Get User Name": {
+        "body": 
+        [
+            "local ${1:UserName} = core.host:execute(\"getTradingProperty\", \"UserName\", nil, nil)"
+        ],
+        "description": "The name of the currently logged in user.",
+        "prefix": "UserName_TP",
+        "scope": "source.lua"
+    },
+    "Get Session ID": {
+        "body": 
+        [
+            "local ${1:SessionID} = core.host:execute(\"getTradingProperty\", \"SessionID\", nil, nil)"
+        ],
+        "description": "The ID of the current session.",
+        "prefix": "SessionID_TP",
+        "scope": "source.lua"
     }
 }

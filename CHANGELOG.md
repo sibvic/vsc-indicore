@@ -6,6 +6,7 @@
 
 * addTextOutput
 * addPriceTypeParam
+* ReportURL_TP, canCreateEntry_TP, canCreateMarketOpen_TP, canCreateMarketClose_TP, canCreateStopLimit_TP, canCreateNetStopLimit_TP, canUseDynamicTrailingForEntryLimit_TP, canUseDynamicTrailingForEntryStop_TP, canUseDynamicTrailingForLimit_TP, canUseDynamicTrailingForStop_TP, canUseFluctuateTrailingForEntryLimit_TP, canUseFluctuateTrailingForEntryStop_TP, canUseFluctuateTrailingForLimit_TP, canUseFluctuateTrailingForStop_TP, baseUnitSize_TP, MMR_TP, EMR_TP, LMR_TP, conditionalDistanceEntryLimit_TP, conditionalDistanceEntryStop_TP, conditionalDistanceLimitForEntry_TP, conditionalDistanceStopForEntry_TP, conditionalDistanceLimitForTrade_TP, conditionalDistanceStopForTrade_TP, marketStatus_TP, maxQuantity_TP, minQuantity_TP, UserName_TP, SessionID_TP
 
 ## 1.3
 
