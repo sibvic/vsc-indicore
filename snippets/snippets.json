@@ -6057,5 +6057,11 @@
         "description": "The ID of the current session.",
         "prefix": "SessionID_TP",
         "scope": "source.lua"
+    },
+    "Trade table fields": {
+        "body": "${1|TradeID,AccountID,AccountName,OfferID,Instrument,Lot,AmountK,BS,Open,Close,Stop,Limit,PL,GrossPL,Com,Int,Time,IsBuy,Kind,QuoteID,OpenOrderID,OpenOrderReqID,QTXT,StopOrderID,LimitOrderID,TradeIDOrigin|}",
+        "description": "Enum trade table fields",
+        "prefix": "TradeField",
+        "scope": "source.lua"
     }
 }
