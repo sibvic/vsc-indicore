@@ -2917,10 +2917,10 @@
         "prefix": "host:execute(\"drawLabel\",",
         "scope": "source.lua"
     },
-    "host:execute(\"drawLabel1\", ...)": {
-        "body": "host:execute(\"drawLabel1\", ${1:id}, ${2:x}, ${3:xType}, ${4:y}, ${5:yType}, ${6:halign}, ${7:valign}, ${8:font}, ${9:color}, ${10:text})",
+    "drawLabel1": {
+        "body": "core.host:execute(\"drawLabel1\", ${1:id}, ${2:x}, ${3|core.CR_CHART,core.CR_LEFT,core.CR_RIGHT,core.CR_CENTER|}, ${4:y}, ${5|core.CR_CHART,core.CR_TOP,core.CR_BOTTOM,core.CR_CENTER|}, ${6|core.H_Left,core.H_Center,core.H_Right|}, ${7|core.V_Top,core.V_Center,core.V_Bottom|}, ${8:font}, ${9:color}, ${10:text})",
         "description": "Creates or replaces a label (advanced version).",
-        "prefix": "host:execute(\"drawLabel1\",",
+        "prefix": "drawLabel1",
         "scope": "source.lua"
     },
     "host:execute(\"drawLine\", ...)": {
