@@ -3412,6 +3412,12 @@
         "prefix": "getTextOutputCount",
         "scope": "source.lua"
     },
+    "textOutput_get": {
+        "body": "local level, label, tooltip, color = ${1:text_output}:get(${2:period})",
+        "description": "The method returns the text label that is set at the specified period.",
+        "prefix": "textOutput_get",
+        "scope": "source.lua"
+    },
     "instance:name": {
         "body": "instance:name()",
         "description": "The method returns the name of the indicator instance.",
