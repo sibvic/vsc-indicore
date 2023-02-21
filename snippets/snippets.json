@@ -3925,7 +3925,7 @@
     "addStreamOscillator": {
         "body": 
         [
-            "${1:id} = instance:addStream(${1:id}, ${2|core.Dot,core.Line,core.Bar|}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
+            "${1:id} = instance:addStream(\"${1:id}\", ${2|core.Dot,core.Line,core.Bar|}, ${3:fullName}, ${4:label}, ${5:color}, ${6:firstPeriod}, ${7:extent})",
             "${1:id}:setPrecision(math.max(2, instance.source:getPrecision()));"
         ],
         "description": "The method adds an output stream to the indicator.",

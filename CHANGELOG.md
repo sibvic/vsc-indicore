@@ -1,5 +1,11 @@
 # Change log
 
+## 1.5
+
+### New in 1.5
+
+* Fixed addStreamOscillator
+
 ## 1.4
 
 ### New in 1.4
