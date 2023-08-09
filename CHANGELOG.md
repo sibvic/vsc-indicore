@@ -5,6 +5,7 @@
 ### New in 1.5
 
 * Fixed addStreamOscillator
+* Added formatRate
 
 ## 1.4
 

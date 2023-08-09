@@ -6069,5 +6069,11 @@
         "description": "Enum trade table fields",
         "prefix": "TradeField",
         "scope": "source.lua"
+    },
+    "formatRate": {
+        "body": "win32.formatNumber(${1:value}, false, ${2:digits})",
+        "description": "Formats rate to a specified number of digits",
+        "prefix": "formatRate",
+        "scope": "source.lua"
     }
 }
