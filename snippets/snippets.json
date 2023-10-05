@@ -2645,7 +2645,7 @@
             "        referencePoints:setReferencePoint(movingPointID,",
             "            instance.parameters.date${1:_1}, instance.parameters.rate${2:_1},",
             "            referencePoints.DATE + referencePoints.PRICE,",
-            "            instance.parameters.${2:color}, instance.parameters.${2:width} + 1);",
+            "            instance.parameters.${3:color}, instance.parameters.${4:width} + 1);",
             "    end",
             "end",
             "function MoveReferencePointFinished()",
