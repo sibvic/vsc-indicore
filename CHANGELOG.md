@@ -6,6 +6,7 @@
 
 * Fixed addStreamOscillator
 * Added formatRate
+* Fixed toolInit
 
 ## 1.4
 
