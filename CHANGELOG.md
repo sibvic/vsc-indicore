@@ -9,6 +9,7 @@
 * Fixed toolInit
 * Fixed toolMovePointFunctions
 * Fixed toolCreateFunctions
+* Added sfkParameters
 
 ## 1.4
 
