@@ -2627,7 +2627,7 @@
             "end"
         ],
         "description": "Tool factions related to creation.",
-        "prefix": "clickFunctions",
+        "prefix": "toolCreateFunctions",
         "scope": "source.lua"
     },
     "toolMovePointFunctions": {

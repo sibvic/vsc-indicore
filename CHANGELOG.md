@@ -8,6 +8,7 @@
 * Added formatRate
 * Fixed toolInit
 * Fixed toolMovePointFunctions
+* Fixed toolCreateFunctions
 
 ## 1.4
 
