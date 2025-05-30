@@ -3322,10 +3322,24 @@
         [
             "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:ssd}_K\", \"Number of periods for %K\", \"The number of periods for %K.\", 10, 2, 1000);",
             "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:ssd}_SD\", \"%D slowing periods\", \"The number of periods for slow %D.\", 5, 2, 1000);",
-            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:ssd}_D\", \"Number of periods for %D\", \"The number of periods for %D.\", 5, 2, 1000);"
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:ssd}_D\", \"Number of periods for %D\", \"The number of periods for %D.\", 5, 2, 1000);",
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:ssd}_ob\", \"Overbought level\", \"\", 80);",
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:ssd}_os\", \"Oversold level\", \"\", 20);"
         ],
         "description": "SSD parameters.",
         "prefix": "ssdParameters",
+        "scope": "source.lua"
+    },
+    "sfkParameters": {
+        "body": 
+        [
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:sfk}_K\", \"Number of periods for %K\", \"The number of periods for %K.\", 10, 2, 1000);",
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:sfk}_SD\", \"%D periods\", \"The number of periods for %D.\", 5, 2, 1000);",
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:sfk}_ob\", \"Overbought level\", \"\", 80);",
+            "${1|indicator,strategy,tool|}.parameters:addInteger(\"${2:sfk}_os\", \"Oversold level\", \"\", 20);"
+        ],
+        "description": "SFK parameters.",
+        "prefix": "sfkParameters",
         "scope": "source.lua"
     },
     "bbParameters": {
